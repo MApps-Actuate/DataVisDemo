@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120817-1705 Build &lt;3.7.2.v20120817-1705></property>
+    <property name="units">in</property>
+    <method name="beforeFactory"><![CDATA[vars["gDataXML1"] += "['Apples',  new Date (1989,6,1), 1200, 400, 'East'],";
+vars["gDataXML1"] += "['Oranges', new Date (1989,6,1), 750,  150, 'West'],";
+vars["gDataXML1"] += "['Bananas', new Date (1989,6,1), 788,  617, 'West']";
+
+]]></method>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">120</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems.rptlibrary</property>
+            <property name="namespace">ThemesReportItems</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="164">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.eclipse.birt.report.data.oda.sampledb.Driver</property>
+            <property name="odaURL">jdbc:classicmodels:sampledb</property>
+            <property name="odaUser">ClassicModels</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="165">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">DATEFormatted</property>
+                    <expression name="expression" type="javascript">BirtDateTime.year(row["DATE"]) + "," + (BirtDateTime.month(row["DATE"])-1) + "," + BirtDateTime.day(row["DATE"])</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">COUNTRY</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">COUNTRY</text-property>
+                    <text-property name="heading">COUNTRY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DATE</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">DATE</text-property>
+                    <text-property name="heading">DATE</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">ITEMSORDERED</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">ITEMSORDERED</text-property>
+                    <text-property name="heading">ITEMSORDERED</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">SALESREV</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">SALESREV</text-property>
+                    <text-property name="heading">SALESREV</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PAYMENTSREC</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">PAYMENTSREC</text-property>
+                    <text-property name="heading">PAYMENTSREC</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">DATEFormatted</property>
+                    <property name="analysis">dimension</property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">in</property>
+                    <expression name="expr" type="javascript">row["COUNTRY"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">"USA"</value>
+                        <value type="javascript">"Australia"</value>
+                        <value type="javascript">"Canada"</value>
+                        <value type="javascript">"Germany"</value>
+                        <value type="javascript">"Russia"</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">COUNTRY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">DATE</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">ITEMSORDERED</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">SALESREV</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">PAYMENTSREC</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">DATEFormatted</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">COUNTRY</property>
+                    <property name="nativeName">COUNTRY</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">DATE</property>
+                    <property name="nativeName">DATE</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">ITEMSORDERED</property>
+                    <property name="nativeName">ITEMSORDERED</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">SALESREV</property>
+                    <property name="nativeName">SALESREV</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">PAYMENTSREC</property>
+                    <property name="nativeName">PAYMENTSREC</property>
+                    <property name="dataType">float</property>
+                    <property name="nativeDataType">8</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+     c.country, o.orderdate date, sum(od.quantityordered) itemsOrdered, sum(od.quantityordered * od.priceeach) salesRev, sum(p.amount) paymentsRec
+from 
+     orderdetails od, orders o, payments p, customers c
+where 
+     od.ordernumber = o.ordernumber
+     and o.orderdate = p.paymentdate
+     and o.orderdate >= '1/1/2003'
+     and o.orderdate <= '12/31/2003'
+group by o.orderdate, c.country]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PRODUCTLINE</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>PRODUCTLINE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PRODUCTLINE</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TEXTDESCRIPTION</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>4000</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>TEXTDESCRIPTION</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TEXTDESCRIPTION</design:label>
+            <design:formattingHints>
+              <design:displaySize>4000</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>HTMLDESCRIPTION</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2005</design:nativeDataTypeCode>
+            <design:precision>2147483647</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>HTMLDESCRIPTION</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>HTMLDESCRIPTION</design:label>
+            <design:formattingHints>
+              <design:displaySize>2147483647</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>IMAGE</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2004</design:nativeDataTypeCode>
+            <design:precision>2147483647</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>IMAGE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>IMAGE</design:label>
+            <design:formattingHints>
+              <design:displaySize>2147483647</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="200">
+            <property name="display">block</property>
+            <property name="dataSet">Data Set</property>
+            <property name="theme">ThemesReportItems.default-table</property>
+            <list-property name="visibility">
+                <structure>
+                    <property name="format">all</property>
+                    <expression name="valueExpr" type="javascript">true</expression>
+                </structure>
+            </list-property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">COUNTRY</property>
+                    <text-property name="displayName">COUNTRY</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["COUNTRY"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">DATE</property>
+                    <text-property name="displayName">DATE</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DATE"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">ITEMSORDERED</property>
+                    <text-property name="displayName">ITEMSORDERED</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ITEMSORDERED"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">SALESREV</property>
+                    <text-property name="displayName">SALESREV</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["SALESREV"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">PAYMENTSREC</property>
+                    <text-property name="displayName">PAYMENTSREC</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["PAYMENTSREC"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">DATEFormatted</property>
+                    <text-property name="displayName">DATEFormatted</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["DATEFormatted"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="229"/>
+            <column id="230"/>
+            <column id="231"/>
+            <column id="232"/>
+            <column id="233"/>
+            <header>
+                <row id="201">
+                    <cell id="202">
+                        <label id="203">
+                            <text-property name="text">COUNTRY</text-property>
+                        </label>
+                    </cell>
+                    <cell id="204">
+                        <label id="205">
+                            <text-property name="text">DATE</text-property>
+                        </label>
+                    </cell>
+                    <cell id="206">
+                        <label id="207">
+                            <text-property name="text">ITEMSORDERED</text-property>
+                        </label>
+                    </cell>
+                    <cell id="208">
+                        <label id="209">
+                            <text-property name="text">SALESREV</text-property>
+                        </label>
+                    </cell>
+                    <cell id="210">
+                        <label id="211">
+                            <text-property name="text">PAYMENTSREC</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="212">
+                    <method name="onCreate"><![CDATA[if (vars["gDataXML"].length > 0) {
+   vars["gDataXML"] += ",['" + this.getRowData().getColumnValue("COUNTRY") + "',  new Date (" + this.getRowData().getColumnValue("DATEFormatted") + "), " + this.getRowData().getColumnValue("ITEMSORDERED") + ", " + this.getRowData().getColumnValue("SALESREV") + ", " + this.getRowData().getColumnValue("PAYMENTSREC") + "]";
+}
+else {
+   vars["gDataXML"] += "['" + this.getRowData().getColumnValue("COUNTRY") + "',  new Date (" + this.getRowData().getColumnValue("DATEFormatted") + "), " + this.getRowData().getColumnValue("ITEMSORDERED") + ", " + this.getRowData().getColumnValue("SALESREV") + ", " + this.getRowData().getColumnValue("PAYMENTSREC") + "]";
+};]]></method>
+                    <cell id="213">
+                        <data id="214">
+                            <property name="resultSetColumn">COUNTRY</property>
+                        </data>
+                    </cell>
+                    <cell id="215">
+                        <data id="216">
+                            <property name="resultSetColumn">DATE</property>
+                        </data>
+                    </cell>
+                    <cell id="217">
+                        <data id="218">
+                            <property name="resultSetColumn">ITEMSORDERED</property>
+                        </data>
+                    </cell>
+                    <cell id="219">
+                        <data id="220">
+                            <structure name="numberFormat">
+                                <property name="category">Fixed</property>
+                                <property name="pattern">###0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="resultSetColumn">SALESREV</property>
+                        </data>
+                    </cell>
+                    <cell id="221">
+                        <data id="222">
+                            <property name="resultSetColumn">PAYMENTSREC</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="223">
+                    <cell id="224"/>
+                    <cell id="225"/>
+                    <cell id="226"/>
+                    <cell id="227"/>
+                    <cell id="228"/>
+                </row>
+            </footer>
+        </table>
+        <text id="163">
+            <property name="contentType">html</property>
+            <text-property name="content"><![CDATA[    <div id="chart_div" style="width: 800px; height: 500px;"></div>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    
+    <script type="text/javascript">
+      var gDataXML = [<VALUE-OF>vars["gDataXML"]</VALUE-OF>];
+      google.load('visualization', '1', {'packages':['motionchart']});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Country');
+        data.addColumn('date', 'Date');
+        data.addColumn('number', 'Items Ordered');
+        data.addColumn('number', 'Sales Revenue');
+        data.addColumn('number', 'Payments Received');
+        data.addRows([ <VALUE-OF>vars["gDataXML"]</VALUE-OF> ]);
+
+		var options = {};
+		options['state'] =
+'{"yAxisOption":"3","xZoomedIn":false,"colorOption":"_UNIQUE_COLOR","playDuration":18888.88888888889,"yLambda":1,"dimensions":{"iconDimensions":["dim0"]},"uniColorForNonSelected":false,"xZoomedDataMax":1070928000000,"duration":{"timeUnit":"D","multiplier":1},"orderedByY":false,"time":"2003-12-09","showTrails":false,"xLambda":1,"yZoomedIn":false,"yZoomedDataMax":6400635.12,"xAxisOption":"_TIME","sizeOption":"4","nonSelectedAlpha":0.4,"iconKeySettings":[],"yZoomedDataMin":1627.56,"orderedByX":false,"xZoomedDataMin":1050019200000,"iconType":"BUBBLE"};';
+
+		options['width'] = 800;
+		options['height'] = 500;
+
+        var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+		chart.draw(data, options);
+      }
+    </script>]]></text-property>
+        </text>
+    </body>
+    <property name="pageVariables">
+        <variable-element name="gDataXML">
+            <expression name="value" type="javascript">""</expression>
+            <property name="type">report</property>
+        </variable-element>
+        <variable-element name="gDataXML1">
+            <expression name="value" type="javascript">""</expression>
+            <property name="type">report</property>
+        </variable-element>
+    </property>
+</report>

@@ -1,0 +1,2633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/C:/Actuate11/iServer/data/ActuateOneEncyc/file/399.dat">
+                <reference-elements>NewDataMartDataSource2;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer Version 2.6.0.v20100609-0603 Build &lt;2.6.0.v20100609-0603></property>
+                    <list-property name="userProperties">
+                        <structure>
+                            <property name="name">Sales Analysis Cube.Sales Data.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">Sales Analysis Cube.Sales Data.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                    </list-property>
+                    <property name="Sales Analysis Cube.Sales Data.x">135</property>
+                    <property name="Sales Analysis Cube.Sales Data.y">80</property>
+                    <data-sources>
+                        <oda-data-source extensionID="com.actuate.ais.oda" name="iServer" id="2">
+                            <property name="ServerUri">http://localhost:8000</property>
+                            <property name="Volume">mgamble</property>
+                            <property name="UserName">administrator</property>
+                            <property name="UseLoggedInUserCredentialsOnServer">Yes</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="ActuateIntegrationServiceDataSource" name="Sales Data" id="3">
+                            <expression name="ACLExpression" type="javascript">"Manager"</expression>
+                            <property name="isVisible">true</property>
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">customerNumber</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Customer Number</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">5</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">customerName</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Customer Name</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">30</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Contact Name</property>
+                                    <property name="analysis">attribute</property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">20</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">addressLine1</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Address 1</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">20</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">addressLine2</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Address 2</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">city</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Customer City</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">state</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Customer State</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">10</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">country</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Customer Country</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">postalCode</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Customer Zip Code</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">phone</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Customer Phone</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">creditLimit</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Credit Limit</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">country_1</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Office Country</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">20</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">state_1</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Office State</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">20</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">city_1</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Office City</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">officeCode</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Office Code</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">10</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">email</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Employee Email</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">30</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">lastName</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Employee LastName</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">20</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">firstName</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Employee FirstName</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">20</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">employeeNumber</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Employee ID</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">5</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">orderNumber</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Order Number</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">10</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                    <property name="textFormat">Unformatted</property>
+                                    <structure name="action">
+                                        <property name="toolTip">Click to display the order invoice</property>
+                                        <property name="targetWindow">_blank</property>
+                                        <property name="linkType">drill-through</property>
+                                        <property name="targetFileType">report-design</property>
+                                        <property name="reportName">Sales Invoice.rptdesign</property>
+                                        <list-property name="paramBindings">
+                                            <structure>
+                                                <property name="paramName">OrderNumber</property>
+                                            </structure>
+                                        </list-property>
+                                    </structure>
+</structure>
+                                <structure>
+                                    <property name="columnName">orderDate</property>
+                                    <property name="analysis">dimension</property>
+                                    <property name="format">mm/dd/yyyy</property>
+                                    <text-property name="displayName">Order Date</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">16</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">requiredDate</property>
+                                    <property name="analysis">dimension</property>
+                                    <property name="format">mm/dd/yyyy</property>
+                                    <text-property name="displayName">Required Date</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">16</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">shippedDate</property>
+                                    <property name="analysis">dimension</property>
+                                    <property name="format">mm/dd/yyyy</property>
+                                    <text-property name="displayName">Shipped Date</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">16</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">status</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Order Status</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">orderLineNumber</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Order Line Number</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">5</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">productCode_1</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Product Code</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">priceEach</property>
+                                    <property name="analysis">attribute</property>
+                                    <property name="format">$##.00</property>
+                                    <text-property name="displayName">Price</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">quantityOrdered</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">Order Quantity</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">5</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">comments</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Order Comments</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">30</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">productLine</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Product Line</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">productName</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="displayName">Product Name</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">30</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">textDescription</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">Product Description</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">50</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">true</property>
+                                    <property name="textFormat">Unformatted</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">MSRP</property>
+                                    <property name="analysis">measure</property>
+                                    <property name="format">$##.00</property>
+                                    <text-property name="displayName">MSRP</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">buyPrice</property>
+                                    <property name="analysis">measure</property>
+                                    <property name="format">$##.00</property>
+                                    <text-property name="displayName">Buy Price</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">15</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">quantityInStock</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="displayName">Quantity In Stock</text-property>
+                                    <property name="onColumnLayout">true</property>
+                                    <property name="displayLength">5</property>
+                                    <property name="horizontalAlign">left</property>
+                                    <property name="wordWrap">false</property>
+                                </structure>
+                            </list-property>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">customerNumber</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">customerName</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Contact Name</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">addressLine1</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">addressLine2</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">city</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">state</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">country</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">postalCode</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">phone</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">11</property>
+                                        <property name="name">creditLimit</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">12</property>
+                                        <property name="name">country_1</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">13</property>
+                                        <property name="name">state_1</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">14</property>
+                                        <property name="name">city_1</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">15</property>
+                                        <property name="name">officeCode</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">16</property>
+                                        <property name="name">email</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">17</property>
+                                        <property name="name">lastName</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">18</property>
+                                        <property name="name">firstName</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">19</property>
+                                        <property name="name">employeeNumber</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">20</property>
+                                        <property name="name">orderNumber</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">21</property>
+                                        <property name="name">orderDate</property>
+                                        <property name="dataType">date-time</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">22</property>
+                                        <property name="name">requiredDate</property>
+                                        <property name="dataType">date-time</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">23</property>
+                                        <property name="name">shippedDate</property>
+                                        <property name="dataType">date-time</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">24</property>
+                                        <property name="name">status</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">25</property>
+                                        <property name="name">orderLineNumber</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">26</property>
+                                        <property name="name">productCode_1</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">27</property>
+                                        <property name="name">priceEach</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">28</property>
+                                        <property name="name">quantityOrdered</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">29</property>
+                                        <property name="name">comments</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">30</property>
+                                        <property name="name">productLine</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">31</property>
+                                        <property name="name">productName</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">32</property>
+                                        <property name="name">textDescription</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">33</property>
+                                        <property name="name">MSRP</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">34</property>
+                                        <property name="name">buyPrice</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">35</property>
+                                        <property name="name">quantityInStock</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">iServer</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">customerNumber</property>
+                                    <property name="nativeName">customerNumber</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">customerName</property>
+                                    <property name="nativeName">customerName</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Contact Name</property>
+                                    <property name="nativeName">Contact Name</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">addressLine1</property>
+                                    <property name="nativeName">addressLine1</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">addressLine2</property>
+                                    <property name="nativeName">addressLine2</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">city</property>
+                                    <property name="nativeName">city</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">state</property>
+                                    <property name="nativeName">state</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">country</property>
+                                    <property name="nativeName">country</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">postalCode</property>
+                                    <property name="nativeName">postalCode</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">10</property>
+                                    <property name="name">phone</property>
+                                    <property name="nativeName">phone</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">11</property>
+                                    <property name="name">creditLimit</property>
+                                    <property name="nativeName">creditLimit</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">12</property>
+                                    <property name="name">country_1</property>
+                                    <property name="nativeName">country_1</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">13</property>
+                                    <property name="name">state_1</property>
+                                    <property name="nativeName">state_1</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">14</property>
+                                    <property name="name">city_1</property>
+                                    <property name="nativeName">city_1</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">15</property>
+                                    <property name="name">officeCode</property>
+                                    <property name="nativeName">officeCode</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">16</property>
+                                    <property name="name">email</property>
+                                    <property name="nativeName">email</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">17</property>
+                                    <property name="name">lastName</property>
+                                    <property name="nativeName">lastName</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">18</property>
+                                    <property name="name">firstName</property>
+                                    <property name="nativeName">firstName</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">19</property>
+                                    <property name="name">employeeNumber</property>
+                                    <property name="nativeName">employeeNumber</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">20</property>
+                                    <property name="name">orderNumber</property>
+                                    <property name="nativeName">orderNumber</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">21</property>
+                                    <property name="name">orderDate</property>
+                                    <property name="nativeName">orderDate</property>
+                                    <property name="dataType">date-time</property>
+                                    <property name="nativeDataType">93</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">22</property>
+                                    <property name="name">requiredDate</property>
+                                    <property name="nativeName">requiredDate</property>
+                                    <property name="dataType">date-time</property>
+                                    <property name="nativeDataType">93</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">23</property>
+                                    <property name="name">shippedDate</property>
+                                    <property name="nativeName">shippedDate</property>
+                                    <property name="dataType">date-time</property>
+                                    <property name="nativeDataType">93</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">24</property>
+                                    <property name="name">status</property>
+                                    <property name="nativeName">status</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">25</property>
+                                    <property name="name">orderLineNumber</property>
+                                    <property name="nativeName">orderLineNumber</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">26</property>
+                                    <property name="name">productCode_1</property>
+                                    <property name="nativeName">productCode_1</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">27</property>
+                                    <property name="name">priceEach</property>
+                                    <property name="nativeName">priceEach</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">28</property>
+                                    <property name="name">quantityOrdered</property>
+                                    <property name="nativeName">quantityOrdered</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">29</property>
+                                    <property name="name">comments</property>
+                                    <property name="nativeName">comments</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">30</property>
+                                    <property name="name">productLine</property>
+                                    <property name="nativeName">productLine</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">31</property>
+                                    <property name="name">productName</property>
+                                    <property name="nativeName">productName</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">32</property>
+                                    <property name="name">textDescription</property>
+                                    <property name="nativeName">textDescription</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">33</property>
+                                    <property name="name">MSRP</property>
+                                    <property name="nativeName">MSRP</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">34</property>
+                                    <property name="name">buyPrice</property>
+                                    <property name="nativeName">buyPrice</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">35</property>
+                                    <property name="name">quantityInStock</property>
+                                    <property name="nativeName">quantityInStock</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[SELECT Sales.customerNumber AS customerNumber, Sales.customerName AS customerName, 
+Sales."Contact Name" AS "Contact Name", Sales.addressLine1 AS addressLine1, Sales.addressLine2 AS 
+addressLine2, Sales.city AS city, Sales.state AS state, Sales.country AS country, Sales.postalCode 
+AS postalCode, Sales.phone AS phone, Sales.creditLimit AS creditLimit, Sales.country_1 AS 
+country_1, Sales.state_1 AS state_1, Sales.city_1 AS city_1, Sales.officeCode AS officeCode, 
+Sales.email AS email, Sales.lastName AS lastName, Sales.firstName AS firstName, 
+Sales.employeeNumber AS employeeNumber, Sales.orderNumber AS orderNumber, Sales.orderDate AS 
+orderDate, Sales.requiredDate AS requiredDate, Sales.shippedDate AS shippedDate, Sales.status AS 
+status, Sales.orderLineNumber AS orderLineNumber, Sales.productCode_1 AS productCode_1, 
+Sales.priceEach AS priceEach, Sales.quantityOrdered AS quantityOrdered, Sales.comments AS comments, 
+Sales.productLine AS productLine, Sales.productName AS productName, Sales.textDescription AS 
+textDescription, Sales.MSRP AS MSRP, Sales.buyPrice AS buyPrice, Sales.quantityInStock AS 
+quantityInStock
+
+FROM 
+"Public/Information Objects Based Examples/Sample_Project/Information Objects/Application Layer/Sales.iob" 
+AS Sales]]></xml-property>
+                            <structure name="designerState">
+                                <property name="version">11.0.0.0</property>
+                                <property name="stateContentAsBlob">
+                                    UEsDBBQACAAIAANYxzwAAAAAAAAAAAAAAAAtAAAAQUlTRGF0YVNldF90ZW1wXzEyNzU5MzM1MzQ3
+Mz
+                                    RcUXVlcnlGaWxlLmlvYmV43VxZc9s2EH7vTP8Dh27zlIqWcjR1rKaJbHc8Y8eu5aadvnhgEpKY
+8DII
+                                    xta/L26ClERTIkXD8oMFLBfH4ltgwcWChx8ewsD6DlHqx9HQ7vf2bQtGbuz50XRo/3198ss7
++8PvP/
+                                    5w6MZhD7g4Axj2/BRnnh/3/NjrhbEHg4PT02gSX9x+hS62HkL/QFU4oBWSJqL0gNCH9gzj
+5MBx7u/v
+                                    e3E47cVo6vx7fipZKhtRhR3C5gg2R7A5hM1hbD3oxgjalp+e+BEgpTDKSPYug2g+tMfH
+Z8eja2sMAp
+                                    j23CzFcQjR5yy8hcj6OLaKlJdlPhDCAhfJv7Re7D18fM8ZX9xlMX4/iiNMumfRx5xC
+C616JhsBnodg
+                                    mp75EexTfj2/hGfA6qRN60TVYx/PWU/Jr6SlmIwXJbKE4oyzCCPOzJPySRITxmBE
+xpS3QzhykmKaxR
+                                    GrlCVUpQh6Pj7zQx+zivNsqdmbvhJDUQr95QwiqUvHH/CUpMeTie9C1mPyLM8V
+MIIh8AP6nCVk0QCk
+                                    WMIr0/LZxEf5Q5UpVZoE8RzCXJOKFNVD5OnqpmULHEcCKdaCokgWBO8ynwyp
+5NLzavBmfpLkLFpWH9
+                                    4sVa3wbKEXVKNKfc1JSgFQ7GUupsPMISkQCoOUIILHMXBnnE1kZEV3GYgw
+gfOCtgM9ylMi5boThjDC
+                                    KddZni41xLpAO6v1iGZLvZagalnJgeEDPoKpi/wEk5VMjVOJLtnPx1eX
+lIf+StptNr+kUlK6TJelPY
+                                    3GOHa/qepLdEZj/06uLs45C182LrPbwHcduu6iELAu8vU3tT6BlIzf
+8QMgKghTZ8x+by5RTB8vK+F8
+                                    TBJSGaedgTlEDu+lH9+KBUyuAIxuWyDD8Z8ozhJiJo4jcBtATy60
+BVtCLIdlEdsRZGGUskyetTw/TQ
+                                    Iwp6M+tEdiTbW4etmWBzC4nifk0WmE4ZSSXLp4EhTR0HZsK2Ll
+iiu2LSs9g9EUz4b2G0U5YVIPbdL5
+                                    6RTBKZkKQ/szWbSIqYg8+JBLAIjZmKd+yls/hyDNqEEh4wOn
+MZpfAlqxIzus1ccLjOhCZgthibgBMV
+                                    EXky8gyAgYOTmNM0R0g/+Q+pw/eDJVCWo6v0FitNySpcor
+J/V8pxVbMwQnQ3tRKX4e7AuQSYopBvmt
+                                    oRp5OV05CLWkHnuk3wJPlSD91uR0uDQSfGc9ZSBZXRW+
+AOTOwGOqwAsVFeHVfh1NmIH0cxaoTcM9As
+                                    nQ/ocsffXh3xbyVCjDce9vgns9bFftnhZwHuwvoPhE
+yK3ssuEoDprO3o98Q2r1a89cfa+7FNHnOHML
+                                    QhmO+au2MB9sgvlgAfN+LbttNOYD0zF/3ZqVHpEN
+a30rzZl3A28mjOE4v2kN5zF9Da8NdCq4S0g/09
+                                    WcS2M41G/bm9LcG1N/Viv+HZnYQh7DAf+1NcD/
+8xOL+mxqI577AtsB/YmA1sQwHOt3rWF9OWMA1AVa
+                                    cO/GxObSGA71b42hZh53i7ncdaCPYiIgXLGE
+5176DdFe4TirOdFbXsA1aQxHu9/YX3bBjjo2Ndo323
+                                    /nPhanIR2Z7RvjX7j7G/nKlmC+wZ58h/CW
+8piOdmOfmpzh675pL8G6bcvd2dzm4pgOdWNXmlrM19iM
+                                    52fdG75wl47AnghiTQzTYW7sPZNjah3T
+OITaSEPBvd3Tra4A59KYjnVjD5rC+kyEltSGO8gL7IbFVg
+                                    KZDnpjX5oC/USGDNVGfaKV2A3Yc4lM
+x72xS03hfnpUO4qlGC3WYRTLSvy3EcVSktJ0TWjscGNxa+sG
+                                    NGkxge3s5eopAutrJ1qgC2i6CjR2
+xHEVOCq9o1/7ISSvrmFSoQJHS0/P3i4oQBg6nufMyd/aPvblmG
+                                    8D7qNncHg2aOyGuxKBuOvirQfw
+7gLkBXlMR72xI27MY6vXBV0Lyd4FzHVxTIe8uTeOrepjFjK/lu+V
+                                    sbd/WNoNwrz/poPb3P/GwGWX
+BzbZuuVXJDbbxm90iNbx7k2T0XR1aOynu+R3Q9YMjtAvwWw45atdsp
+                                    1M+aIYpkPd2E3HbujUPS5X
+F5jqwPvT3l5vf7/d2d421FIc02Fu7JjjC/xf4qZV7dW9dBut89W9XbzL
+                                    0piOemO3HEd9JO4LrhEj
+oQps98ilkwVdSWM63I19b9Js063KumZblNnusbnoYEcmnIlkOuiNvW0S9L
+                                    UOW7TLv1uf5N2C/hzO
+W1419rpJ0LVb2bWxL93mXrTpzxP/slim60BjHxy9dl934y54O96zS+TbBZrJ
+                                    Yjq6jd1tn7K5tda7
+mfzawq7ArOQxHerGzjf5VmadRhb7Asbar2fiyxkdvp5tB/OyPKZDX9vRVsolAB
+                                    H8MERipA5RHOOR
+GGGB7RUh2Upv+DMfpnl7OU2UWLxVoGnc0i+HODU46X6qgm/ljf+KMoVb4vX4BpV9
+                                    pS6Niuf8HmNV
+BeISQQWLdmeqiovdtKlqSbuiUWCrNU90baulEirU5VHZbyqRkDHnj4BQzaFFulZw8f
+                                    DICgYVTVfB
+k4deVbZUCM3pAI6SU2txhLQwkaqBVOEFFUyFA+kqaLVDzEc0IEsf7ZV2SlI1TQo+9kpG
+                                    6aGtYCq7
+9SonuvAFdQD2golcNQzMT/H4aD2mzuUXoApWtoWueK72XjVGXdrqlkd0gXTo6EaSkyZ+oB
+                                    lRUbOs
+QGQtEPggHdriK14PQ3sweGtbZL/Rf/1a27+ILj/dBkONh9xJSLkLuSn9AtmnuZR5Br770VTm
+                                    vsZ+
+JNNqjzGGGGs8aYwwS9M9Sc3vWxLu/wFQSwcIrzZxTgkIAAA1UwAAUEsDBBQACAAIAANYxzwAAA
+                                    AA
+AAAAAAAAAAAmAAAAQUlTRGF0YVNldF90ZW1wXzEyNzU5MzM1MzQ3MzRcLnByb2plY3RdkM2KAjEQ
+                                    
+hM8KvoPM3UQdRYU4oisLnmf3LDFpJDL5IenIPv4mQ1yZveUrqrqrww4/ups+wQdlzb5akHk1BSOs
+
+                                    VOa+r76/Pmfb6tBMxsx5+wCBZwjCK4fJndQRM1xDc7y0Z468BbwiaHddLDfrXV2v69WmXjHae7JZ
+WK
+                                    3BYMPo65XVMjn0QAd0i6qTrQORqeBHinIje6XsT9MIFxg5AlEBo1SWWMlJsjrVwSnHwL+LpBz3
+95gb
+                                    hMJ0KDD6f1dRXmXSYoweSuk3/B0w/KhfUEsHCEVKxrPNAAAAZwEAAFBLAQIUABQACAAIAANY
+xzyvNn
+                                    FOCQgAADVTAAAtAAAAAAAAAAAAAAAAAAAAAABBSVNEYXRhU2V0X3RlbXBfMTI3NTkzMzUz
+NDczNFxR
+                                    dWVyeUZpbGUuaW9iZXhQSwECFAAUAAgACAADWMc8RUrGs80AAABnAQAAJgAAAAAAAAAA
+AAAAAABkCA
+                                    AAQUlTRGF0YVNldF90ZW1wXzEyNzU5MzM1MzQ3MzRcLnByb2plY3RQSwUGAAAAAAIA
+AgCvAAAAhQkA
+                                    AAAA
+
+                                </property>
+                            </structure>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets>
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>customerNumber</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Customer Number</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>5</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>customerName</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Customer Name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>30</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>Contact Name</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints/>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>addressLine1</design:name>
+            <design:position>4</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Address 1</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>addressLine2</design:name>
+            <design:position>5</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Address 2</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>city</design:name>
+            <design:position>6</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Customer City</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>state</design:name>
+            <design:position>7</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Customer State</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>country</design:name>
+            <design:position>8</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Customer Country</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>postalCode</design:name>
+            <design:position>9</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Customer Zip Code</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>phone</design:name>
+            <design:position>10</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Customer Phone</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>creditLimit</design:name>
+            <design:position>11</design:position>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Credit Limit</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>country_1</design:name>
+            <design:position>12</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Office Country</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>state_1</design:name>
+            <design:position>13</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Office State</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>city_1</design:name>
+            <design:position>14</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Office City</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>officeCode</design:name>
+            <design:position>15</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Office Code</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>email</design:name>
+            <design:position>16</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Employee Email</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>30</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>lastName</design:name>
+            <design:position>17</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Employee LastName</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>firstName</design:name>
+            <design:position>18</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Employee FirstName</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>employeeNumber</design:name>
+            <design:position>19</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Employee ID</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>5</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>orderNumber</design:name>
+            <design:position>20</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Order Number</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>orderDate</design:name>
+            <design:position>21</design:position>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Order Date</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>16</design:displaySize>
+              <design:displayFormat>mm/dd/yyyy</design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>requiredDate</design:name>
+            <design:position>22</design:position>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Required Date</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>16</design:displaySize>
+              <design:displayFormat>mm/dd/yyyy</design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>shippedDate</design:name>
+            <design:position>23</design:position>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Shipped Date</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>16</design:displaySize>
+              <design:displayFormat>mm/dd/yyyy</design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>status</design:name>
+            <design:position>24</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Order Status</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>orderLineNumber</design:name>
+            <design:position>25</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Order Line Number</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>5</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>productCode_1</design:name>
+            <design:position>26</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Product Code</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>priceEach</design:name>
+            <design:position>27</design:position>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Price</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat>$##.00</design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>quantityOrdered</design:name>
+            <design:position>28</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Order Quantity</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>5</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>comments</design:name>
+            <design:position>29</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Order Comments</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>30</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>productLine</design:name>
+            <design:position>30</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Product Line</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>productName</design:name>
+            <design:position>31</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Product Name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>30</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>textDescription</design:name>
+            <design:position>32</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Product Description</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>Word</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>DimensionMember</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>MSRP</design:name>
+            <design:position>33</design:position>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>MSRP</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat>$##.00</design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>buyPrice</design:name>
+            <design:position>34</design:position>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Buy Price</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+              <design:displayFormat>$##.00</design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>quantityInStock</design:name>
+            <design:position>35</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:uiHints>
+              <design:displayName>Quantity In Stock</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:formattingHints>
+              <design:displaySize>5</design:displaySize>
+              <design:displayFormat></design:displayFormat>
+              <design:textFormatType>Plain</design:textFormatType>
+              <design:horizontalAlignment>Left</design:horizontalAlignment>
+              <design:textWrapType>None</design:textWrapType>
+            </design:formattingHints>
+          </design:usageHints>
+          <design:multiDimensionAttributes>
+            <design:axisType>Measure</design:axisType>
+          </design:multiDimensionAttributes>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria>
+        <design:rowOrdering/>
+      </design:criteria>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                    <cubes>
+                        <tabular-cube name="Sales Analysis Cube" id="4">
+                            <expression name="ACLExpression" type="javascript">"Vice President"</expression>
+                            <property name="dimensions">
+                                <tabular-dimension name="Product Line" id="5">
+                                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                                    <expression name="ACLExpression" type="javascript">'Administrators'</expression>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy" id="6">
+                                            <property name="levels">
+                                                <tabular-level name="Product Line" id="7">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">productLine</property>
+                                                </tabular-level>
+                                                <tabular-level name="Product Name" id="8">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">productName</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="Customer Country" id="9">
+                                    <property name="defaultHierarchy">NewTabularHierarchy1</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy1" id="10">
+                                            <property name="levels">
+                                                <tabular-level name="Customer Country" id="11">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">country</property>
+                                                </tabular-level>
+                                                <tabular-level name="Customer State" id="12">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">state</property>
+                                                </tabular-level>
+                                                <tabular-level name="Customer City" id="13">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">city</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="Time" id="14">
+                                    <property name="isTimeType">true</property>
+                                    <property name="defaultHierarchy">NewTabularHierarchy2</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy2" id="15">
+                                            <property name="levels">
+                                                <tabular-level name="Year" id="16">
+                                                    <property name="dataType">integer</property>
+                                                    <property name="dateTimeLevelType">year</property>
+                                                    <list-property name="attributes">
+                                                        <structure>
+                                                            <property name="name">DateTime</property>
+                                                            <property name="dataType">date-time</property>
+                                                        </structure>
+                                                    </list-property>
+                                                    <property name="columnName">orderDate</property>
+                                                </tabular-level>
+                                                <tabular-level name="Quarter" id="17">
+                                                    <property name="dataType">integer</property>
+                                                    <property name="dateTimeLevelType">quarter</property>
+                                                    <list-property name="attributes">
+                                                        <structure>
+                                                            <property name="name">DateTime</property>
+                                                            <property name="dataType">date-time</property>
+                                                        </structure>
+                                                    </list-property>
+                                                    <property name="columnName">orderDate</property>
+                                                </tabular-level>
+                                                <tabular-level name="Month" id="18">
+                                                    <property name="dataType">integer</property>
+                                                    <property name="dateTimeLevelType">month</property>
+                                                    <list-property name="attributes">
+                                                        <structure>
+                                                            <property name="name">DateTime</property>
+                                                            <property name="dataType">date-time</property>
+                                                        </structure>
+                                                    </list-property>
+                                                    <property name="columnName">orderDate</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="Customers" id="19">
+                                    <property name="defaultHierarchy">NewTabularHierarchy3</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy3" id="20">
+                                            <property name="levels">
+                                                <tabular-level name="Customer Name" id="21">
+                                                    <property name="dataType">string</property>
+                                                    <property name="levelType">dynamic</property>
+                                                    <list-property name="action">
+                                                        <structure>
+                                                            <property name="linkType">drill-through</property>
+                                                            <property name="toolTip">Click to view customer order history</property>
+                                                            <property name="reportName">Customer Order History.rptdesign</property>
+                                                            <property name="targetWindow">_blank</property>
+                                                            <property name="targetFileType">report-design</property>
+                                                            <list-property name="paramBindings">
+                                                                <structure>
+                                                                    <property name="paramName">Customer</property>
+                                                                </structure>
+                                                            </list-property>
+                                                        </structure>
+                                                    </list-property>
+                                                    <property name="columnName">customerName</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="Office" id="22">
+                                    <property name="defaultHierarchy">NewTabularHierarchy4</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy4" id="23">
+                                            <property name="levels">
+                                                <tabular-level name="Office Country" id="24">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">country_1</property>
+                                                </tabular-level>
+                                                <tabular-level name="Office State" id="25">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">state_1</property>
+                                                </tabular-level>
+                                                <tabular-level name="Office City" id="26">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">city_1</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                            </property>
+                            <property name="measureGroups">
+                                <tabular-measure-group name="Summary Field" id="27">
+                                    <property name="measures">
+                                        <tabular-measure name="Quantity In Stock" id="28">
+                                            <property name="function">sum</property>
+                                            <expression name="measureExpression" type="javascript">dataSetRow["quantityInStock"]</expression>
+                                            <property name="dataType">integer</property>
+                                            <structure name="format">
+                                                <property name="category">Fixed</property>
+                                                <property name="pattern">#,##0;(#,##0){RoundingMode=HALF_UP}</property>
+                                            </structure>
+                                        </tabular-measure>
+                                        <tabular-measure name="Order Quantity" id="29">
+                                            <property name="function">sum</property>
+                                            <expression name="measureExpression" type="javascript">dataSetRow["quantityOrdered"]</expression>
+                                            <property name="dataType">integer</property>
+                                            <structure name="format">
+                                                <property name="category">Fixed</property>
+                                                <property name="pattern">#,##0;(#,##0){RoundingMode=HALF_UP}</property>
+                                            </structure>
+                                        </tabular-measure>
+                                        <tabular-measure name="Sales Amount" id="30">
+                                            <property name="function">sum</property>
+                                            <expression name="measureExpression" type="javascript">dataSetRow["priceEach"]*dataSetRow["quantityOrdered"]</expression>
+                                            <property name="dataType">float</property>
+                                            <structure name="format">
+                                                <property name="category">Currency</property>
+                                                <property name="pattern">$#,##0.00{RoundingMode=HALF_UP}</property>
+                                            </structure>
+                                        </tabular-measure>
+                                    </property>
+                                </tabular-measure-group>
+                            </property>
+                            <property name="dataSet">Sales Data</property>
+                        </tabular-cube>
+                    </cubes>
+                </datamart>
+            </datamart-node>
+            <datamart-node location="file:/C:/Actuate11/iServer/data/ActuateOneEncyc/file/350.dat">
+                <reference-elements>NewDataMartDataSource;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer Version 2.6.2.v20110811-0430 Build &lt;2.6.2.v20110811-0430></property>
+                    <data-sources>
+                        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="2">
+                            <list-property name="privateDriverProperties">
+                                <ex-property>
+                                    <name>contentBidiFormatStr</name>
+                                    <value>ILYNN</value>
+                                </ex-property>
+                                <ex-property>
+                                    <name>metadataBidiFormatStr</name>
+                                    <value>ILYNN</value>
+                                </ex-property>
+                            </list-property>
+                            <property name="odaDriverClass">org.eclipse.birt.report.data.oda.sampledb.Driver</property>
+                            <property name="odaURL">jdbc:classicmodels:sampledb</property>
+                            <property name="odaUser">ClassicModels</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set" id="3">
+                            <list-property name="computedColumns">
+                                <structure>
+                                    <property name="name">Full Address</property>
+                                    <expression name="expression" type="javascript">row["ADDRESSLINE1"]+ " " +row["CITY"]+ " " +row["STATE"]+ " " +row["POSTALCODE"]+ " " +row["COUNTRY"]</expression>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">ADDRESSLINE1</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">ADDRESSLINE1</text-property>
+                                    <text-property name="heading">ADDRESSLINE1</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">ADDRESSLINE2</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">ADDRESSLINE2</text-property>
+                                    <text-property name="heading">ADDRESSLINE2</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">CITY</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">CITY</text-property>
+                                    <text-property name="heading">CITY</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">STATE</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">STATE</text-property>
+                                    <text-property name="heading">STATE</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">POSTALCODE</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">POSTALCODE</text-property>
+                                    <text-property name="heading">POSTALCODE</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">COUNTRY</property>
+                                    <property name="analysis">attribute</property>
+                                    <text-property name="displayName">COUNTRY</text-property>
+                                    <text-property name="heading">COUNTRY</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Full Address</property>
+                                    <property name="analysis">attribute</property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                            </list-property>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">ADDRESSLINE1</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">ADDRESSLINE2</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">CITY</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">STATE</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">POSTALCODE</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">COUNTRY</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">Full Address</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">ADDRESSLINE1</property>
+                                    <property name="nativeName">ADDRESSLINE1</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">ADDRESSLINE2</property>
+                                    <property name="nativeName">ADDRESSLINE2</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">CITY</property>
+                                    <property name="nativeName">CITY</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">STATE</property>
+                                    <property name="nativeName">STATE</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">POSTALCODE</property>
+                                    <property name="nativeName">POSTALCODE</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">COUNTRY</property>
+                                    <property name="nativeName">COUNTRY</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select CLASSICMODELS.CUSTOMERS.ADDRESSLINE1
+,CLASSICMODELS.CUSTOMERS.ADDRESSLINE2
+,CLASSICMODELS.CUSTOMERS.CITY
+,CLASSICMODELS.CUSTOMERS.STATE
+,CLASSICMODELS.CUSTOMERS.POSTALCODE
+,CLASSICMODELS.CUSTOMERS.COUNTRY
+from CLASSICMODELS.CUSTOMERS]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ADDRESSLINE1</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>ADDRESSLINE1</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ADDRESSLINE1</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ADDRESSLINE2</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>ADDRESSLINE2</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ADDRESSLINE2</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>CITY</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>CITY</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>CITY</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>STATE</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>STATE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>STATE</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>POSTALCODE</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>15</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>POSTALCODE</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>POSTALCODE</design:label>
+            <design:formattingHints>
+              <design:displaySize>15</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>COUNTRY</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COUNTRY</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COUNTRY</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
+    <property name="layoutPreference">auto layout</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ThemesReportItems.rptlibrary</property>
+            <property name="namespace">ThemesReportItems</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <data-mart-data-source name="NewDataMartDataSource2" id="56">
+            <property name="datamartURL">Sales</property>
+            <property name="datamartVersion">-1</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+        <data-mart-data-source name="NewDataMartDataSource" id="142">
+            <property name="datamartURL">classicModels</property>
+            <property name="datamartVersion">-1</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <body>
+        <text name="b6106602-8903-4c9b-bb4a-82cc80dc1148" id="175">
+            <text-property name="content"><![CDATA[http://localhost:8700/iportal/iv?__report=%2fBigDataVis%2ftreemap-HTML.rptdocument&amp;closex=true&amp;__vp=ACTUATEONE&amp;fromDashboard=true&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
+        </text>
+        <text name="1aa4b835-0ba4-4008-92e9-a70689953cc2" id="178">
+            <text-property name="content"><![CDATA[http://localhost:8700/iportal/iv?__report=%2fBigDataVis%2fmotionchart-HTML.rptdocument&amp;closex=true&amp;__vp=ACTUATEONE&amp;fromDashboard=true&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
+        </text>
+        <text name="1feb8af6-ed73-4b1d-a06d-af5baffd8e26" id="193">
+            <text-property name="content"><![CDATA[http://workshop.chromeexperiments.com/globe-search/]]></text-property>
+        </text>
+        <text name="b146f2f4-a430-473e-acb0-27021b174dcf" id="196">
+            <text-property name="content"><![CDATA[http://actuateone:8700/iportal/choropleth/index.html]]></text-property>
+        </text>
+        <text name="fe72830b-584a-4298-9743-0e85719434d0" id="204">
+            <text-property name="content"><![CDATA[http://actuateone:8700/iportal/d3_Airports/airports.html]]></text-property>
+        </text>
+        <text name="ebdbb567-9fad-49e6-bba6-079a787cc1ac" id="212">
+            <text-property name="content"><![CDATA[http://actuateone:8700/iportal/iv?__report=%2fBigDataVis%2fmotionchart-HTML.rptdocument&amp;closex=true&amp;__vp=ACTUATEONE&amp;fromDashboard=true&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
+        </text>
+        <text name="46875174-a247-4df2-80bf-59089dc0ac63" id="220">
+            <text-property name="content"><![CDATA[http://mbostock.github.com/d3/talk/20111018/calendar.html]]></text-property>
+        </text>
+        <text name="3a0e693c-9fc5-4e00-bcea-82b5e6f1d931" id="228">
+            <text-property name="content"><![CDATA[http://bost.ocks.org/mike/miserables/]]></text-property>
+        </text>
+        <text name="36d6d970-b515-44c0-8cf5-59bca8044218" id="236">
+            <text-property name="content"><![CDATA[http://actuateone:8700/iportal/iv?__report=%2fBigDataVis%2ftreemap-HTML.rptdocument&amp;closex=true&amp;__vp=ACTUATEONE&amp;fromDashboard=true&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
+        </text>
+        <text name="3c71e5c9-afaa-4f97-adb1-f7a1aa997962" id="239">
+            <text-property name="content"><![CDATA[http://actuateone:8700/iportal/executereport.do?__executableName=/BigDataVis/d3-layout-tree.rptdesign&amp;__requesttype=immediate&amp;invokeSubmit=true&amp;__format=html]]></text-property>
+        </text>
+    </body>
+    <property name="dashboardView">
+        <dashboard id="2">
+            <property name="activeTab">96840ce2-caf3-4873-bbfb-f7d239a1841e</property>
+            <property name="tabs">
+                <tab-element name="96840ce2-caf3-4873-bbfb-f7d239a1841e" id="3">
+                    <property name="title">My Documents</property>
+                    <property name="externalTab">/Dashboard/Contents/Documents.dashboard</property>
+                    <property name="externalTabName">c018109c-49ff-48be-bbef-babbf9408f93</property>
+                </tab-element>
+                <tab-element name="95f2e0a7-5d0f-4b22-a622-8f180270cb98" id="187">
+                    <property name="title">Geospatial</property>
+                    <property name="sections">
+                        <section id="188">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="2e5424a2-9f7a-4c86-b9a4-ec320d5c8b2a" id="190">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="content">
+                                        <current-selections id="191"/>
+                                    </property>
+                                </gadget>
+                                <gadget name="3dccc337-5e83-4bdd-9357-47dddfeb0727" id="192">
+                                    <property name="height">660px</property>
+                                    <property name="title">Google Earth</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="194">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">1feb8af6-ed73-4b1d-a06d-af5baffd8e26</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="396e683d-503f-4c99-8639-dcafe9d8edb9" id="195">
+                                    <property name="height">651px</property>
+                                    <property name="title">Choropleth</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">3</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="197">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">b146f2f4-a430-473e-acb0-27021b174dcf</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="84c438d1-84f5-4190-b6d7-7769593fd35d" id="198">
+                    <property name="title">Charts on Top</property>
+                    <property name="sections">
+                        <section id="199">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="cf20cbfc-5983-48ba-8dc9-e79323bb8c5a" id="201">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="content">
+                                        <current-selections id="202"/>
+                                    </property>
+                                </gadget>
+                                <gadget name="ea068754-01cf-4092-8d5d-057de839e413" id="203">
+                                    <property name="height">734px</property>
+                                    <property name="title">Charts and Interaction</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="205">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">fe72830b-584a-4298-9743-0e85719434d0</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="0563ce9e-1fb9-40cc-ac80-a1072a894925" id="206">
+                    <property name="title">Animation</property>
+                    <property name="freeFormGadgets">
+                        <gadget name="4915518c-f613-4a93-af74-e675cb61ea61" id="209">
+                            <property name="x">10px</property>
+                            <property name="y">10px</property>
+                            <property name="height">150px</property>
+                            <property name="width">1184px</property>
+                            <property name="zIndex">1</property>
+                            <property name="isVisible">false</property>
+                            <property name="content">
+                                <current-selections id="210"/>
+                            </property>
+                        </gadget>
+                        <gadget name="427f239a-df59-47ca-af41-87a468c334f3" id="211">
+                            <property name="x">10px</property>
+                            <property name="y">10px</property>
+                            <property name="height">501px</property>
+                            <property name="width">769px</property>
+                            <property name="title">Motion Chart</property>
+                            <property name="gadgetContentType">url</property>
+                            <property name="zIndex">2</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="content">
+                                <data-view id="213">
+                                    <property name="gadgetType">embedded</property>
+                                    <property name="internalReportLetRef">ebdbb567-9fad-49e6-bba6-079a787cc1ac</property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                    </property>
+                </tab-element>
+                <tab-element name="523396ab-b8c2-4358-8b7f-7863969ebdc9" id="107">
+                    <property name="title">Icon</property>
+                    <property name="showHeader">false</property>
+                    <property name="showFooter">false</property>
+                    <property name="headerHTML">null</property>
+                    <property name="footerHTML">null</property>
+                    <property name="sections">
+                        <section id="108">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="a1d7e93e-14ce-4d1d-a9d3-88f445b2f5bf" id="109">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="content">
+                                        <current-selections id="110"/>
+                                    </property>
+                                </gadget>
+                                <gadget name="Gadget_8fd5c706-30bf-4b9b-9dca-4564b1700d8e" id="111">
+                                    <property name="height">679px</property>
+                                    <property name="title">Report - Roadmap</property>
+                                    <property name="externalGadgetURI">/Roadmap.rptdesign</property>
+                                    <property name="showTitle">false</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="112">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">false</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">/Roadmap.rptdesign</property>
+                                                </external-element-ref>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="ace73e27-66bc-43d4-91ba-53cb405ba9b8" id="45">
+                    <property name="title">Rich</property>
+                    <property name="showHeader">false</property>
+                    <property name="showFooter">false</property>
+                    <property name="headerHTML">null</property>
+                    <property name="footerHTML">null</property>
+                    <property name="sections">
+                        <section id="46">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="8cf7511f-e88a-4efe-939e-312aa4523a88" id="47">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="content">
+                                        <current-selections id="48"/>
+                                    </property>
+                                </gadget>
+                                <gadget name="Gadget_830d9783-ee9a-41c0-b031-94116d8aefa6" id="49">
+                                    <property name="height">278px</property>
+                                    <property name="title">Sales Metrics</property>
+                                    <property name="externalGadgetURI">/Sales_Dashboard_V11_360.rptdocument</property>
+                                    <property name="showTitle">false</property>
+                                    <property name="showBorder">false</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="50">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">false</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">/Sales_Dashboard_V11_360.rptdocument</property>
+                                                    <property name="targetBookmark">metrics</property>
+                                                </external-element-ref>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="Gadget_107ed582-8a23-44a3-8fff-82b0ac747eb2" id="51">
+                                    <property name="height">260px</property>
+                                    <property name="title">Sales</property>
+                                    <property name="externalGadgetURI">/Sales_Dashboard_V11_360.rptdocument</property>
+                                    <property name="showTitle">false</property>
+                                    <property name="showBorder">false</property>
+                                    <property name="zIndex">3</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="52">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">false</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">/Sales_Dashboard_V11_360.rptdocument</property>
+                                                    <property name="targetBookmark">sales</property>
+                                                </external-element-ref>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="Gadget_a4cb756b-c8e3-46ff-ab67-57d473180749" id="53">
+                                    <property name="height">268px</property>
+                                    <property name="title">Sales Revenue</property>
+                                    <property name="externalGadgetURI">/Sales_Dashboard_V11_360.rptdocument</property>
+                                    <property name="showTitle">false</property>
+                                    <property name="showBorder">false</property>
+                                    <property name="zIndex">4</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="54">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">false</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">/Sales_Dashboard_V11_360.rptdocument</property>
+                                                    <property name="targetBookmark">revenue</property>
+                                                </external-element-ref>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="b8423518-0193-4585-b4f6-fe01a809d20f" id="214">
+                    <property name="title">Repetition</property>
+                    <property name="freeFormGadgets">
+                        <gadget name="8b719cc1-12d2-4946-810a-3adb95c71a41" id="217">
+                            <property name="x">10px</property>
+                            <property name="y">10px</property>
+                            <property name="height">150px</property>
+                            <property name="width">1184px</property>
+                            <property name="zIndex">1</property>
+                            <property name="isVisible">false</property>
+                            <property name="content">
+                                <current-selections id="218"/>
+                            </property>
+                        </gadget>
+                        <gadget name="8b78b43f-9bcd-44f2-b493-c1348964b229" id="219">
+                            <property name="x">10px</property>
+                            <property name="y">10px</property>
+                            <property name="height">750px</property>
+                            <property name="width">1250px</property>
+                            <property name="title">Repeating Months Over Years</property>
+                            <property name="gadgetContentType">url</property>
+                            <property name="zIndex">2</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="content">
+                                <data-view id="221">
+                                    <property name="gadgetType">embedded</property>
+                                    <property name="internalReportLetRef">46875174-a247-4df2-80bf-59089dc0ac63</property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                    </property>
+                </tab-element>
+                <tab-element name="993fe1b4-cb2f-4742-9ee7-fbf4f2410165" id="222">
+                    <property name="title">Grouping</property>
+                    <property name="sections">
+                        <section id="223">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="7022c385-6863-4f5d-8c66-74936349a381" id="225">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="content">
+                                        <current-selections id="226"/>
+                                    </property>
+                                </gadget>
+                                <gadget name="f3fc123e-c5da-46c2-9e3b-7cd2b63a19a8" id="227">
+                                    <property name="height">842px</property>
+                                    <property name="title">Intersecting</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="229">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">3a0e693c-9fc5-4e00-bcea-82b5e6f1d931</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="0f23e8c2-9348-448b-bbe6-5df458f6fa97" id="230">
+                    <property name="title">Drill</property>
+                    <property name="sections">
+                        <section id="241">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="ff5bb59b-a70f-4961-9306-5025957171e8" id="238">
+                                    <property name="height">816px</property>
+                                    <property name="title">Hierarchy</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">3</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="240">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">3c71e5c9-afaa-4f97-adb1-f7a1aa997962</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="7c39d717-c1ee-459d-8081-0f440feacf0f" id="235">
+                                    <property name="height">423px</property>
+                                    <property name="title">Tree Map</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="content">
+                                        <data-view id="237">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">36d6d970-b515-44c0-8cf5-59bca8044218</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="5b50b897-cbec-49b2-b78e-6b548d3a0cc0" id="233">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="content">
+                                        <current-selections id="234"/>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+            </property>
+        </dashboard>
+    </property>
+</report>
