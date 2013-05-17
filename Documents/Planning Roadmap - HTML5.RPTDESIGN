@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120817-1705 Build &lt;3.7.2.v20120817-1705></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20130129-1905 Build &lt;3.7.2.v20130129-1905></property>
     <text-property name="title">Planning Roadmap</text-property>
     <html-property name="description">An Application within a Report.&#13;
 &#13;
@@ -564,8 +564,8 @@ totalBaseRows = curRow;
     <page-setup>
         <simple-master-page name="Simple MasterPage" id="2">
             <property name="type">custom</property>
-            <property name="height">8.5in</property>
-            <property name="width">9in</property>
+            <property name="height">700px</property>
+            <property name="width">1000px</property>
             <property name="orientation">landscape</property>
             <property name="topMargin">0in</property>
             <property name="leftMargin">0in</property>
@@ -574,287 +574,296 @@ totalBaseRows = curRow;
         </simple-master-page>
     </page-setup>
     <body>
-        <table id="373">
-            <property name="width">100%</property>
-            <property name="dataSet">Data Set Static</property>
-            <list-property name="visibility">
-                <structure>
-                    <property name="format">all</property>
-                    <expression name="valueExpr" type="javascript">true</expression>
-                </structure>
-            </list-property>
-            <list-property name="boundDataColumns">
-                <structure>
-                    <property name="name">BIRTH_YEAR</property>
-                    <text-property name="displayName">BIRTH_YEAR</text-property>
-                    <expression name="expression">dataSetRow["BIRTH_YEAR"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">MNTH_END_YYYYMM</property>
-                    <text-property name="displayName">MNTH_END_YYYYMM</text-property>
-                    <expression name="expression">dataSetRow["MNTH_END_YYYYMM"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">totalnetworth</property>
-                    <text-property name="displayName">totalnetworth</text-property>
-                    <expression name="expression">dataSetRow["totalnetworth"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">retirementage</property>
-                    <text-property name="displayName">retirementage</text-property>
-                    <expression name="expression">dataSetRow["retirementage"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">retirementamt</property>
-                    <text-property name="displayName">retirementamt</text-property>
-                    <expression name="expression">dataSetRow["retirementamt"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-            </list-property>
-            <column id="402"/>
-            <column id="403"/>
-            <column id="404"/>
-            <column id="405"/>
-            <column id="406"/>
-            <header>
-                <row id="374">
-                    <cell id="375">
-                        <label id="376">
-                            <text-property name="text">BIRTH_YEAR</text-property>
-                        </label>
-                    </cell>
-                    <cell id="377">
-                        <label id="378">
-                            <text-property name="text">MNTH_END_YYYYMM</text-property>
-                        </label>
-                    </cell>
-                    <cell id="379">
-                        <label id="380">
-                            <text-property name="text">totalnetworth</text-property>
-                        </label>
-                    </cell>
-                    <cell id="381">
-                        <label id="382">
-                            <text-property name="text">retirementage</text-property>
-                        </label>
-                    </cell>
-                    <cell id="383">
-                        <label id="384">
-                            <text-property name="text">retirementamt</text-property>
-                        </label>
-                    </cell>
-                </row>
-            </header>
-            <detail>
-                <row id="385">
-                    <cell id="386">
-                        <data id="387">
-                            <property name="resultSetColumn">BIRTH_YEAR</property>
-                        </data>
-                    </cell>
-                    <cell id="388">
-                        <data id="389">
-                            <property name="resultSetColumn">MNTH_END_YYYYMM</property>
-                        </data>
-                    </cell>
-                    <cell id="390">
-                        <data id="391">
-                            <property name="resultSetColumn">totalnetworth</property>
-                        </data>
-                    </cell>
-                    <cell id="392">
-                        <data id="393">
-                            <property name="resultSetColumn">retirementage</property>
-                        </data>
-                    </cell>
-                    <cell id="394">
-                        <data id="395">
-                            <property name="resultSetColumn">retirementamt</property>
-                        </data>
-                    </cell>
-                </row>
-            </detail>
-        </table>
-        <table id="319">
-            <property name="width">100%</property>
-            <property name="dataSet">Data Set</property>
-            <list-property name="visibility">
-                <structure>
-                    <property name="format">all</property>
-                    <expression name="valueExpr" type="javascript">true</expression>
-                </structure>
-            </list-property>
-            <list-property name="boundDataColumns">
-                <structure>
-                    <property name="name">birthyear</property>
-                    <text-property name="displayName">birthyear</text-property>
-                    <expression name="expression">dataSetRow["birthyear"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">yearmonth</property>
-                    <text-property name="displayName">yearmonth</text-property>
-                    <expression name="expression">dataSetRow["yearmonth"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">totalnetworth</property>
-                    <text-property name="displayName">totalnetworth</text-property>
-                    <expression name="expression">dataSetRow["totalnetworth"]</expression>
-                    <property name="dataType">float</property>
-                </structure>
-                <structure>
-                    <property name="name">retirementage</property>
-                    <text-property name="displayName">retirementage</text-property>
-                    <expression name="expression">dataSetRow["retirementage"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">retirementamt</property>
-                    <text-property name="displayName">retirementamt</text-property>
-                    <expression name="expression">dataSetRow["retirementamt"]</expression>
-                    <property name="dataType">float</property>
-                </structure>
-                <structure>
-                    <property name="name">projectednetworth</property>
-                    <text-property name="displayName">projectednetworth</text-property>
-                    <expression name="expression">dataSetRow["projectednetworth"]</expression>
-                    <property name="dataType">float</property>
-                </structure>
-                <structure>
-                    <property name="name">plotdate</property>
-                    <text-property name="displayName">plotdate</text-property>
-                    <expression name="expression">dataSetRow["plotdate"]</expression>
-                    <property name="dataType">date-time</property>
-                </structure>
-                <structure>
-                    <property name="name">lifeeventnote</property>
-                    <text-property name="displayName">lifeeventnote</text-property>
-                    <expression name="expression">dataSetRow["lifeeventnote"]</expression>
-                    <property name="dataType">string</property>
-                </structure>
-            </list-property>
-            <column id="363"/>
-            <column id="364"/>
-            <column id="365"/>
-            <column id="366"/>
-            <column id="367"/>
-            <column id="368"/>
-            <column id="369"/>
-            <column id="370"/>
-            <header>
-                <row id="320">
-                    <cell id="321">
-                        <label id="322">
-                            <text-property name="text">birthyear</text-property>
-                        </label>
-                    </cell>
-                    <cell id="323">
-                        <label id="324">
-                            <text-property name="text">yearmonth</text-property>
-                        </label>
-                    </cell>
-                    <cell id="325">
-                        <label id="326">
-                            <text-property name="text">totalnetworth</text-property>
-                        </label>
-                    </cell>
-                    <cell id="327">
-                        <label id="328">
-                            <text-property name="text">retirementage</text-property>
-                        </label>
-                    </cell>
-                    <cell id="329">
-                        <label id="330">
-                            <text-property name="text">retirementamt</text-property>
-                        </label>
-                    </cell>
-                    <cell id="331">
-                        <label id="332">
-                            <text-property name="text">projectednetworth</text-property>
-                        </label>
-                    </cell>
-                    <cell id="333">
-                        <label id="334">
-                            <text-property name="text">plotdate</text-property>
-                        </label>
-                    </cell>
-                    <cell id="335">
-                        <label id="336">
-                            <text-property name="text">lifeeventnote</text-property>
-                        </label>
-                    </cell>
-                </row>
-            </header>
-            <detail>
-                <row id="337">
-                    <cell id="338">
-                        <data id="339">
-                            <property name="resultSetColumn">birthyear</property>
-                        </data>
-                    </cell>
-                    <cell id="340">
-                        <data id="341">
-                            <property name="resultSetColumn">yearmonth</property>
-                        </data>
-                    </cell>
-                    <cell id="342">
-                        <data id="343">
-                            <property name="resultSetColumn">totalnetworth</property>
-                        </data>
-                    </cell>
-                    <cell id="344">
-                        <data id="345">
-                            <property name="resultSetColumn">retirementage</property>
-                        </data>
-                    </cell>
-                    <cell id="346">
-                        <data id="347">
-                            <property name="resultSetColumn">retirementamt</property>
-                        </data>
-                    </cell>
-                    <cell id="348">
-                        <data id="349">
-                            <property name="resultSetColumn">projectednetworth</property>
-                        </data>
-                    </cell>
-                    <cell id="350">
-                        <data id="351">
-                            <property name="resultSetColumn">plotdate</property>
-                        </data>
-                    </cell>
-                    <cell id="352">
-                        <data id="353">
-                            <property name="resultSetColumn">lifeeventnote</property>
-                        </data>
-                    </cell>
-                </row>
-            </detail>
-            <footer>
-                <row id="354">
-                    <cell id="355"/>
-                    <cell id="356"/>
-                    <cell id="357"/>
-                    <cell id="358"/>
-                    <cell id="359"/>
-                    <cell id="360"/>
-                    <cell id="361"/>
-                    <cell id="362"/>
-                </row>
-            </footer>
-        </table>
-        <text id="431">
-            <property name="contentType">html</property>
-            <text-property name="content"><![CDATA[<script>
+        <grid id="432">
+            <expression name="bookmark" type="javascript">"Roadmap"</expression>
+            <column id="433"/>
+            <row id="434">
+                <cell id="435">
+                    <property name="paddingTop">0pt</property>
+                    <property name="paddingLeft">0pt</property>
+                    <property name="paddingBottom">0pt</property>
+                    <property name="paddingRight">0pt</property>
+                    <table id="373">
+                        <property name="width">100%</property>
+                        <property name="dataSet">Data Set Static</property>
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr" type="javascript">true</expression>
+                            </structure>
+                        </list-property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">BIRTH_YEAR</property>
+                                <text-property name="displayName">BIRTH_YEAR</text-property>
+                                <expression name="expression">dataSetRow["BIRTH_YEAR"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">MNTH_END_YYYYMM</property>
+                                <text-property name="displayName">MNTH_END_YYYYMM</text-property>
+                                <expression name="expression">dataSetRow["MNTH_END_YYYYMM"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">totalnetworth</property>
+                                <text-property name="displayName">totalnetworth</text-property>
+                                <expression name="expression">dataSetRow["totalnetworth"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">retirementage</property>
+                                <text-property name="displayName">retirementage</text-property>
+                                <expression name="expression">dataSetRow["retirementage"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">retirementamt</property>
+                                <text-property name="displayName">retirementamt</text-property>
+                                <expression name="expression">dataSetRow["retirementamt"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                        </list-property>
+                        <column id="402"/>
+                        <column id="403"/>
+                        <column id="404"/>
+                        <column id="405"/>
+                        <column id="406"/>
+                        <header>
+                            <row id="374">
+                                <cell id="375">
+                                    <label id="376">
+                                        <text-property name="text">BIRTH_YEAR</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="377">
+                                    <label id="378">
+                                        <text-property name="text">MNTH_END_YYYYMM</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="379">
+                                    <label id="380">
+                                        <text-property name="text">totalnetworth</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="381">
+                                    <label id="382">
+                                        <text-property name="text">retirementage</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="383">
+                                    <label id="384">
+                                        <text-property name="text">retirementamt</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="385">
+                                <cell id="386">
+                                    <data id="387">
+                                        <property name="resultSetColumn">BIRTH_YEAR</property>
+                                    </data>
+                                </cell>
+                                <cell id="388">
+                                    <data id="389">
+                                        <property name="resultSetColumn">MNTH_END_YYYYMM</property>
+                                    </data>
+                                </cell>
+                                <cell id="390">
+                                    <data id="391">
+                                        <property name="resultSetColumn">totalnetworth</property>
+                                    </data>
+                                </cell>
+                                <cell id="392">
+                                    <data id="393">
+                                        <property name="resultSetColumn">retirementage</property>
+                                    </data>
+                                </cell>
+                                <cell id="394">
+                                    <data id="395">
+                                        <property name="resultSetColumn">retirementamt</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                    </table>
+                    <table id="319">
+                        <property name="width">100%</property>
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr" type="javascript">true</expression>
+                            </structure>
+                        </list-property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">birthyear</property>
+                                <text-property name="displayName">birthyear</text-property>
+                                <expression name="expression">dataSetRow["birthyear"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">yearmonth</property>
+                                <text-property name="displayName">yearmonth</text-property>
+                                <expression name="expression">dataSetRow["yearmonth"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">totalnetworth</property>
+                                <text-property name="displayName">totalnetworth</text-property>
+                                <expression name="expression">dataSetRow["totalnetworth"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">retirementage</property>
+                                <text-property name="displayName">retirementage</text-property>
+                                <expression name="expression">dataSetRow["retirementage"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">retirementamt</property>
+                                <text-property name="displayName">retirementamt</text-property>
+                                <expression name="expression">dataSetRow["retirementamt"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">projectednetworth</property>
+                                <text-property name="displayName">projectednetworth</text-property>
+                                <expression name="expression">dataSetRow["projectednetworth"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">plotdate</property>
+                                <text-property name="displayName">plotdate</text-property>
+                                <expression name="expression">dataSetRow["plotdate"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">lifeeventnote</property>
+                                <text-property name="displayName">lifeeventnote</text-property>
+                                <expression name="expression">dataSetRow["lifeeventnote"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="363"/>
+                        <column id="364"/>
+                        <column id="365"/>
+                        <column id="366"/>
+                        <column id="367"/>
+                        <column id="368"/>
+                        <column id="369"/>
+                        <column id="370"/>
+                        <header>
+                            <row id="320">
+                                <cell id="321">
+                                    <label id="322">
+                                        <text-property name="text">birthyear</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="323">
+                                    <label id="324">
+                                        <text-property name="text">yearmonth</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="325">
+                                    <label id="326">
+                                        <text-property name="text">totalnetworth</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="327">
+                                    <label id="328">
+                                        <text-property name="text">retirementage</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="329">
+                                    <label id="330">
+                                        <text-property name="text">retirementamt</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="331">
+                                    <label id="332">
+                                        <text-property name="text">projectednetworth</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="333">
+                                    <label id="334">
+                                        <text-property name="text">plotdate</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="335">
+                                    <label id="336">
+                                        <text-property name="text">lifeeventnote</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="337">
+                                <cell id="338">
+                                    <data id="339">
+                                        <property name="resultSetColumn">birthyear</property>
+                                    </data>
+                                </cell>
+                                <cell id="340">
+                                    <data id="341">
+                                        <property name="resultSetColumn">yearmonth</property>
+                                    </data>
+                                </cell>
+                                <cell id="342">
+                                    <data id="343">
+                                        <property name="resultSetColumn">totalnetworth</property>
+                                    </data>
+                                </cell>
+                                <cell id="344">
+                                    <data id="345">
+                                        <property name="resultSetColumn">retirementage</property>
+                                    </data>
+                                </cell>
+                                <cell id="346">
+                                    <data id="347">
+                                        <property name="resultSetColumn">retirementamt</property>
+                                    </data>
+                                </cell>
+                                <cell id="348">
+                                    <data id="349">
+                                        <property name="resultSetColumn">projectednetworth</property>
+                                    </data>
+                                </cell>
+                                <cell id="350">
+                                    <data id="351">
+                                        <property name="resultSetColumn">plotdate</property>
+                                    </data>
+                                </cell>
+                                <cell id="352">
+                                    <data id="353">
+                                        <property name="resultSetColumn">lifeeventnote</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                        <footer>
+                            <row id="354">
+                                <cell id="355"/>
+                                <cell id="356"/>
+                                <cell id="357"/>
+                                <cell id="358"/>
+                                <cell id="359"/>
+                                <cell id="360"/>
+                                <cell id="361"/>
+                                <cell id="362"/>
+                            </row>
+                        </footer>
+                    </table>
+                    <text id="431">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<script>
 var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
 </script>]]></text-property>
-        </text>
-        <extended-item extensionName="Chart" id="430">
-            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.5.3">
+                    </text>
+                    <extended-item extensionName="Chart" id="430">
+                        <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.5.3">
  <ChartWithAxes version="2.5.3" type="Area Chart" subType="Overlay">
   <description value="">
    <font>
@@ -912,7 +921,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
   <extendedProperties name="enable.area.alt" value="false"/>
   <extendedProperties name="enable.drill.category" value="true"/>
   <extendedProperties name="enable.drill.series" value="true"/>
-  <extendedProperties name="jschart.client.script" value="beforeRendering: function(options, chart)&#13;&#10;{&#13;&#10;&#13;&#10;  options.plotOptions = {area:{animation:{duration:2500}}};&#13;&#10;    options.colors[0] = &quot;rgba(192,192,192,0.5)&quot;;&#13;&#10;&#13;&#10;    var startColor = &quot;rgba(0,127,0,0.5)&quot;;    &#13;&#10;    if (planningData.investmentStyle == 0.08)&#13;&#10;     startColor = &quot;rgba(255,0,0,0.5)&quot;;&#13;&#10;    else if (planningData.investmentStyle == 0.06)&#13;&#10;     startColor = &quot;rgba(255,127,0,0.5)&quot;;&#13;&#10;    else if (planningData.investmentStyle == 0.04)&#13;&#10;     startColor = &quot;rgba(154,204,0,0.5)&quot;;&#13;&#10;    else&#13;&#10;     startColor = &quot;rgba(0,127,0,0.5)&quot;;&#13;&#10;    &#13;&#10;    options.colors[1] = { &#13;&#10;        linearGradient: [0, 0, 700, 0],&#13;&#10;         stops: [&#13;&#10;            [0, startColor],&#13;&#10;            [1, &quot;rgba(0,127,0,0.5)&quot;]&#13;&#10;        ]&#13;&#10;         &#13;&#10;    };&#13;&#10;&#13;&#10;},&#13;&#10;&#13;&#10;afterRendering: function(chart)&#13;&#10;{  &#13;&#10;&#13;&#10;    // Goal Amount line&#13;&#10;    chart.getCore().yAxis[0].addPlotLine({&#13;&#10;     color: &quot;AF7817&quot;,&#13;&#10;     width: 1,&#13;&#10;     zIndex: 5,&#13;&#10;     value: planningData.goalAmount,&#13;&#10;     label: {&#13;&#10;      text: &quot;Retirement Goal amount: &quot; + planningData.goalAmountValue,&#13;&#10;      align: &quot;right&quot;,&#13;&#10;         style: {&#13;&#10;          color: &quot;#AF7817&quot;,&#13;&#10;          fontWeight: &quot;bold&quot;,&#13;&#10;          fontSize: &quot;9pt&quot;&#13;&#10;         },&#13;&#10;         x: -10&#13;&#10;     },&#13;&#10;     id: &quot;goalAmountLine&quot;&#13;&#10;    });&#13;&#10;&#13;&#10;    // Goal Age line&#13;&#10;    chart.getCore().xAxis[0].addPlotLine({&#13;&#10;        color: &quot;#AF7817&quot;,&#13;&#10;        width: 1,&#13;&#10;        zIndex: 5,&#13;&#10;        value: planningData.goalAge,&#13;&#10;        label: {&#13;&#10;         text: &quot;Years: &quot; + planningData.goalAgeValue,&#13;&#10;         rotation: 270,&#13;&#10;         verticalAlign: &quot;middle&quot;,&#13;&#10;         style: {&#13;&#10;          color: &quot;#AF7817&quot;,&#13;&#10;          fontWeight: &quot;bold&quot;,&#13;&#10;          fontSize: &quot;10pt&quot;&#13;&#10;         },&#13;&#10;         x: 14&#13;&#10;        },&#13;&#10;        id: &quot;goalAgeLine&quot;&#13;&#10;    });&#13;&#10;    &#13;&#10;    // Actual/Projected dividing line&#13;&#10;    chart.getCore().xAxis[0].addPlotLine({&#13;&#10;        color: &quot;grey&quot;,&#13;&#10;        width: 4,&#13;&#10;        dashStyle: &quot;Dash&quot;,&#13;&#10;        zIndex: 5,&#13;&#10;        value: planningData.baseChartRows,&#13;&#10;        id: &quot;actualProjectedLine&quot;&#13;&#10;    });&#13;&#10;   &#13;&#10;    // Actual section band &#13;&#10;    chart.getCore().xAxis[0].addPlotBand({&#13;&#10;     from: 0,&#13;&#10;     to: planningData.baseChartRows,&#13;&#10;     label: {&#13;&#10;      text: &quot;Actual&quot;,&#13;&#10;      verticalAlign: &quot;top&quot;,&#13;&#10;      style: {&#13;&#10;       color: &quot;black&quot;,&#13;&#10;       fontWeight: &quot;bold&quot;,&#13;&#10;       fontSize: &quot;9pt&quot;&#13;&#10;      }&#13;&#10;     },&#13;&#10;     id: &quot;actualBand&quot;&#13;&#10;    });&#13;&#10;    &#13;&#10;    // Projected section band &#13;&#10;    chart.getCore().xAxis[0].addPlotBand({&#13;&#10;     from: planningData.baseChartRows,&#13;&#10;     to: planningData.totalChartRows,&#13;&#10;     label: {&#13;&#10;      text: &quot;Projected&quot;,&#13;&#10;      verticalAlign: &quot;top&quot;,&#13;&#10;      style: {&#13;&#10;       color: &quot;black&quot;,&#13;&#10;       fontWeight: &quot;bold&quot;,&#13;&#10;       fontSize: &quot;9pt&quot;&#13;&#10;      }&#13;&#10;     },&#13;&#10;     id: &quot;projectedBand&quot;&#13;&#10;    });&#13;&#10;},&#13;&#10;&#13;&#10;beforeDrawDataPoint: function(point, pointOptions, chart, seriesIndex, pointIndex)&#13;&#10;{&#13;&#10;    if (seriesIndex == 1) {&#13;&#10;        pointOptions.marker = {};&#13;&#10;        &#13;&#10;        var hasMarker = false;&#13;&#10;        for (var i = 0; i &lt; planningData.events.length; i++) {&#13;&#10;         if (planningData.events[i].state &amp;&amp; pointIndex == planningData.events[i].rec) {&#13;&#10;          var type = planningData.events[i].type;&#13;&#10;          var markerURL = &quot;custom/images/&quot;;&#13;&#10;                    if (type == 1)&#13;&#10;                  markerURL += &quot;home.png&quot;;&#13;&#10;                 else if (type == 2)&#13;&#10;                        markerURL += &quot;sports_car.png&quot;;&#13;&#10;                    else if (type == 3)&#13;&#10;                        markerURL += &quot;graduate.png&quot;;&#13;&#10;                    else if (type == 4)&#13;&#10;                        markerURL += &quot;church.png&quot;;&#13;&#10;                    else if (type == 5)&#13;&#10;                        markerURL += &quot;palm_tree.png&quot;;&#13;&#10;                    else if (type == 6)&#13;&#10;                        markerURL += &quot;moneybag_dollar.png&quot;;&#13;&#10;                        &#13;&#10;          pointOptions.marker.symbol = &quot;url(&quot; + markerURL + &quot;)&quot;;&#13;&#10;          hasMarker = true;&#13;&#10;         }&#13;&#10;        }&#13;&#10;        &#13;&#10;        if (!hasMarker)&#13;&#10;         pointOptions.marker.symbol = &quot;url(http://)&quot;;&#13;&#10;    }&#13;&#10;},"/>
+  <extendedProperties name="jschart.client.script" value="beforeRendering: function(options, chart)&#13;&#10;{&#13;&#10;    options.plotOptions = {&#13;&#10;        area: {&#13;&#10;            animation: {duration:0},&#13;&#10;            shadow:true,&#13;&#10;            lineWidth:1&#13;&#10;        }&#13;&#10;    };&#13;&#10;    &#13;&#10;    options.xAxis = {&#13;&#10;        startOnTick: true,&#13;&#10;        endOnTick: true,&#13;&#10;        maxPadding: 0&#13;&#10;    }&#13;&#10;&#13;&#10;    options.colors[0] = &quot;rgba(192,192,192,0.5)&quot;;&#13;&#10;&#13;&#10;    var startColor = &quot;rgba(0,127,0,0.5)&quot;;    &#13;&#10;    if (planningData.investmentStyle == 0.08)&#13;&#10;     startColor = &quot;rgba(255,0,0,0.5)&quot;;&#13;&#10;    else if (planningData.investmentStyle == 0.06)&#13;&#10;     startColor = &quot;rgba(255,127,0,0.5)&quot;;&#13;&#10;    else if (planningData.investmentStyle == 0.04)&#13;&#10;     startColor = &quot;rgba(154,204,0,0.5)&quot;;&#13;&#10;    else&#13;&#10;     startColor = &quot;rgba(0,127,0,0.5)&quot;;&#13;&#10;    &#13;&#10;    options.colors[1] = { &#13;&#10;        linearGradient: [0, 0, 800, 0],&#13;&#10;         stops: [&#13;&#10;            [0, startColor],&#13;&#10;            [1, &quot;rgba(0,127,0,0.5)&quot;]&#13;&#10;        ]&#13;&#10;         &#13;&#10;    };&#13;&#10;},&#13;&#10;&#13;&#10;afterRendering: function(chart)&#13;&#10;{  &#13;&#10;&#13;&#10;    // Goal Amount line&#13;&#10;    chart.getCore().yAxis[0].addPlotLine({&#13;&#10;     color: &quot;#AF7817&quot;,&#13;&#10;     width: 1,&#13;&#10;     zIndex: 5,&#13;&#10;     value: planningData.goalAmount,&#13;&#10;     label: {&#13;&#10;      text: &quot;Retirement Goal amount: &quot; + planningData.goalAmountValue,&#13;&#10;      align: &quot;right&quot;,&#13;&#10;         style: {&#13;&#10;          color: &quot;#AF7817&quot;,&#13;&#10;          fontWeight: &quot;bold&quot;,&#13;&#10;          fontSize: &quot;9pt&quot;&#13;&#10;         },&#13;&#10;         x: -10&#13;&#10;     },&#13;&#10;     id: &quot;goalAmountLine&quot;&#13;&#10;    });&#13;&#10;&#13;&#10;    // Goal Age line&#13;&#10;    chart.getCore().xAxis[0].addPlotLine({&#13;&#10;        color: &quot;#AF7817&quot;,&#13;&#10;        width: 1,&#13;&#10;        zIndex: 5,&#13;&#10;        value: planningData.goalAge,&#13;&#10;        label: {&#13;&#10;         text: &quot;Years: &quot; + planningData.goalAgeValue,&#13;&#10;         rotation: 270,&#13;&#10;         verticalAlign: &quot;middle&quot;,&#13;&#10;         style: {&#13;&#10;          color: &quot;#AF7817&quot;,&#13;&#10;          fontWeight: &quot;bold&quot;,&#13;&#10;          fontSize: &quot;10pt&quot;&#13;&#10;         },&#13;&#10;         x: 14&#13;&#10;        },&#13;&#10;        id: &quot;goalAgeLine&quot;&#13;&#10;    });&#13;&#10;    &#13;&#10;    // Actual/Projected dividing line&#13;&#10;    chart.getCore().xAxis[0].addPlotLine({&#13;&#10;        color: &quot;grey&quot;,&#13;&#10;        width: 1,&#13;&#10;        dashStyle: &quot;Dash&quot;,&#13;&#10;        zIndex: 5,&#13;&#10;        value: planningData.baseChartRows,&#13;&#10;        id: &quot;actualProjectedLine&quot;&#13;&#10;    });&#13;&#10;   &#13;&#10;    // Actual section band &#13;&#10;    chart.getCore().xAxis[0].addPlotBand({&#13;&#10;     from: 0,&#13;&#10;     to: planningData.baseChartRows,&#13;&#10;     label: {&#13;&#10;      text: &quot;Actual&quot;,&#13;&#10;      verticalAlign: &quot;top&quot;,&#13;&#10;      style: {&#13;&#10;       color: &quot;black&quot;,&#13;&#10;       fontWeight: &quot;bold&quot;,&#13;&#10;       fontSize: &quot;9pt&quot;&#13;&#10;      }&#13;&#10;     },&#13;&#10;     id: &quot;actualBand&quot;&#13;&#10;    });&#13;&#10;    &#13;&#10;    // Projected section band &#13;&#10;    chart.getCore().xAxis[0].addPlotBand({&#13;&#10;     from: planningData.baseChartRows,&#13;&#10;     to: planningData.totalChartRows,&#13;&#10;     label: {&#13;&#10;      text: &quot;Projected&quot;,&#13;&#10;      verticalAlign: &quot;top&quot;,&#13;&#10;      style: {&#13;&#10;       color: &quot;black&quot;,&#13;&#10;       fontWeight: &quot;bold&quot;,&#13;&#10;       fontSize: &quot;9pt&quot;&#13;&#10;      }&#13;&#10;     },&#13;&#10;     id: &quot;projectedBand&quot;&#13;&#10;    });&#13;&#10;},&#13;&#10;&#13;&#10;beforeDrawDataPoint: function(point, pointOptions, chart, seriesIndex, pointIndex)&#13;&#10;{&#13;&#10;    if (pointOptions.y == 0) {&#13;&#10;        if (seriesIndex == 0 &amp;&amp; pointIndex &gt;= planningData.baseChartRows)&#13;&#10;            pointOptions.y = null;&#13;&#10;        else if (seriesIndex == 1 &amp;&amp; pointIndex &lt;= planningData.baseChartRows)&#13;&#10;            pointOptions.y = null;&#13;&#10;    }&#13;&#10;    &#13;&#10;    if (seriesIndex == 1) {&#13;&#10;        pointOptions.marker = {};&#13;&#10;        &#13;&#10;        var hasMarker = false;&#13;&#10;        for (var i = 0; i &lt; planningData.events.length; i++) {&#13;&#10;         if (planningData.events[i].state &amp;&amp; pointIndex == planningData.events[i].rec) {&#13;&#10;          var type = planningData.events[i].type;    &#13;&#10;          //var markerURL = &quot;custom/images/&quot;;&#13;&#10;          var markerURL = &quot;servlet/DownloadFile?name=/Resources/images/&quot;;&#13;&#10;          //var markerURL = &quot;http://localhost:8900/iportal/servlet/DownloadFile?name=/images/&quot;;&#13;&#10;                    if (type == 1)&#13;&#10;                  markerURL += &quot;home.png&quot;;&#13;&#10;                 else if (type == 2)&#13;&#10;                        markerURL += &quot;sports_car.png&quot;;&#13;&#10;                    else if (type == 3)&#13;&#10;                        markerURL += &quot;graduate.png&quot;;&#13;&#10;                    else if (type == 4)&#13;&#10;                        markerURL += &quot;church.png&quot;;&#13;&#10;                    else if (type == 5)&#13;&#10;                        markerURL += &quot;palm_tree.png&quot;;&#13;&#10;                    else if (type == 6)&#13;&#10;                        markerURL += &quot;moneybag_dollar.png&quot;;&#13;&#10;                        &#13;&#10;          pointOptions.marker.symbol = &quot;url(&quot; + markerURL + &quot;)&quot;;&#13;&#10;          hasMarker = true;&#13;&#10;         }&#13;&#10;        }&#13;&#10;        &#13;&#10;        if (!hasMarker)&#13;&#10;         pointOptions.marker.symbol = &quot;url(http://)&quot;;&#13;&#10;    }&#13;&#10;},"/>
   <extendedProperties name="jschart.zoom" value="x"/>
   <extendedProperties name="jschart.animation" value="true"/>
   <sampleData>
@@ -977,14 +986,14 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
       <entries _body=",255,255,255,255"/>
       <entries _body=",255,255,128,0"/>
      </seriesPalette>
-     <series _type="AreaSeries" seriesIdentifier="Series 1" stacked="false">
+     <series _type="AreaSeries" seriesIdentifier="Series 1" stacked="false" connectMissingValue="false">
       <label>
        <background _nil="1"/>
        <outline>
         <color _nil="1"/>
        </outline>
       </label>
-      <dataDefinition definition="if (row[&quot;totalnetworth&quot;] == null)&#13;&#10; 0;&#13;&#10;else&#13;&#10; row[&quot;totalnetworth&quot;];">
+      <dataDefinition definition="if (row[&quot;totalnetworth&quot;] == 0)&#13;&#10; null;&#13;&#10;else&#13;&#10; row[&quot;totalnetworth&quot;];">
        <grouping/>
       </dataDefinition>
       <dataPoint separator=", ">
@@ -1003,6 +1012,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
        <color _nil="1"/>
       </lineAttributes>
      </series>
+     <grouping _nil="1"/>
     </seriesDefinitions>
     <seriesDefinitions>
      <query definition=""/>
@@ -1040,7 +1050,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
       <entries _body=",255,255,128,0"/>
       <entries _body=",255,192,192,192"/>
      </seriesPalette>
-     <series _type="AreaSeries" seriesIdentifier="Series 2" stacked="false">
+     <series _type="AreaSeries" seriesIdentifier="Series 2" stacked="false" connectMissingValue="false">
       <label>
        <background _nil="1"/>
        <outline>
@@ -1095,7 +1105,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
      <value _nil="1"/>
     </origin>
    </associatedAxes>
-   <seriesDefinitions>
+   <seriesDefinitions sorting="0">
     <query definition=""/>
     <seriesPalette>
      <entries _body=",255,192,192,192"/>
@@ -1144,15 +1154,15 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
      </dataPoint>
      <curveFitting _nil="1"/>
     </series>
-    <grouping enabled="true" groupingUnit="5" groupType="1"/>
-    <sortKey/>
+    <grouping groupingUnit="5" groupType="1"/>
+    <sortKey definition="row[&quot;birthyear&quot;]"/>
    </seriesDefinitions>
    <lineAttributes>
     <color _body=",255,0,0,0"/>
    </lineAttributes>
    <label>
     <caption>
-     <font size="7.0" rotation="45.0"/>
+     <font size="7.0" rotation="90.0"/>
      <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
@@ -1187,75 +1197,70 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
  </ChartWithAxes>
 </ActuateChart>
 ]]></xml-property>
-            <property name="outputFormat">JS</property>
-            <property name="inheritColumns">false</property>
-            <property name="marginTop">10pt</property>
-            <property name="marginLeft">20pt</property>
-            <property name="dataSet">Data Set</property>
-            <property name="height">3.8020833333333335in</property>
-            <property name="width">850px</property>
-            <list-property name="boundDataColumns">
-                <structure>
-                    <property name="name">birthyear</property>
-                    <expression name="expression" type="javascript">dataSetRow["birthyear"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">yearmonth</property>
-                    <expression name="expression" type="javascript">dataSetRow["yearmonth"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">totalnetworth</property>
-                    <expression name="expression" type="javascript">dataSetRow["totalnetworth"]</expression>
-                    <property name="dataType">float</property>
-                </structure>
-                <structure>
-                    <property name="name">retirementage</property>
-                    <expression name="expression" type="javascript">dataSetRow["retirementage"]</expression>
-                    <property name="dataType">integer</property>
-                </structure>
-                <structure>
-                    <property name="name">retirementamt</property>
-                    <expression name="expression" type="javascript">dataSetRow["retirementamt"]</expression>
-                    <property name="dataType">float</property>
-                </structure>
-                <structure>
-                    <property name="name">projectednetworth</property>
-                    <expression name="expression" type="javascript">dataSetRow["projectednetworth"]</expression>
-                    <property name="dataType">float</property>
-                </structure>
-                <structure>
-                    <property name="name">plotdate</property>
-                    <expression name="expression" type="javascript">dataSetRow["plotdate"]</expression>
-                    <property name="dataType">date-time</property>
-                </structure>
-                <structure>
-                    <property name="name">lifeeventnote</property>
-                    <expression name="expression" type="javascript">dataSetRow["lifeeventnote"]</expression>
-                    <property name="dataType">string</property>
-                </structure>
-            </list-property>
-        </extended-item>
-        <grid id="130">
-            <property name="fontSize">12pt</property>
-            <property name="color">#C0C0C0</property>
-            <property name="borderTopColor">#000000</property>
-            <property name="borderTopStyle">solid</property>
-            <property name="marginTop">25pt</property>
-            <property name="marginLeft">0px</property>
-            <property name="textAlign">left</property>
-            <property name="width">950px</property>
-            <column id="131"/>
-            <row id="132">
-                <property name="fontSize">10pt</property>
-                <property name="color">#808080</property>
-                <cell id="133">
-                    <property name="paddingLeft">1pt</property>
-                    <property name="textAlign">center</property>
-                    <text id="125">
-                        <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<script>
+                        <property name="outputFormat">JS</property>
+                        <property name="inheritColumns">false</property>
+                        <property name="marginTop">10pt</property>
+                        <property name="dataSet">Data Set</property>
+                        <property name="height">3.9895833333333335in</property>
+                        <property name="width">1000px</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">birthyear</property>
+                                <expression name="expression" type="javascript">dataSetRow["birthyear"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">yearmonth</property>
+                                <expression name="expression" type="javascript">dataSetRow["yearmonth"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">totalnetworth</property>
+                                <expression name="expression" type="javascript">dataSetRow["totalnetworth"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">retirementage</property>
+                                <expression name="expression" type="javascript">dataSetRow["retirementage"]</expression>
+                                <property name="dataType">integer</property>
+                            </structure>
+                            <structure>
+                                <property name="name">retirementamt</property>
+                                <expression name="expression" type="javascript">dataSetRow["retirementamt"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">projectednetworth</property>
+                                <expression name="expression" type="javascript">dataSetRow["projectednetworth"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">plotdate</property>
+                                <expression name="expression" type="javascript">dataSetRow["plotdate"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">lifeeventnote</property>
+                                <expression name="expression" type="javascript">dataSetRow["lifeeventnote"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                    </extended-item>
+                    <grid id="130">
+                        <property name="fontSize">10pt</property>
+                        <property name="marginTop">0pt</property>
+                        <property name="marginLeft">0px</property>
+                        <property name="textAlign">left</property>
+                        <property name="width">1000px</property>
+                        <column id="131"/>
+                        <row id="132">
+                            <cell id="133">
+                                <property name="paddingTop">20pt</property>
+                                <property name="paddingLeft">1pt</property>
+                                <property name="textAlign">center</property>
+                                <text id="125">
+                                    <property name="contentType">html</property>
+                                    <text-property name="content"><![CDATA[<script>
 function _$(id){return document.getElementById(id);}
 var monthlyContribution = "<VALUE-OF>params["pMonthlyContribution"].value</VALUE-OF>";
 var investmentStyle = <VALUE-OF>params["pInvestmentStyle"].value</VALUE-OF>;
@@ -1267,7 +1272,7 @@ var lifeEventAmounts = "<VALUE-OF>params["pLifeEventAmounts"].value</VALUE-OF>".
 var typeNames = ["House", "Car", "College", "Wedding", "Vacation", "Miscellaneous"];
 var lifeEventEdit = -1;
 
-function initialize() {
+function initLifeEvents() {
 	_$("investmentStyle").value = investmentStyle;
 	displayLifeEvents();
 }
@@ -1287,6 +1292,8 @@ function addLifeEvent() {
 	displayLifeEvents();
 	displayLifeEventEdit(null, idx);
 	_$("selAddLifeEvent").value = 0;
+	_$("lifeEventAmount" + idx).focus();
+	_$("lifeEventAmount" + idx).select();
 }
 
 function displayLifeEvents() {
@@ -1295,16 +1302,16 @@ function displayLifeEvents() {
 	var html = "<table border='0'><tr>";
 	for (var i = 0; i < lifeEventTypes.length; i++) {
 		html += "<td valign='top'>"
-		html += "<div id='lifeEventContainer" + i + "' style='width:300px; padding:3px;'>";
+		html += "<div id='lifeEventContainer" + i + "' style='width:310px; padding:3px;'>";
 		html += "<div id='lifeEvent" + i + "' style='font-size:10pt'>";
 		html += "<span style='vertical-align:top'>";
-		html += "<input type='checkbox' style='vertical-align:top' id='lifeEventState" + i + "'";
+		html += "<input type='checkbox' style='vertical-align:top' id='lifeEventState" + i + "' onclick='event.stopPropagation()' ";
 		if (lifeEventStates[i] == 1)
 			html += " checked ";
-		html += "></input>";
+		html += "></input><span style='vertical-align:top;cursor:default' onclick='toggleLifeEventState(" + i + ")'>";
 		html += lifeEventNames[i];
-		html += "</span>";
-		html += "<img title='Edit Event' style='margin-left:10px;' src='images/edit.png' ontouchstart='displayLifeEventEdit(event," + i + ")' onclick='displayLifeEventEdit(event," + i + ")' />";
+		html += "</span></span>";
+		html += "<img title='Edit Event' style='margin-left:10px;' src='servlet/DownloadFile?name=/Resources/images/edit.png' ontouchstart='displayLifeEventEdit(event," + i + ")' onclick='displayLifeEventEdit(event," + i + ")' />";
 		html += "</div>";
 		html += "</div>";
 		html += "</td>";
@@ -1321,22 +1328,21 @@ function displayLifeEventEdit(event, idx) {
 	displayLifeEvents();
 
 	var html = "";
-	html += "<div id='lifeEvent" + idx + "' style='padding:2px; background-color:#404040; border:1px solid #4F91CD'>";
+	html += "<div id='lifeEvent" + idx + "' style='padding:2px; border:1px solid #4F91CD; border-radius:3px'>";
 	html += "<input type='checkbox' id='lifeEventState" + idx + "'";
 	if (lifeEventStates[idx] == 1)
 		html += " checked ";
 	html += "></input>";
-	html += "<input type='text' size='27' style='font-size:10pt' id='lifeEventName" + idx + "' value=\"" + lifeEventNames[idx] + "\"></input>";
-	html += "<table border='0'>";
+	html += "<input type='text' style='width:255px;float:right;margin-right:3px;font-size:10pt' id='lifeEventName" + idx + "' value=\"" + lifeEventNames[idx] + "\"></input>";
+	html += "<table border='0' style='width:304px'>";
 	html += "<tr><td>Amount $</td>";
-	html += "<td><input type='number' size='10' style='font-size:10pt' id='lifeEventAmount" + idx + "' value='" + lifeEventAmounts[idx] + "'></input></td></tr>";	
+	html += "<td align='right'><input type='number' style='width:190px;font-size:10pt' id='lifeEventAmount" + idx + "' value='" + lifeEventAmounts[idx] + "'></input></td></tr>";	
 	html += "<tr><td>Year-Month</td>";
-	html += "<td><input type='text' pattern='[0-9]*' size='10' style='font-size:10pt' id='lifeEventDate" + idx + "' value='" + parseYearMonth(lifeEventDates[idx]) + "'></input></td></tr>";	
+	html += "<td align='right'><input type='text' pattern='[0-9]*' style='width:190px;font-size:10pt' id='lifeEventDate" + idx + "' value='" + formatYearMonth(parseYearMonth(lifeEventDates[idx])) + "'></input></td></tr>";	
 	html += "</table>"
 	html += "</div>";
 	_$("lifeEventContainer" + idx).innerHTML = html;	
 	lifeEventEdit = idx;
-	
 }
 
 function updateLifeEvents() {
@@ -1352,30 +1358,13 @@ function updateLifeEvents() {
 		if (elem)
 			lifeEventStates[i] = elem.checked ? 1 : 0;
 	}
-
 }
 
-function allocate(event) {
-	if (event)
-		event.preventDefault();
-	displayLifeEvents();
-	
-	var url = "";
-	//url += "?ts=" + new Date().getTime();
-	url += "executereport.do?__executableName=";
-	url += encodeURIComponent("<VALUE-OF>vars["reportExecutableName"]</VALUE-OF>");
-	url += "&amp;invokesubmit=true&amp;__format=html";
-	url += "&amp;pMonthlyContribution=" + encodeURIComponent(_$("monthlyContibution").value);
-	url += "&amp;pInvestmentStyle=" + encodeURIComponent(_$("investmentStyle").value);
-	url += "&amp;pLifeEventStates=" + encodeURIComponent(lifeEventStates.join(","));
-	url += "&amp;pLifeEventTypes=" + encodeURIComponent(lifeEventTypes.join(","));
-	url += "&amp;pLifeEventNames=" + encodeURIComponent(lifeEventNames.join(","));
-	url += "&amp;pLifeEventAmounts=" + encodeURIComponent(lifeEventAmounts.join(","));
-	url += "&amp;pLifeEventDates=" + encodeURIComponent(lifeEventDates.join(","));
-	location.href = url;
-	//loadHTMLReport(null, null, url);
-	//runReport(null, url, false);
+function toggleLifeEventState(ind) { 
+	var elem = _$("lifeEventState" + ind);
+	elem.checked = !elem.checked;
 }
+
 
 function formatYearMonth(raw) {
 	raw = "" + raw;	
@@ -1389,11 +1378,79 @@ function parseYearMonth(formatted) {
 	else
 		return parseInt(formatted, 10);
 }
+
+function allocate(event) {
+	if (event)
+		event.preventDefault();		
+	displayLifeEvents();
+	
+	
+	if (window["actuate"]) {
+		if (actuate["mobilex"]) {
+			runReportMobile();
+		} else if (actuate["viewer"]) {
+			runReportViewer();
+		} else {
+			runReportURL();
+		}
+	} else {
+		runReportURL();
+	}
+}
+	
+function getRunReportParams() {
+	var params = {};
+
+	params["pMonthlyContribution"] = _$("monthlyContibution").value;
+	params["pInvestmentStyle"] = _$("investmentStyle").value;
+	params["pLifeEventStates"] = lifeEventStates.join(",");
+	params["pLifeEventTypes"] = lifeEventTypes.join(",");
+	params["pLifeEventNames"] = lifeEventNames.join(",");
+	params["pLifeEventAmounts"] = lifeEventAmounts.join(",");
+	params["pLifeEventDates"] = lifeEventDates.join(",");
+
+	return params;
+}
+
+function getRunReportURLParams() {
+	var obj = getRunReportParams();
+	var str = [];
+
+	for(var p in obj)
+		str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+
+	return str.join("&amp;");
+}
+
+function runReportURL() {	
+	var url = "";
+	url += "executereport.do?__executableName=";
+	url += encodeURIComponent("<VALUE-OF>vars["reportExecutableName"]</VALUE-OF>");
+	url += "&amp;invokesubmit=true&amp;__format=html&amp;";
+	
+	url += getRunReportURLParams();
+	location.href = url;
+}
+
+function runReportMobile() {
+	var params = getRunReportURLParams();
+	actuate.mobilex.runReport(null, null, params);
+}
+
+function runReportViewer() {
+	var viewer = actuate.getViewer("allLifeEventsContainer");
+
+ 	var params = getRunReportParams();
+	viewer.setParameters(params);
+
+	viewer.submit();
+}
+
 </script>]]></text-property>
-                    </text>
-                    <text id="126">
-                        <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<form action="javascript:allocate()">
+                                </text>
+                                <text id="126">
+                                    <property name="contentType">html</property>
+                                    <text-property name="content"><![CDATA[<form action="javascript:allocate()">
 <table width="98%" style="font-family:Arial: border:0">
 <tr>
 <td align="left">
@@ -1408,7 +1465,7 @@ function parseYearMonth(formatted) {
 	</select>
 </td>
 <td align="center">
-	Monthly Contribution $<input type="number" size="10" id="monthlyContibution" name="monthlyContribution" value="<VALUE-OF>params["pMonthlyContribution"].value</VALUE-OF>" style="font-size:10pt"></input>
+	Monthly Contribution $<input type="number" size="10" id="monthlyContibution" name="monthlyContribution" value="<VALUE-OF>params["pMonthlyContribution"].value</VALUE-OF>" style="font-size:10pt;width:100px"></input>
 </td>
 <td align="right">
 	Investment Style
@@ -1422,23 +1479,23 @@ function parseYearMonth(formatted) {
 </tr>
 </table>
 </form>]]></text-property>
-                    </text>
-                    <text id="129">
-                        <property name="marginTop">0pt</property>
-                        <property name="marginBottom">0px</property>
-                        <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<div id="allLifeEventsContainer" style="margin-top:10px; border:1px solid #808080; width:942px"></div>]]></text-property>
-                    </text>
-                    <text id="414">
-                        <property name="marginTop">10pt</property>
-                        <list-property name="visibility">
-                            <structure>
-                                <property name="format">all</property>
-                                <expression name="valueExpr">(retirementAgeGoalAchieved == true)</expression>
-                            </structure>
-                        </list-property>
-                        <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<div style="width:942px; border:1px solid red; color: red; padding:3px">
+                                </text>
+                                <text id="129">
+                                    <property name="marginTop">0pt</property>
+                                    <property name="marginBottom">0px</property>
+                                    <property name="contentType">html</property>
+                                    <text-property name="content"><![CDATA[<div id="allLifeEventsContainer" style="margin-top:10px; border:1px solid #808080; width:980px;border-radius:5px"></div>]]></text-property>
+                                </text>
+                                <text id="414">
+                                    <property name="marginTop">10pt</property>
+                                    <list-property name="visibility">
+                                        <structure>
+                                            <property name="format">all</property>
+                                            <expression name="valueExpr">(retirementAgeGoalAchieved == true)</expression>
+                                        </structure>
+                                    </list-property>
+                                    <property name="contentType">html</property>
+                                    <text-property name="content"><![CDATA[<div style="width:980px; border:1px solid red; color: red; padding:3px">
 At the age of <VALUE-OF>retirementage</VALUE-OF> you will have <VALUE-OF format="$#,##0">retirementAmountAtAgeGoal</VALUE-OF>, which is less than your retirement goal of <VALUE-OF format="$#,##0">retirementamt</VALUE-OF>
 <br />
 With this plan, you will not attain your goal until <VALUE-OF format="MMMM yyyy">var yearmonthVal = new String(retirementAmountAchievedYearMonth);
@@ -1451,17 +1508,20 @@ Please contact your Financial Advisor to help you plan for and acheive your inve
 
 
 ]]></text-property>
-                    </text>
-                    <text id="417">
-                        <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<div style="margin-top: 15px; text-align:center; width:95%">
-	<button ontouchstart="allocate(event)" onclick="allocate(event)" style="padding:2px;font-size:14pt;font-weight:bold;width:200px">Re-Allocate</button>
+                                </text>
+                                <text id="417">
+                                    <property name="contentType">html</property>
+                                    <text-property name="content"><![CDATA[<div style="margin-top: 15px; text-align:center; width:95%">
+	<button ontouchstart="allocate(event)" onclick="allocate(event)" style="padding:2px;font-size:12pt;font-weight:bold;width:250px">Re-Allocate</button>
 </div>
 
 <script>
-initialize();
+initLifeEvents();
 </script>]]></text-property>
-                    </text>
+                                </text>
+                            </cell>
+                        </row>
+                    </grid>
                 </cell>
             </row>
         </grid>
