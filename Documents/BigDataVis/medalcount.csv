@@ -1,0 +1,747 @@
+Continent,ContinentCode,Country,CountryCode,Discipline,MedalCount,Year
+Africa,AF,Cameroon,CMR,Athletics,1,2008
+Africa,AF,Algeria,DZA,Judo,2,2008
+Africa,AF,"Egypt, Arab Rep.",EGY,Judo,1,2008
+Africa,AF,Ethiopia,ETH,Athletics,7,2008
+Africa,AF,Kenya,KEN,Athletics,15,2008
+Africa,AF,Morocco,MAR,Athletics,2,2008
+Africa,AF,Mauritius,MUS,Boxing,1,2008
+Africa,AF,Nigeria,NGA,Athletics,2,2008
+Africa,AF,Nigeria,NGA,Football,1,2008
+Africa,AF,Nigeria,NGA,Taekwondo,1,2008
+Africa,AF,Sudan,SDN,Athletics,2,2008
+Africa,AF,Togo,TGO,Canoeing,1,2008
+Africa,AF,Tunisia,TUN,Swimming,1,2008
+Africa,AF,South Africa,ZAF,Athletics,1,2008
+Africa,AF,Zimbabwe,ZWE,Swimming,4,2008
+Asia,AS,Armenia,ARM,Boxing,1,2008
+Asia,AS,Armenia,ARM,Weightlifting,3,2008
+Asia,AS,Armenia,ARM,Wrestling,2,2008
+Asia,AS,Azerbaijan,AZE,Boxing,1,2008
+Asia,AS,Azerbaijan,AZE,Judo,2,2008
+Asia,AS,Azerbaijan,AZE,Wrestling,4,2008
+Asia,AS,China,CHN,Archery,3,2008
+Asia,AS,China,CHN,Athletics,2,2008
+Asia,AS,China,CHN,Badminton,8,2008
+Asia,AS,China,CHN,Boxing,4,2008
+Asia,AS,China,CHN,Canoeing,1,2008
+Asia,AS,China,CHN,Cycling,1,2008
+Asia,AS,China,CHN,Diving,11,2008
+Asia,AS,China,CHN,Fencing,2,2008
+Asia,AS,China,CHN,Field Hockey,1,2008
+Asia,AS,China,CHN,Gymnastics,18,2008
+Asia,AS,China,CHN,Judo,4,2008
+Asia,AS,China,CHN,Rowing,2,2008
+Asia,AS,China,CHN,Sailing,2,2008
+Asia,AS,China,CHN,Shooting,9,2008
+Asia,AS,China,CHN,Swimming,6,2008
+Asia,AS,China,CHN,Synchronized swimming,1,2008
+Asia,AS,China,CHN,Table Tennis,8,2008
+Asia,AS,China,CHN,Taekwondo,4,2008
+Asia,AS,China,CHN,Tennis,1,2008
+Asia,AS,China,CHN,Volleyball,3,2008
+Asia,AS,China,CHN,Weightlifting,11,2008
+Asia,AS,China,CHN,Wrestling,3,2008
+Asia,AS,Georgia,GEO,Judo,1,2008
+Asia,AS,Georgia,GEO,Shooting,1,2008
+Asia,AS,Georgia,GEO,Wrestling,4,2008
+Asia,AS,Indonesia,IDN,Badminton,3,2008
+Asia,AS,Indonesia,IDN,Weightlifting,2,2008
+Asia,AS,India,IND,Boxing,1,2008
+Asia,AS,India,IND,Shooting,1,2008
+Asia,AS,India,IND,Wrestling,1,2008
+Asia,AS,Japan,JPN,Athletics,1,2008
+Asia,AS,Japan,JPN,Cycling,1,2008
+Asia,AS,Japan,JPN,Fencing,1,2008
+Asia,AS,Japan,JPN,Gymnastics,2,2008
+Asia,AS,Japan,JPN,Judo,7,2008
+Asia,AS,Japan,JPN,Swimming,5,2008
+Asia,AS,Japan,JPN,Synchronized swimming,1,2008
+Asia,AS,Japan,JPN,Wrestling,6,2008
+Asia,AS,Kazakhstan,KAZ,Boxing,3,2008
+Asia,AS,Kazakhstan,KAZ,Judo,1,2008
+Asia,AS,Kazakhstan,KAZ,Taekwondo,1,2008
+Asia,AS,Kazakhstan,KAZ,Weightlifting,4,2008
+Asia,AS,Kazakhstan,KAZ,Wrestling,5,2008
+Asia,AS,"Korea, Rep.",KOR,Archery,5,2008
+Asia,AS,"Korea, Rep.",KOR,Badminton,3,2008
+Asia,AS,"Korea, Rep.",KOR,Boxing,1,2008
+Asia,AS,"Korea, Rep.",KOR,Fencing,1,2008
+Asia,AS,"Korea, Rep.",KOR,Gymnastics,1,2008
+Asia,AS,"Korea, Rep.",KOR,Handball,1,2008
+Asia,AS,"Korea, Rep.",KOR,Judo,4,2008
+Asia,AS,"Korea, Rep.",KOR,Shooting,2,2008
+Asia,AS,"Korea, Rep.",KOR,Swimming,2,2008
+Asia,AS,"Korea, Rep.",KOR,Table Tennis,2,2008
+Asia,AS,"Korea, Rep.",KOR,Taekwondo,4,2008
+Asia,AS,"Korea, Rep.",KOR,Weightlifting,3,2008
+Asia,AS,"Korea, Rep.",KOR,Wrestling,1,2008
+Asia,AS,Mongolia,MNG,Boxing,2,2008
+Asia,AS,Mongolia,MNG,Judo,1,2008
+Asia,AS,Mongolia,MNG,Shooting,1,2008
+Asia,AS,Malaysia,MYS,Badminton,1,2008
+Asia,AS,"Korea, Dem. Rep.",PRK,Gymnastics,1,2008
+Asia,AS,"Korea, Dem. Rep.",PRK,Judo,3,2008
+Asia,AS,"Korea, Dem. Rep.",PRK,Weightlifting,2,2008
+Asia,AS,Russian Federation,RUS,Archery,1,2008
+Asia,AS,Russian Federation,RUS,Athletics,18,2008
+Asia,AS,Russian Federation,RUS,Basketball,1,2008
+Asia,AS,Russian Federation,RUS,Boxing,3,2008
+Asia,AS,Russian Federation,RUS,Canoeing,3,2008
+Asia,AS,Russian Federation,RUS,Cycling,3,2008
+Asia,AS,Russian Federation,RUS,Diving,5,2008
+Asia,AS,Russian Federation,RUS,Fencing,1,2008
+Asia,AS,Russian Federation,RUS,Gymnastics,4,2008
+Asia,AS,Russian Federation,RUS,Handball,1,2008
+Asia,AS,Russian Federation,RUS,Modern Pentathlon,1,2008
+Asia,AS,Russian Federation,RUS,Shooting,3,2008
+Asia,AS,Russian Federation,RUS,Swimming,4,2008
+Asia,AS,Russian Federation,RUS,Synchronized swimming,2,2008
+Asia,AS,Russian Federation,RUS,Tennis,3,2008
+Asia,AS,Russian Federation,RUS,Volleyball,1,2008
+Asia,AS,Russian Federation,RUS,Weightlifting,7,2008
+Asia,AS,Russian Federation,RUS,Wrestling,11,2008
+Asia,AS,Singapore,SGP,Table Tennis,1,2008
+Asia,AS,Thailand,THA,Boxing,2,2008
+Asia,AS,Thailand,THA,Taekwondo,1,2008
+Asia,AS,Thailand,THA,Weightlifting,1,2008
+Asia,AS,Vietnam,VNM,Weightlifting,1,2008
+Central America,CA,Panama,PAN,Athletics,1,2008
+Europe,EU,Austria,AUT,Canoeing,1,2008
+Europe,EU,Austria,AUT,Judo,1,2008
+Europe,EU,Austria,AUT,Swimming,1,2008
+Europe,EU,Belgium,BEL,Athletics,2,2008
+Europe,EU,Bulgaria,BGR,Rowing,1,2008
+Europe,EU,Bulgaria,BGR,Wrestling,4,2008
+Europe,EU,Belarus,BLR,Athletics,7,2008
+Europe,EU,Belarus,BLR,Canoeing,3,2008
+Europe,EU,Belarus,BLR,Gymnastics,2,2008
+Europe,EU,Belarus,BLR,Rowing,2,2008
+Europe,EU,Belarus,BLR,Weightlifting,3,2008
+Europe,EU,Belarus,BLR,Wrestling,2,2008
+Europe,EU,Switzerland,CHE,Cycling,4,2008
+Europe,EU,Switzerland,CHE,Equestrian,1,2008
+Europe,EU,Switzerland,CHE,Judo,1,2008
+Europe,EU,Switzerland,CHE,Tennis,1,2008
+Europe,EU,Czech Republic,CZE,Athletics,1,2008
+Europe,EU,Czech Republic,CZE,Canoeing,1,2008
+Europe,EU,Czech Republic,CZE,Rowing,1,2008
+Europe,EU,Czech Republic,CZE,Shooting,2,2008
+Europe,EU,Germany,DEU,Athletics,1,2008
+Europe,EU,Germany,DEU,Canoeing,8,2008
+Europe,EU,Germany,DEU,Cycling,3,2008
+Europe,EU,Germany,DEU,Diving,2,2008
+Europe,EU,Germany,DEU,Equestrian,5,2008
+Europe,EU,Germany,DEU,Fencing,2,2008
+Europe,EU,Germany,DEU,Field Hockey,1,2008
+Europe,EU,Germany,DEU,Football,1,2008
+Europe,EU,Germany,DEU,Gymnastics,2,2008
+Europe,EU,Germany,DEU,Judo,1,2008
+Europe,EU,Germany,DEU,Modern Pentathlon,1,2008
+Europe,EU,Germany,DEU,Rowing,2,2008
+Europe,EU,Germany,DEU,Sailing,1,2008
+Europe,EU,Germany,DEU,Shooting,4,2008
+Europe,EU,Germany,DEU,Swimming,3,2008
+Europe,EU,Germany,DEU,Table Tennis,1,2008
+Europe,EU,Germany,DEU,Triathlon,1,2008
+Europe,EU,Germany,DEU,Weightlifting,1,2008
+Europe,EU,Germany,DEU,Wrestling,1,2008
+Europe,EU,Denmark,DNK,Canoeing,1,2008
+Europe,EU,Denmark,DNK,Cycling,1,2008
+Europe,EU,Denmark,DNK,Equestrian,1,2008
+Europe,EU,Denmark,DNK,Rowing,2,2008
+Europe,EU,Denmark,DNK,Sailing,1,2008
+Europe,EU,Denmark,DNK,Swimming,1,2008
+Europe,EU,Spain,ESP,Basketball,1,2008
+Europe,EU,Spain,ESP,Canoeing,3,2008
+Europe,EU,Spain,ESP,Cycling,4,2008
+Europe,EU,Spain,ESP,Fencing,1,2008
+Europe,EU,Spain,ESP,Field Hockey,1,2008
+Europe,EU,Spain,ESP,Gymnastics,1,2008
+Europe,EU,Spain,ESP,Handball,1,2008
+Europe,EU,Spain,ESP,Sailing,2,2008
+Europe,EU,Spain,ESP,Synchronized swimming,2,2008
+Europe,EU,Spain,ESP,Tennis,2,2008
+Europe,EU,Estonia,EST,Athletics,1,2008
+Europe,EU,Estonia,EST,Rowing,1,2008
+Europe,EU,Finland,FIN,Athletics,1,2008
+Europe,EU,Finland,FIN,Rowing,1,2008
+Europe,EU,Finland,FIN,Shooting,2,2008
+Europe,EU,France,FRA,Archery,1,2008
+Europe,EU,France,FRA,Athletics,1,2008
+Europe,EU,France,FRA,Boxing,3,2008
+Europe,EU,France,FRA,Canoeing,2,2008
+Europe,EU,France,FRA,Cycling,6,2008
+Europe,EU,France,FRA,Fencing,4,2008
+Europe,EU,France,FRA,Gymnastics,2,2008
+Europe,EU,France,FRA,Handball,1,2008
+Europe,EU,France,FRA,Judo,4,2008
+Europe,EU,France,FRA,Rowing,2,2008
+Europe,EU,France,FRA,Sailing,3,2008
+Europe,EU,France,FRA,Shooting,1,2008
+Europe,EU,France,FRA,Swimming,6,2008
+Europe,EU,France,FRA,Taekwondo,1,2008
+Europe,EU,France,FRA,Weightlifting,1,2008
+Europe,EU,France,FRA,Wrestling,2,2008
+Europe,EU,United Kingdom,GBR,Athletics,4,2008
+Europe,EU,United Kingdom,GBR,Boxing,3,2008
+Europe,EU,United Kingdom,GBR,Canoeing,3,2008
+Europe,EU,United Kingdom,GBR,Cycling,14,2008
+Europe,EU,United Kingdom,GBR,Equestrian,2,2008
+Europe,EU,United Kingdom,GBR,Gymnastics,1,2008
+Europe,EU,United Kingdom,GBR,Modern Pentathlon,1,2008
+Europe,EU,United Kingdom,GBR,Rowing,6,2008
+Europe,EU,United Kingdom,GBR,Sailing,6,2008
+Europe,EU,United Kingdom,GBR,Swimming,6,2008
+Europe,EU,United Kingdom,GBR,Taekwondo,1,2008
+Europe,EU,Greece,GRC,Athletics,1,2008
+Europe,EU,Greece,GRC,Rowing,1,2008
+Europe,EU,Greece,GRC,Sailing,1,2008
+Europe,EU,Greece,GRC,Taekwondo,1,2008
+Europe,EU,Croatia,HRV,Athletics,1,2008
+Europe,EU,Croatia,HRV,Gymnastics,1,2008
+Europe,EU,Croatia,HRV,Shooting,1,2008
+Europe,EU,Croatia,HRV,Taekwondo,2,2008
+Europe,EU,Hungary,HUN,Canoeing,4,2008
+Europe,EU,Hungary,HUN,Fencing,1,2008
+Europe,EU,Hungary,HUN,Swimming,3,2008
+Europe,EU,Hungary,HUN,Waterpolo,1,2008
+Europe,EU,Hungary,HUN,Wrestling,1,2008
+Europe,EU,Ireland,IRL,Boxing,3,2008
+Europe,EU,Iceland,ISL,Handball,1,2008
+Europe,EU,Italy,ITA,Archery,1,2008
+Europe,EU,Italy,ITA,Athletics,2,2008
+Europe,EU,Italy,ITA,Boxing,3,2008
+Europe,EU,Italy,ITA,Canoeing,2,2008
+Europe,EU,Italy,ITA,Cycling,1,2008
+Europe,EU,Italy,ITA,Fencing,7,2008
+Europe,EU,Italy,ITA,Judo,1,2008
+Europe,EU,Italy,ITA,Rowing,1,2008
+Europe,EU,Italy,ITA,Sailing,2,2008
+Europe,EU,Italy,ITA,Shooting,2,2008
+Europe,EU,Italy,ITA,Swimming,2,2008
+Europe,EU,Italy,ITA,Taekwondo,1,2008
+Europe,EU,Italy,ITA,Wrestling,1,2008
+Europe,EU,Lithuania,LTU,Athletics,1,2008
+Europe,EU,Lithuania,LTU,Modern Pentathlon,2,2008
+Europe,EU,Lithuania,LTU,Sailing,1,2008
+Europe,EU,Lithuania,LTU,Wrestling,1,2008
+Europe,EU,Latvia,LVA,Athletics,1,2008
+Europe,EU,Latvia,LVA,Cycling,1,2008
+Europe,EU,Latvia,LVA,Weightlifting,1,2008
+Europe,EU,Moldova,MDA,Boxing,1,2008
+Europe,EU,Netherlands,NLD,Cycling,1,2008
+Europe,EU,Netherlands,NLD,Equestrian,2,2008
+Europe,EU,Netherlands,NLD,Field Hockey,1,2008
+Europe,EU,Netherlands,NLD,Judo,5,2008
+Europe,EU,Netherlands,NLD,Rowing,2,2008
+Europe,EU,Netherlands,NLD,Sailing,2,2008
+Europe,EU,Netherlands,NLD,Swimming,2,2008
+Europe,EU,Netherlands,NLD,Waterpolo,1,2008
+Europe,EU,Norway,NOR,Athletics,2,2008
+Europe,EU,Norway,NOR,Canoeing,1,2008
+Europe,EU,Norway,NOR,Handball,1,2008
+Europe,EU,Norway,NOR,Rowing,1,2008
+Europe,EU,Norway,NOR,Shooting,1,2008
+Europe,EU,Norway,NOR,Swimming,2,2008
+Europe,EU,Norway,NOR,Taekwondo,1,2008
+Europe,EU,Poland,POL,Athletics,2,2008
+Europe,EU,Poland,POL,Canoeing,1,2008
+Europe,EU,Poland,POL,Cycling,1,2008
+Europe,EU,Poland,POL,Fencing,1,2008
+Europe,EU,Poland,POL,Gymnastics,1,2008
+Europe,EU,Poland,POL,Rowing,2,2008
+Europe,EU,Poland,POL,Weightlifting,1,2008
+Europe,EU,Poland,POL,Wrestling,1,2008
+Europe,EU,Portugal,PRT,Athletics,1,2008
+Europe,EU,Portugal,PRT,Triathlon,1,2008
+Europe,EU,Romania,ROM,Athletics,1,2008
+Europe,EU,Romania,ROM,Fencing,2,2008
+Europe,EU,Romania,ROM,Gymnastics,2,2008
+Europe,EU,Romania,ROM,Judo,1,2008
+Europe,EU,Romania,ROM,Rowing,2,2008
+Europe,EU,Serbia,SRB,Swimming,1,2008
+Europe,EU,Serbia,SRB,Tennis,1,2008
+Europe,EU,Serbia,SRB,Waterpolo,1,2008
+Europe,EU,Slovak Republic,SVK,Canoeing,4,2008
+Europe,EU,Slovak Republic,SVK,Shooting,1,2008
+Europe,EU,Slovak Republic,SVK,Wrestling,1,2008
+Europe,EU,Slovenia,SVN,Athletics,1,2008
+Europe,EU,Slovenia,SVN,Judo,1,2008
+Europe,EU,Slovenia,SVN,Sailing,1,2008
+Europe,EU,Slovenia,SVN,Shooting,2,2008
+Europe,EU,Slovenia,SVN,Swimming,1,2008
+Europe,EU,Sweden,SWE,Cycling,2,2008
+Europe,EU,Sweden,SWE,Equestrian,1,2008
+Europe,EU,Sweden,SWE,Sailing,1,2008
+Europe,EU,Sweden,SWE,Tennis,1,2008
+Europe,EU,Ukraine,UKR,Archery,1,2008
+Europe,EU,Ukraine,UKR,Athletics,5,2008
+Europe,EU,Ukraine,UKR,Boxing,2,2008
+Europe,EU,Ukraine,UKR,Canoeing,2,2008
+Europe,EU,Ukraine,UKR,Cycling,1,2008
+Europe,EU,Ukraine,UKR,Diving,1,2008
+Europe,EU,Ukraine,UKR,Fencing,1,2008
+Europe,EU,Ukraine,UKR,Gymnastics,2,2008
+Europe,EU,Ukraine,UKR,Judo,1,2008
+Europe,EU,Ukraine,UKR,Modern Pentathlon,1,2008
+Europe,EU,Ukraine,UKR,Shooting,4,2008
+Europe,EU,Ukraine,UKR,Weightlifting,2,2008
+Europe,EU,Ukraine,UKR,Wrestling,5,2008
+Middle East,ME,Afghanistan,AFG,Taekwondo,1,2008
+Middle East,ME,"Iran, Islamic Rep.",IRN,Taekwondo,1,2008
+Middle East,ME,"Iran, Islamic Rep.",IRN,Wrestling,1,2008
+Middle East,ME,Israel,ISR,Sailing,1,2008
+Middle East,ME,Kyrgyz Republic,KGZ,Wrestling,2,2008
+Middle East,ME,Tajikistan,TJK,Judo,1,2008
+Middle East,ME,Tajikistan,TJK,Wrestling,1,2008
+Middle East,ME,Turkey,TUR,Athletics,2,2008
+Middle East,ME,Turkey,TUR,Boxing,1,2008
+Middle East,ME,Turkey,TUR,Taekwondo,2,2008
+Middle East,ME,Turkey,TUR,Weightlifting,1,2008
+Middle East,ME,Turkey,TUR,Wrestling,2,2008
+Middle East,ME,Uzbekistan,UZB,Gymnastics,2,2008
+Middle East,ME,Uzbekistan,UZB,Judo,2,2008
+Middle East,ME,Uzbekistan,UZB,Wrestling,2,2008
+North America,NA,Canada,CAN,Athletics,1,2008
+North America,NA,Canada,CAN,Canoeing,2,2008
+North America,NA,Canada,CAN,Diving,2,2008
+North America,NA,Canada,CAN,Equestrian,2,2008
+North America,NA,Canada,CAN,Gymnastics,2,2008
+North America,NA,Canada,CAN,Rowing,4,2008
+North America,NA,Canada,CAN,Swimming,1,2008
+North America,NA,Canada,CAN,Taekwondo,1,2008
+North America,NA,Canada,CAN,Triathlon,1,2008
+North America,NA,Canada,CAN,Wrestling,2,2008
+North America,NA,Mexico,MEX,Diving,1,2008
+North America,NA,Mexico,MEX,Taekwondo,2,2008
+North America,NA,United States,USA,Athletics,23,2008
+North America,NA,United States,USA,Basketball,2,2008
+North America,NA,United States,USA,Boxing,1,2008
+North America,NA,United States,USA,Cycling,5,2008
+North America,NA,United States,USA,Equestrian,3,2008
+North America,NA,United States,USA,Fencing,6,2008
+North America,NA,United States,USA,Football,1,2008
+North America,NA,United States,USA,Gymnastics,10,2008
+North America,NA,United States,USA,Judo,1,2008
+North America,NA,United States,USA,Rowing,3,2008
+North America,NA,United States,USA,Sailing,2,2008
+North America,NA,United States,USA,Shooting,6,2008
+North America,NA,United States,USA,Swimming,31,2008
+North America,NA,United States,USA,Taekwondo,3,2008
+North America,NA,United States,USA,Tennis,2,2008
+North America,NA,United States,USA,Volleyball,4,2008
+North America,NA,United States,USA,Waterpolo,2,2008
+North America,NA,United States,USA,Wrestling,3,2008
+Oceania,OC,Australia,AUS,Athletics,4,2008
+Oceania,OC,Australia,AUS,Basketball,1,2008
+Oceania,OC,Australia,AUS,Canoeing,5,2008
+Oceania,OC,Australia,AUS,Cycling,1,2008
+Oceania,OC,Australia,AUS,Diving,2,2008
+Oceania,OC,Australia,AUS,Equestrian,1,2008
+Oceania,OC,Australia,AUS,Field Hockey,1,2008
+Oceania,OC,Australia,AUS,Rowing,3,2008
+Oceania,OC,Australia,AUS,Sailing,3,2008
+Oceania,OC,Australia,AUS,Shooting,1,2008
+Oceania,OC,Australia,AUS,Swimming,20,2008
+Oceania,OC,Australia,AUS,Triathlon,2,2008
+Oceania,OC,Australia,AUS,Waterpolo,1,2008
+Oceania,OC,New Zealand,NZL,Athletics,1,2008
+Oceania,OC,New Zealand,NZL,Cycling,2,2008
+Oceania,OC,New Zealand,NZL,Rowing,3,2008
+Oceania,OC,New Zealand,NZL,Sailing,1,2008
+Oceania,OC,New Zealand,NZL,Triathlon,1,2008
+South America,SA,Argentina,ARG,Basketball,1,2008
+South America,SA,Argentina,ARG,Cycling,1,2008
+South America,SA,Argentina,ARG,Field Hockey,1,2008
+South America,SA,Argentina,ARG,Football,1,2008
+South America,SA,Argentina,ARG,Judo,1,2008
+South America,SA,Argentina,ARG,Sailing,1,2008
+South America,SA,Brazil,BRA,Athletics,1,2008
+South America,SA,Brazil,BRA,Football,2,2008
+South America,SA,Brazil,BRA,Judo,3,2008
+South America,SA,Brazil,BRA,Sailing,2,2008
+South America,SA,Brazil,BRA,Swimming,2,2008
+South America,SA,Brazil,BRA,Taekwondo,1,2008
+South America,SA,Brazil,BRA,Volleyball,4,2008
+South America,SA,Chile,CHL,Tennis,1,2008
+South America,SA,Colombia,COL,Weightlifting,1,2008
+South America,SA,Colombia,COL,Wrestling,1,2008
+South America,SA,Ecuador,ECU,Athletics,1,2008
+South America,SA,"Venezuela, RB",VEN,Taekwondo,1,2008
+Africa,AF,Botswana,BWA,Athletics,1,2012
+Africa,AF,Algeria,DZA,Athletics,1,2012
+Africa,AF,"Egypt, Arab Rep.",EGY,Fencing,1,2012
+Africa,AF,"Egypt, Arab Rep.",EGY,Wrestling,1,2012
+Africa,AF,Ethiopia,ETH,Athletics,7,2012
+Africa,AF,Gabon,GAB,Taekwondo,1,2012
+Africa,AF,Kenya,KEN,Athletics,11,2012
+Africa,AF,Morocco,MAR,Athletics,1,2012
+Africa,AF,Tunisia,TUN,Athletics,1,2012
+Africa,AF,Tunisia,TUN,Swimming,2,2012
+Africa,AF,Uganda,UGA,Athletics,1,2012
+Africa,AF,South Africa,ZAF,Athletics,1,2012
+Africa,AF,South Africa,ZAF,Canoeing,1,2012
+Africa,AF,South Africa,ZAF,Rowing,1,2012
+Africa,AF,South Africa,ZAF,Swimming,3,2012
+Asia,AS,Armenia,ARM,Weightlifting,1,2012
+Asia,AS,Armenia,ARM,Wrestling,2,2012
+Asia,AS,Azerbaijan,AZE,Weightlifting,1,2012
+Asia,AS,Azerbaijan,AZE,Wrestling,6,2012
+Asia,AS,China,CHN,Archery,2,2012
+Asia,AS,China,CHN,Athletics,8,2012
+Asia,AS,China,CHN,"Badminton ",5,2012
+Asia,AS,China,CHN,Boxing,2,2012
+Asia,AS,China,CHN,Cycling,3,2012
+Asia,AS,China,CHN,Diving,10,2012
+Asia,AS,China,CHN,Fencing,3,2012
+Asia,AS,China,CHN,Gymnastics,8,2012
+Asia,AS,China,CHN,Judo,2,2012
+Asia,AS,China,CHN,Modern Pentathlon,1,2012
+Asia,AS,China,CHN,Rowing,1,2012
+Asia,AS,China,CHN,Sailing,1,2012
+Asia,AS,China,CHN,Shooting,7,2012
+Asia,AS,China,CHN,Swimming,10,2012
+Asia,AS,China,CHN,Synchronized swimming,2,2012
+Asia,AS,China,CHN,Table Tennis,6,2012
+Asia,AS,China,CHN,"Taekwondo ",4,2012
+Asia,AS,China,CHN,Trampoline,4,2012
+Asia,AS,China,CHN,Weightlifting,8,2012
+Asia,AS,China,CHN,Wrestling,1,2012
+Asia,AS,Georgia,GEO,Judo,1,2012
+Asia,AS,Georgia,GEO,Wrestling,6,2012
+Asia,AS,"Hong Kong SAR, China",HKG,Cycling,1,2012
+Asia,AS,Indonesia,IDN,Weightlifting,2,2012
+Asia,AS,India,IND,Athletics,1,2012
+Asia,AS,India,IND,Shooting,2,2012
+Asia,AS,India,IND,Wrestling,2,2012
+Asia,AS,Japan,JPN,Archery,2,2012
+Asia,AS,Japan,JPN,Athletics,2,2012
+Asia,AS,Japan,JPN,Boxing,1,2012
+Asia,AS,Japan,JPN,Fencing,1,2012
+Asia,AS,Japan,JPN,Football,1,2012
+Asia,AS,Japan,JPN,Gymnastics,3,2012
+Asia,AS,Japan,JPN,Judo,7,2012
+Asia,AS,Japan,JPN,Swimming,11,2012
+Asia,AS,Japan,JPN,Table Tennis,1,2012
+Asia,AS,Japan,JPN,Volleyball,1,2012
+Asia,AS,Japan,JPN,Weightlifting,1,2012
+Asia,AS,Japan,JPN,Wrestling,6,2012
+Asia,AS,Kazakhstan,KAZ,Athletics,1,2012
+Asia,AS,Kazakhstan,KAZ,Boxing,2,2012
+Asia,AS,Kazakhstan,KAZ,Cycling,1,2012
+Asia,AS,Kazakhstan,KAZ,Weightlifting,4,2012
+Asia,AS,Kazakhstan,KAZ,Wrestling,2,2012
+Asia,AS,"Korea, Rep.",KOR,Archery,4,2012
+Asia,AS,"Korea, Rep.",KOR,Badminton,1,2012
+Asia,AS,"Korea, Rep.",KOR,Boxing,1,2012
+Asia,AS,"Korea, Rep.",KOR,Fencing,6,2012
+Asia,AS,"Korea, Rep.",KOR,Football,1,2012
+Asia,AS,"Korea, Rep.",KOR,Gymnastics,1,2012
+Asia,AS,"Korea, Rep.",KOR,Judo,3,2012
+Asia,AS,"Korea, Rep.",KOR,Shooting,5,2012
+Asia,AS,"Korea, Rep.",KOR,Swimming,2,2012
+Asia,AS,"Korea, Rep.",KOR,Table Tennis,1,2012
+Asia,AS,"Korea, Rep.",KOR,Taekwondo,2,2012
+Asia,AS,"Korea, Rep.",KOR,Wrestling,2,2012
+Asia,AS,Mongolia,MNG,Boxing,1,2012
+Asia,AS,Mongolia,MNG,Judo,2,2012
+Asia,AS,Mongolia,MNG,Wrestling,1,2012
+Asia,AS,Malaysia,MYS,Badminton,1,2012
+Asia,AS,Malaysia,MYS,Diving,1,2012
+Asia,AS,"Korea, Dem. Rep.",PRK,Judo,1,2012
+Asia,AS,"Korea, Dem. Rep.",PRK,Weightlifting,4,2012
+Asia,AS,Russian Federation,RUS,Athletics,19,2012
+Asia,AS,Russian Federation,RUS,Basketball,1,2012
+Asia,AS,Russian Federation,RUS,Boxing,3,2012
+Asia,AS,Russian Federation,RUS,Canoeing,3,2012
+Asia,AS,Russian Federation,RUS,Cycling,2,2012
+Asia,AS,Russian Federation,RUS,Diving,2,2012
+Asia,AS,Russian Federation,RUS,Fencing,3,2012
+Asia,AS,Russian Federation,RUS,Gymnastics,11,2012
+Asia,AS,Russian Federation,RUS,Judo,5,2012
+Asia,AS,Russian Federation,RUS,Shooting,1,2012
+Asia,AS,Russian Federation,RUS,Swimming,4,2012
+Asia,AS,Russian Federation,RUS,Synchronized swimming,2,2012
+Asia,AS,Russian Federation,RUS,Taekwondo,2,2012
+Asia,AS,Russian Federation,RUS,Tennis,2,2012
+Asia,AS,Russian Federation,RUS,Trampoline,1,2012
+Asia,AS,Russian Federation,RUS,Volleyball,1,2012
+Asia,AS,Russian Federation,RUS,Weightlifting,6,2012
+Asia,AS,Russian Federation,RUS,Wrestling,13,2012
+Asia,AS,Singapore,SGP,Table Tennis,2,2012
+Asia,AS,Thailand,THA,Boxing,1,2012
+Asia,AS,Thailand,THA,Taekwondo,1,2012
+Asia,AS,Thailand,THA,Weightlifting,1,2012
+Central America,CA,"Bahamas, The",BHS,Athletics,1,2012
+Central America,CA,Cuba,CUB,Athletics,2,2012
+Central America,CA,Cuba,CUB,Boxing,2,2012
+Central America,CA,Cuba,CUB,Judo,3,2012
+Central America,CA,Cuba,CUB,Shooting,1,2012
+Central America,CA,Cuba,CUB,Taekwondo,1,2012
+Central America,CA,Cuba,CUB,Weightlifting,1,2012
+Central America,CA,Cuba,CUB,Wrestling,2,2012
+Central America,CA,Dominican Republic,DOM,Athletics,2,2012
+Central America,CA,Grenada,GRD,Athletics,1,2012
+Central America,CA,Guatemala,GTM,Athletics,1,2012
+Central America,CA,Jamaica,JAM,Athletics,10,2012
+Central America,CA,Puerto Rico,PRI,Athletics,1,2012
+Central America,CA,Puerto Rico,PRI,Wrestling,1,2012
+Central America,CA,Trinidad and Tobago,TTO,Athletics,4,2012
+Europe,EU,Belgium,BEL,Judo,1,2012
+Europe,EU,Belgium,BEL,Sailing,1,2012
+Europe,EU,Belgium,BEL,Shooting,1,2012
+Europe,EU,Bulgaria,BGR,Wrestling,1,2012
+Europe,EU,Belarus,BLR,Athletics,1,2012
+Europe,EU,Belarus,BLR,Canoeing,3,2012
+Europe,EU,Belarus,BLR,Gymnastics,2,2012
+Europe,EU,Belarus,BLR,Shooting,1,2012
+Europe,EU,Belarus,BLR,Swimming,2,2012
+Europe,EU,Belarus,BLR,Tennis,2,2012
+Europe,EU,Belarus,BLR,Weightlifting,2,2012
+Europe,EU,Switzerland,CHE,Cycling,1,2012
+Europe,EU,Switzerland,CHE,Equestrian,1,2012
+Europe,EU,Switzerland,CHE,Tennis,1,2012
+Europe,EU,Switzerland,CHE,Triathlon,2,2012
+Europe,EU,Cyprus,CYP,Sailing,1,2012
+Europe,EU,Czech Republic,CZE,Athletics,2,2012
+Europe,EU,Czech Republic,CZE,Canoeing,2,2012
+Europe,EU,Czech Republic,CZE,Cycling,1,2012
+Europe,EU,Czech Republic,CZE,Modern Pentathlon,1,2012
+Europe,EU,Czech Republic,CZE,Rowing,2,2012
+Europe,EU,Czech Republic,CZE,Shooting,1,2012
+Europe,EU,Czech Republic,CZE,Tennis,1,2012
+Europe,EU,Germany,DEU,Athletics,7,2012
+Europe,EU,Germany,DEU,Canoeing,8,2012
+Europe,EU,Germany,DEU,Cycling,6,2012
+Europe,EU,Germany,DEU,"Equestrian ",4,2012
+Europe,EU,Germany,DEU,Fencing,2,2012
+Europe,EU,Germany,DEU,Field Hockey,1,2012
+Europe,EU,Germany,DEU,Gymnastics,3,2012
+Europe,EU,Germany,DEU,Judo,4,2012
+Europe,EU,Germany,DEU,Rowing,3,2012
+Europe,EU,Germany,DEU,Swimming,1,2012
+Europe,EU,Germany,DEU,Table Tennis,2,2012
+Europe,EU,Germany,DEU,Taekwondo,1,2012
+Europe,EU,Germany,DEU,Volleyball,1,2012
+Europe,EU,Denmark,DNK,Badminton,2,2012
+Europe,EU,Denmark,DNK,Cycling,1,2012
+Europe,EU,Denmark,DNK,Rowing,3,2012
+Europe,EU,Denmark,DNK,Sailing,2,2012
+Europe,EU,Denmark,DNK,Shooting,1,2012
+Europe,EU,Spain,ESP,Basketball,1,2012
+Europe,EU,Spain,ESP,Canoeing,3,2012
+Europe,EU,Spain,ESP,Handball,1,2012
+Europe,EU,Spain,ESP,Sailing,2,2012
+Europe,EU,Spain,ESP,Swimming,2,2012
+Europe,EU,Spain,ESP,Synchronized swimming,2,2012
+Europe,EU,Spain,ESP,Taekwondo,3,2012
+Europe,EU,Spain,ESP,Water polo,1,2012
+Europe,EU,Spain,ESP,Wrestling,1,2012
+Europe,EU,Estonia,EST,Athletics,1,2012
+Europe,EU,Estonia,EST,Wrestling,1,2012
+Europe,EU,Finland,FIN,Athletics,1,2012
+Europe,EU,Finland,FIN,Sailing,2,2012
+Europe,EU,France,FRA,Athletics,2,2012
+Europe,EU,France,FRA,Basketball,1,2012
+Europe,EU,France,FRA,Canoeing,2,2012
+Europe,EU,France,FRA,Cycling,4,2012
+Europe,EU,France,FRA,Gymnastics,1,2012
+Europe,EU,France,FRA,Handball,1,2012
+Europe,EU,France,FRA,Judo,7,2012
+Europe,EU,France,FRA,Rowing,1,2012
+Europe,EU,France,FRA,Sailing,1,2012
+Europe,EU,France,FRA,Shooting,2,2012
+Europe,EU,France,FRA,Swimming,7,2012
+Europe,EU,France,FRA,Taekwondo,2,2012
+Europe,EU,France,FRA,Tennis,2,2012
+Europe,EU,France,FRA,Wrestling,1,2012
+Europe,EU,United Kingdom,GBR,Athletics,6,2012
+Europe,EU,United Kingdom,GBR,Boxing,4,2012
+Europe,EU,United Kingdom,GBR,Canoeing,4,2012
+Europe,EU,United Kingdom,GBR,Cycling,12,2012
+Europe,EU,United Kingdom,GBR,Diving,1,2012
+Europe,EU,United Kingdom,GBR,Equestrian,5,2012
+Europe,EU,United Kingdom,GBR,Field Hockey,1,2012
+Europe,EU,United Kingdom,GBR,Gymnastics,4,2012
+Europe,EU,United Kingdom,GBR,Judo,2,2012
+Europe,EU,United Kingdom,GBR,Modern Pentathlon,1,2012
+Europe,EU,United Kingdom,GBR,Rowing,9,2012
+Europe,EU,United Kingdom,GBR,Sailing,5,2012
+Europe,EU,United Kingdom,GBR,Shooting,1,2012
+Europe,EU,United Kingdom,GBR,Swimming,3,2012
+Europe,EU,United Kingdom,GBR,Taekwondo,2,2012
+Europe,EU,United Kingdom,GBR,Tennis,2,2012
+Europe,EU,United Kingdom,GBR,Triathlon,2,2012
+Europe,EU,Greece,GRC,Judo,1,2012
+Europe,EU,Greece,GRC,Rowing,1,2012
+Europe,EU,Croatia,HRV,Athletics,1,2012
+Europe,EU,Croatia,HRV,Handball,1,2012
+Europe,EU,Croatia,HRV,Rowing,1,2012
+Europe,EU,Croatia,HRV,Shooting,1,2012
+Europe,EU,Croatia,HRV,Taekwondo,1,2012
+Europe,EU,Croatia,HRV,Water polo,1,2012
+Europe,EU,Hungary,HUN,Athletics,1,2012
+Europe,EU,Hungary,HUN,Canoeing,6,2012
+Europe,EU,Hungary,HUN,Fencing,1,2012
+Europe,EU,Hungary,HUN,Gymnastics,1,2012
+Europe,EU,Hungary,HUN,Judo,2,2012
+Europe,EU,Hungary,HUN,Modern Pentathlon,1,2012
+Europe,EU,Hungary,HUN,Swimming,3,2012
+Europe,EU,Hungary,HUN,Wrestling,3,2012
+Europe,EU,Ireland,IRL,Boxing,2,2012
+Europe,EU,Ireland,IRL,Equestrian,1,2012
+Europe,EU,Italy,ITA,Archery,1,2012
+Europe,EU,Italy,ITA,Athletics,1,2012
+Europe,EU,Italy,ITA,Boxing,2,2012
+Europe,EU,Italy,ITA,Canoeing,1,2012
+Europe,EU,Italy,ITA,Cycling,1,2012
+Europe,EU,Italy,ITA,Fencing,7,2012
+Europe,EU,Italy,ITA,Gymnastics,2,2012
+Europe,EU,Italy,ITA,Judo,1,2012
+Europe,EU,Italy,ITA,Rowing,1,2012
+Europe,EU,Italy,ITA,Shooting,5,2012
+Europe,EU,Italy,ITA,Swimming,1,2012
+Europe,EU,Italy,ITA,Taekwondo,2,2012
+Europe,EU,Italy,ITA,Volleyball,1,2012
+Europe,EU,Italy,ITA,Water polo,1,2012
+Europe,EU,Lithuania,LTU,Canoeing,1,2012
+Europe,EU,Lithuania,LTU,Modern Pentathlon,1,2012
+Europe,EU,Lithuania,LTU,Swimming,1,2012
+Europe,EU,Latvia,LVA,Cycling,1,2012
+Europe,EU,Latvia,LVA,Volleyball,1,2012
+Europe,EU,Moldova,MDA,Weightlifting,2,2012
+Europe,EU,Montenegro,MNE,Handball,1,2012
+Europe,EU,Netherlands,NLD,Cycling,3,2012
+Europe,EU,Netherlands,NLD,Equestrian,4,2012
+Europe,EU,Netherlands,NLD,Field Hockey,2,2012
+Europe,EU,Netherlands,NLD,Gymnastics,1,2012
+Europe,EU,Netherlands,NLD,Judo,2,2012
+Europe,EU,Netherlands,NLD,Rowing,1,2012
+Europe,EU,Netherlands,NLD,Sailing,3,2012
+Europe,EU,Netherlands,NLD,Swimming,4,2012
+Europe,EU,Norway,NOR,Canoeing,1,2012
+Europe,EU,Norway,NOR,Cycling,1,2012
+Europe,EU,Norway,NOR,Fencing,1,2012
+Europe,EU,Norway,NOR,Handball,1,2012
+Europe,EU,Poland,POL,Athletics,2,2012
+Europe,EU,Poland,POL,Canoeing,1,2012
+Europe,EU,Poland,POL,Rowing,1,2012
+Europe,EU,Poland,POL,Sailing,2,2012
+Europe,EU,Poland,POL,Shooting,1,2012
+Europe,EU,Poland,POL,Weightlifting,2,2012
+Europe,EU,Poland,POL,Wrestling,1,2012
+Europe,EU,Portugal,PRT,Canoeing,1,2012
+Europe,EU,Romania,ROM,Fencing,1,2012
+Europe,EU,Romania,ROM,Gymnastics,3,2012
+Europe,EU,Romania,ROM,Judo,2,2012
+Europe,EU,Romania,ROM,Shooting,1,2012
+Europe,EU,Romania,ROM,Weightlifting,2,2012
+Europe,EU,Serbia,SRB,Shooting,2,2012
+Europe,EU,Serbia,SRB,Taekwondo,1,2012
+Europe,EU,Serbia,SRB,Water polo,1,2012
+Europe,EU,Slovak Republic,SVK,Canoeing,2,2012
+Europe,EU,Slovak Republic,SVK,Shooting,2,2012
+Europe,EU,Slovenia,SVN,Athletics,1,2012
+Europe,EU,Slovenia,SVN,Judo,1,2012
+Europe,EU,Slovenia,SVN,Rowing,1,2012
+Europe,EU,Slovenia,SVN,Shooting,1,2012
+Europe,EU,Sweden,SWE,Equestrian,1,2012
+Europe,EU,Sweden,SWE,Handball,1,2012
+Europe,EU,Sweden,SWE,Sailing,2,2012
+Europe,EU,Sweden,SWE,Shooting,1,2012
+Europe,EU,Sweden,SWE,Triathlon,1,2012
+Europe,EU,Sweden,SWE,Wrestling,2,2012
+Europe,EU,Ukraine,UKR,Athletics,4,2012
+Europe,EU,Ukraine,UKR,Boxing,3,2012
+Europe,EU,Ukraine,UKR,Canoeing,3,2012
+Europe,EU,Ukraine,UKR,Fencing,2,2012
+Europe,EU,Ukraine,UKR,Gymnastics,1,2012
+Europe,EU,Ukraine,UKR,Rowing,1,2012
+Europe,EU,Ukraine,UKR,Shooting,2,2012
+Europe,EU,Ukraine,UKR,Weightlifting,2,2012
+Europe,EU,Ukraine,UKR,Wrestling,1,2012
+Middle East,ME,Afghanistan,AFG,Taekwondo,1,2012
+Middle East,ME,Bahrain,BHR,Athletics,1,2012
+Middle East,ME,"Iran, Islamic Rep.",IRN,Athletics,1,2012
+Middle East,ME,"Iran, Islamic Rep.",IRN,Taekwondo,1,2012
+Middle East,ME,"Iran, Islamic Rep.",IRN,Weightlifting,4,2012
+Middle East,ME,"Iran, Islamic Rep.",IRN,Wrestling,6,2012
+Middle East,ME,Kuwait,KWT,Shooting,1,2012
+Middle East,ME,Qatar,QAT,Athletics,1,2012
+Middle East,ME,Qatar,QAT,Shooting,1,2012
+Middle East,ME,Saudi Arabia,SAU,Equestrian,1,2012
+Middle East,ME,Turkey,TUR,Athletics,2,2012
+Middle East,ME,Turkey,TUR,Taekwondo,2,2012
+Middle East,ME,Turkey,TUR,Wrestling,1,2012
+Middle East,ME,Uzbekistan,UZB,Judo,1,2012
+Middle East,ME,Uzbekistan,UZB,Wrestling,2,2012
+North America,NA,Canada,CAN,Athletics,1,2012
+North America,NA,Canada,CAN,Canoeing,3,2012
+North America,NA,Canada,CAN,Cycling,1,2012
+North America,NA,Canada,CAN,Diving,2,2012
+North America,NA,Canada,CAN,Football,1,2012
+North America,NA,Canada,CAN,Judo,1,2012
+North America,NA,Canada,CAN,Rowing,2,2012
+North America,NA,Canada,CAN,Swimming,3,2012
+North America,NA,Canada,CAN,Trampoline,1,2012
+North America,NA,Canada,CAN,Weightlifting,1,2012
+North America,NA,Canada,CAN,Wrestling,2,2012
+North America,NA,Mexico,MEX,Archery,2,2012
+North America,NA,Mexico,MEX,Diving,3,2012
+North America,NA,Mexico,MEX,Football,1,2012
+North America,NA,Mexico,MEX,Taekwondo,1,2012
+North America,NA,United States,USA,Archery,1,2012
+North America,NA,United States,USA,Athletics,28,2012
+North America,NA,United States,USA,Basketball,2,2012
+North America,NA,United States,USA,Boxing,1,2012
+North America,NA,United States,USA,Cycling,4,2012
+North America,NA,United States,USA,Diving,4,2012
+North America,NA,United States,USA,Fencing,1,2012
+North America,NA,United States,USA,Football,1,2012
+North America,NA,United States,USA,Gymnastics,6,2012
+North America,NA,United States,USA,Judo,2,2012
+North America,NA,United States,USA,Rowing,3,2012
+North America,NA,United States,USA,Shooting,4,2012
+North America,NA,United States,USA,Swimming,31,2012
+North America,NA,United States,USA,Taekwondo,2,2012
+North America,NA,United States,USA,Tennis,4,2012
+North America,NA,United States,USA,Volleyball,3,2012
+North America,NA,United States,USA,Water polo,1,2012
+North America,NA,United States,USA,Wrestling,4,2012
+Oceania,OC,Australia,AUS,Athletics,3,2012
+Oceania,OC,Australia,AUS,Basketball,1,2012
+Oceania,OC,Australia,AUS,Canoeing,2,2012
+Oceania,OC,Australia,AUS,Cycling,6,2012
+Oceania,OC,Australia,AUS,Diving,1,2012
+Oceania,OC,Australia,AUS,Field Hockey,1,2012
+Oceania,OC,Australia,AUS,Rowing,5,2012
+Oceania,OC,Australia,AUS,Sailing,4,2012
+Oceania,OC,Australia,AUS,Swimming,10,2012
+Oceania,OC,Australia,AUS,Triathlon,1,2012
+Oceania,OC,Australia,AUS,Water polo,1,2012
+Oceania,OC,New Zealand,NZL,Athletics,1,2012
+Oceania,OC,New Zealand,NZL,Canoeing,1,2012
+Oceania,OC,New Zealand,NZL,Cycling,3,2012
+Oceania,OC,New Zealand,NZL,Equestrian,1,2012
+Oceania,OC,New Zealand,NZL,Rowing,5,2012
+Oceania,OC,New Zealand,NZL,Sailing,2,2012
+South America,SA,Argentina,ARG,Field Hockey,1,2012
+South America,SA,Argentina,ARG,Sailing,1,2012
+South America,SA,Argentina,ARG,Taekwondo,1,2012
+South America,SA,Argentina,ARG,Tennis,1,2012
+South America,SA,Brazil,BRA,Boxing,1,2012
+South America,SA,Brazil,BRA,Football,1,2012
+South America,SA,Brazil,BRA,Gymnastics,1,2012
+South America,SA,Brazil,BRA,Judo,4,2012
+South America,SA,Brazil,BRA,Modern Pentathlon,1,2012
+South America,SA,Brazil,BRA,Sailing,1,2012
+South America,SA,Brazil,BRA,Swimming,2,2012
+South America,SA,Brazil,BRA,Volleyball,4,2012
+South America,SA,Colombia,COL,Athletics,1,2012
+South America,SA,Colombia,COL,Cycling,3,2012
+South America,SA,Colombia,COL,Judo,1,2012
+South America,SA,Colombia,COL,Taekwondo,1,2012
+South America,SA,Colombia,COL,Weightlifting,1,2012
+South America,SA,Colombia,COL,Wrestling,1,2012
+South America,SA,"Venezuela, RB",VEN,Fencing,1,2012
