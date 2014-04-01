@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120817-1705 Build &lt;3.7.2.v20120817-1705></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
     <property name="units">in</property>
     <method name="beforeFactory"><![CDATA[vars["gDataXML1"] += "['Apples',  new Date (1989,6,1), 1200, 400, 'East'],";
 vars["gDataXML1"] += "['Oranges', new Date (1989,6,1), 750,  150, 'West'],";
@@ -171,8 +171,8 @@ from
 where 
      od.ordernumber = o.ordernumber
      and o.orderdate = p.paymentdate
-     and o.orderdate >= '1/1/2003'
-     and o.orderdate <= '12/31/2003'
+     and o.orderdate >= '1/1/2013'
+     and o.orderdate <= '12/31/2013'
 group by o.orderdate, c.country]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">

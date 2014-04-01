@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20130129-1905 Build &lt;3.7.2.v20130129-1905></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
     <text-property name="title">Planning Roadmap</text-property>
     <html-property name="description">An Application within a Report.&#13;
 &#13;
@@ -78,7 +78,7 @@ retirementAmountAtAgeGoal = 0;
             <property name="dataType">string</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">1,2,1,2</value>
+                <value type="constant">1,5,1,5</value>
             </simple-property-list>
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>
@@ -107,7 +107,7 @@ retirementAmountAtAgeGoal = 0;
             <property name="dataType">string</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">House in Palm Springs,Bentley,Napa Cottage,Jen's Lexus</value>
+                <value type="constant">New Home,Safari,Vacation Cottage,Cruise</value>
             </simple-property-list>
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>
@@ -122,7 +122,7 @@ retirementAmountAtAgeGoal = 0;
             <property name="dataType">string</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">201304,201503,201801,201109</value>
+                <value type="constant">201604,201803,202001,201509</value>
             </simple-property-list>
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>
@@ -137,7 +137,7 @@ retirementAmountAtAgeGoal = 0;
             <property name="dataType">string</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">1300000,250000,1200000,125000</value>
+                <value type="constant">1300000,125000,1200000,75000</value>
             </simple-property-list>
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>
@@ -270,13 +270,13 @@ retirementAmountAtAgeGoal = 0;
 overlapped = false;
 deductamt = 0;
 
-totalnetworth = data[totalBaseRows - 1][2];
-retirementamt = data[totalBaseRows - 1][4];
-birthyear = parseInt(data[totalBaseRows - 1][0], 10);
-retirementage = parseInt(data[totalBaseRows - 1][3], 10);
+totalnetworth = dataRows[totalBaseRows - 1][2];
+retirementamt = dataRows[totalBaseRows - 1][4];
+birthyear = parseInt(dataRows[totalBaseRows - 1][0], 10);
+retirementage = parseInt(dataRows[totalBaseRows - 1][3], 10);
 retirementyear = birthyear + retirementage;
 
-var yearmonth = new String(data[totalBaseRows - 1][1]);
+var yearmonth = new String(dataRows[totalBaseRows - 1][1]);
 year = parseInt(yearmonth.substring(0, 4), 10);
 month = parseInt(yearmonth.substring(4, 6), 10);
 
@@ -321,13 +321,13 @@ if (curRow > totalBaseRows) {
 			}
 		}		
 		
-		row["birthyear"] = data[totalBaseRows - 1][0];
+		row["birthyear"] = dataRows[totalBaseRows - 1][0];
 		row["yearmonth"] = yearmonth;
 		if (overlapped)
 			row["totalnetworth"] = null;
 		else
 			row["totalnetworth"] = totalnetworth;
-		row["retirementage"] = data[totalBaseRows - 1][3];			
+		row["retirementage"] = dataRows[totalBaseRows - 1][3];			
 		row["retirementamt"] = retirementamt;
 		row["projectednetworth"] = totalnetworth;
 		row["plotdate"] = new Date(year, month - 1, 1);
@@ -339,11 +339,11 @@ if (curRow > totalBaseRows) {
 		return false;
 	}
 } else {
-	row["birthyear"] = data[curRow - 1][0];
-	row["yearmonth"] = data[curRow - 1][1];
-	row["totalnetworth"] = data[curRow - 1][2];
-	row["retirementage"] = data[curRow - 1][3];
-	row["retirementamt"] = data[curRow - 1][4];
+	row["birthyear"] = dataRows[curRow - 1][0];
+	row["yearmonth"] = dataRows[curRow - 1][1];
+	row["totalnetworth"] = dataRows[curRow - 1][2];
+	row["retirementage"] = dataRows[curRow - 1][3];
+	row["retirementamt"] = dataRows[curRow - 1][4];
 	row["projectednetworth"] = null;
 	row["plotdate"] = new Date(parseInt(new String(row["yearmonth"]).substring(0,4), 10), parseInt(new String(row["yearmonth"]).substring(4,6), 10) - 1, 1);
 
@@ -469,13 +469,13 @@ vars["planningData"] = json;
                 </list-property>
             </structure>
             <method name="beforeOpen"><![CDATA[curRow = 0;
-data = [];]]></method>
-            <method name="onFetch"><![CDATA[data[curRow] = [];
-data[curRow][0] = row[1];
-data[curRow][1] = row[2];
-data[curRow][2] = row[3];
-data[curRow][3] = row[4];
-data[curRow][4] = row[5];
+dataRows = [];]]></method>
+            <method name="onFetch"><![CDATA[dataRows[curRow] = [];
+dataRows[curRow][0] = row[1];
+dataRows[curRow][1] = row[2];
+dataRows[curRow][2] = row[3];
+dataRows[curRow][3] = row[4];
+dataRows[curRow][4] = row[5];
 curRow++;
 totalBaseRows = curRow;
 ]]></method>
@@ -521,7 +521,7 @@ totalBaseRows = curRow;
             <list-property name="privateDriverProperties">
                 <ex-property>
                     <name>DATA</name>
-                    <value>[["1958","200602","2559445","65","7000000"],["1958","200603","3271609","65","7000000"],["1958","200604","3305542","65","7000000"],["1958","200605","3240576","65","7000000"],["1958","200606","3236523","65","7000000"],["1958","200607","3229570","65","7000000"],["1958","200608","3254909","65","7000000"],["1958","200609","3385682","65","7000000"],["1958","200610","3414568","65","7000000"],["1958","200611","3494568","65","7000000"],["1958","200612","3554685","65","7000000"],["1958","200701","3684568","65","7000000"],["1958","200702","3746584","65","7000000"],["1958","200703","3896854","65","7000000"],["1958","200704","3995684","65","7000000"],["1958","200705","4020153","65","7000000"],["1958","200706","4035864","65","7000000"],["1958","200707","4143584","65","7000000"],["1958","200708","4243548","65","7000000"],["1958","200709","4238546","65","7000000"],["1958","200710","4558439","65","7000000"],["1958","200711","4407121","65","7000000"],["1958","200712","4377603","65","7000000"],["1958","200801","4118641","65","7000000"],["1958","200802","4044868","65","7000000"],["1958","200803","4021930","65","7000000"],["1958","200804","4177208","65","7000000"],["1958","200805","4295232","65","7000000"],["1958","200806","4024594","65","7000000"],["1958","200807","3988386","65","7000000"],["1958","200808","4018513","65","7000000"],["1958","200809","3690097","65","7000000"],["1958","200810","3170617","65","7000000"],["1958","200811","2973597","65","7000000"],["1958","200812","3057271","65","7000000"],["1958","200901","2899499","65","7000000"],["1958","200902","2660175","65","7000000"],["1958","200903","2803818","65","7000000"],["1958","200904","3041812","65","7000000"],["1958","200905","3210867","65","7000000"],["1958","200906","3209218","65","7000000"],["1958","200907","3421761","65","7000000"],["1958","200908","3525780","65","7000000"],["1958","200909","3578246","65","7000000"],["1958","200910","3601971","65","7000000"],["1958","200911","3617354","65","7000000"],["1958","200912","3694424","65","7000000"],["1958","201001","3776285","65","7000000"],["1958","201002","3864627","65","7000000"],["1958","201003","3946485","65","7000000"],["1958","201004","3955469","65","7000000"],["1958","201005","3994118","65","7000000"],["1958","201006","4039064","65","7000000"],["1958","201007","4076838","65","7000000"],["1958","201008","4106363","65","7000000"],["1958","201009","4174434","65","7000000"],["1958","201010","4252475","65","7000000"],["1958","201011","4340814","65","7000000"],["1958","201012","4443072","65","7000000"],["1958","201101","4558439","65","7000000"],["1958","201102","4636425","65","7000000"],["1958","201103","4742643","65","7000000"],["1958","201104","4836935","65","7000000"]]</value>
+                    <value>[["1961","200902","2559445","65","7000000"],["1961","200903","3271609","65","7000000"],["1961","200904","3305542","65","7000000"],["1961","200905","3240576","65","7000000"],["1961","200906","3236523","65","7000000"],["1961","200907","3229570","65","7000000"],["1961","200908","3254909","65","7000000"],["1961","200909","3385682","65","7000000"],["1961","200910","3414568","65","7000000"],["1961","200911","3494568","65","7000000"],["1961","200912","3554685","65","7000000"],["1961","201001","3684568","65","7000000"],["1961","201002","3746584","65","7000000"],["1961","201003","3896854","65","7000000"],["1961","201004","3995684","65","7000000"],["1961","201005","4020153","65","7000000"],["1961","201006","4035864","65","7000000"],["1961","201007","4143584","65","7000000"],["1961","201008","4243548","65","7000000"],["1961","201009","4238546","65","7000000"],["1961","201010","4558439","65","7000000"],["1961","201011","4407121","65","7000000"],["1961","201012","4377603","65","7000000"],["1961","201101","4118641","65","7000000"],["1961","201102","4044868","65","7000000"],["1961","201103","4021930","65","7000000"],["1961","201104","4177208","65","7000000"],["1961","201105","4295232","65","7000000"],["1961","201106","4024594","65","7000000"],["1961","201107","3988386","65","7000000"],["1961","201108","4018513","65","7000000"],["1961","201109","3690097","65","7000000"],["1961","201110","3170617","65","7000000"],["1961","201111","2973597","65","7000000"],["1961","201112","3057271","65","7000000"],["1961","201201","2899499","65","7000000"],["1961","201202","2660175","65","7000000"],["1961","201203","2803818","65","7000000"],["1961","201204","3041812","65","7000000"],["1961","201205","3210867","65","7000000"],["1961","201206","3209218","65","7000000"],["1961","201207","3421761","65","7000000"],["1961","201208","3525780","65","7000000"],["1961","201209","3578246","65","7000000"],["1961","201210","3601971","65","7000000"],["1961","201211","3617354","65","7000000"],["1961","201212","3694424","65","7000000"],["1961","201301","3776285","65","7000000"],["1961","201302","3864627","65","7000000"],["1961","201303","3946485","65","7000000"],["1961","201304","3955469","65","7000000"],["1961","201305","3994118","65","7000000"],["1961","201306","4039064","65","7000000"],["1961","201307","4076838","65","7000000"],["1961","201308","4106363","65","7000000"],["1961","201309","4174434","65","7000000"],["1961","201310","4252475","65","7000000"],["1961","201311","4340814","65","7000000"],["1961","201312","4443072","65","7000000"],["1961","201401","4558439","65","7000000"],["1961","201402","4636425","65","7000000"],["1961","201403","4742643","65","7000000"],["1961","201404","4836935","65","7000000"]]</value>
                 </ex-property>
             </list-property>
         </oda-data-set>
@@ -564,13 +564,13 @@ totalBaseRows = curRow;
     <page-setup>
         <simple-master-page name="Simple MasterPage" id="2">
             <property name="type">custom</property>
-            <property name="height">700px</property>
-            <property name="width">1000px</property>
             <property name="orientation">landscape</property>
             <property name="topMargin">0in</property>
             <property name="leftMargin">0in</property>
             <property name="bottomMargin">0in</property>
             <property name="rightMargin">0in</property>
+            <property name="height">700px</property>
+            <property name="width">1000px</property>
         </simple-master-page>
     </page-setup>
     <body>
@@ -863,8 +863,8 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
 </script>]]></text-property>
                     </text>
                     <extended-item extensionName="Chart" id="430">
-                        <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.5.3">
- <ChartWithAxes version="2.5.3" type="Area Chart" subType="Overlay">
+                        <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Line Chart" subType="Overlay">
   <description value="">
    <font>
     <alignment/>
@@ -921,13 +921,16 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
   <extendedProperties name="enable.area.alt" value="false"/>
   <extendedProperties name="enable.drill.category" value="true"/>
   <extendedProperties name="enable.drill.series" value="true"/>
-  <extendedProperties name="jschart.client.script" value="beforeRendering: function(options, chart)&#13;&#10;{&#13;&#10;    options.plotOptions = {&#13;&#10;        area: {&#13;&#10;            animation: {duration:0},&#13;&#10;            shadow:true,&#13;&#10;            lineWidth:1&#13;&#10;        }&#13;&#10;    };&#13;&#10;    &#13;&#10;    options.xAxis = {&#13;&#10;        startOnTick: true,&#13;&#10;        endOnTick: true,&#13;&#10;        maxPadding: 0&#13;&#10;    }&#13;&#10;&#13;&#10;    options.colors[0] = &quot;rgba(192,192,192,0.5)&quot;;&#13;&#10;&#13;&#10;    var startColor = &quot;rgba(0,127,0,0.5)&quot;;    &#13;&#10;    if (planningData.investmentStyle == 0.08)&#13;&#10;     startColor = &quot;rgba(255,0,0,0.5)&quot;;&#13;&#10;    else if (planningData.investmentStyle == 0.06)&#13;&#10;     startColor = &quot;rgba(255,127,0,0.5)&quot;;&#13;&#10;    else if (planningData.investmentStyle == 0.04)&#13;&#10;     startColor = &quot;rgba(154,204,0,0.5)&quot;;&#13;&#10;    else&#13;&#10;     startColor = &quot;rgba(0,127,0,0.5)&quot;;&#13;&#10;    &#13;&#10;    options.colors[1] = { &#13;&#10;        linearGradient: [0, 0, 800, 0],&#13;&#10;         stops: [&#13;&#10;            [0, startColor],&#13;&#10;            [1, &quot;rgba(0,127,0,0.5)&quot;]&#13;&#10;        ]&#13;&#10;         &#13;&#10;    };&#13;&#10;},&#13;&#10;&#13;&#10;afterRendering: function(chart)&#13;&#10;{  &#13;&#10;&#13;&#10;    // Goal Amount line&#13;&#10;    chart.getCore().yAxis[0].addPlotLine({&#13;&#10;     color: &quot;#AF7817&quot;,&#13;&#10;     width: 1,&#13;&#10;     zIndex: 5,&#13;&#10;     value: planningData.goalAmount,&#13;&#10;     label: {&#13;&#10;      text: &quot;Retirement Goal amount: &quot; + planningData.goalAmountValue,&#13;&#10;      align: &quot;right&quot;,&#13;&#10;         style: {&#13;&#10;          color: &quot;#AF7817&quot;,&#13;&#10;          fontWeight: &quot;bold&quot;,&#13;&#10;          fontSize: &quot;9pt&quot;&#13;&#10;         },&#13;&#10;         x: -10&#13;&#10;     },&#13;&#10;     id: &quot;goalAmountLine&quot;&#13;&#10;    });&#13;&#10;&#13;&#10;    // Goal Age line&#13;&#10;    chart.getCore().xAxis[0].addPlotLine({&#13;&#10;        color: &quot;#AF7817&quot;,&#13;&#10;        width: 1,&#13;&#10;        zIndex: 5,&#13;&#10;        value: planningData.goalAge,&#13;&#10;        label: {&#13;&#10;         text: &quot;Years: &quot; + planningData.goalAgeValue,&#13;&#10;         rotation: 270,&#13;&#10;         verticalAlign: &quot;middle&quot;,&#13;&#10;         style: {&#13;&#10;          color: &quot;#AF7817&quot;,&#13;&#10;          fontWeight: &quot;bold&quot;,&#13;&#10;          fontSize: &quot;10pt&quot;&#13;&#10;         },&#13;&#10;         x: 14&#13;&#10;        },&#13;&#10;        id: &quot;goalAgeLine&quot;&#13;&#10;    });&#13;&#10;    &#13;&#10;    // Actual/Projected dividing line&#13;&#10;    chart.getCore().xAxis[0].addPlotLine({&#13;&#10;        color: &quot;grey&quot;,&#13;&#10;        width: 1,&#13;&#10;        dashStyle: &quot;Dash&quot;,&#13;&#10;        zIndex: 5,&#13;&#10;        value: planningData.baseChartRows,&#13;&#10;        id: &quot;actualProjectedLine&quot;&#13;&#10;    });&#13;&#10;   &#13;&#10;    // Actual section band &#13;&#10;    chart.getCore().xAxis[0].addPlotBand({&#13;&#10;     from: 0,&#13;&#10;     to: planningData.baseChartRows,&#13;&#10;     label: {&#13;&#10;      text: &quot;Actual&quot;,&#13;&#10;      verticalAlign: &quot;top&quot;,&#13;&#10;      style: {&#13;&#10;       color: &quot;black&quot;,&#13;&#10;       fontWeight: &quot;bold&quot;,&#13;&#10;       fontSize: &quot;9pt&quot;&#13;&#10;      }&#13;&#10;     },&#13;&#10;     id: &quot;actualBand&quot;&#13;&#10;    });&#13;&#10;    &#13;&#10;    // Projected section band &#13;&#10;    chart.getCore().xAxis[0].addPlotBand({&#13;&#10;     from: planningData.baseChartRows,&#13;&#10;     to: planningData.totalChartRows,&#13;&#10;     label: {&#13;&#10;      text: &quot;Projected&quot;,&#13;&#10;      verticalAlign: &quot;top&quot;,&#13;&#10;      style: {&#13;&#10;       color: &quot;black&quot;,&#13;&#10;       fontWeight: &quot;bold&quot;,&#13;&#10;       fontSize: &quot;9pt&quot;&#13;&#10;      }&#13;&#10;     },&#13;&#10;     id: &quot;projectedBand&quot;&#13;&#10;    });&#13;&#10;},&#13;&#10;&#13;&#10;beforeDrawDataPoint: function(point, pointOptions, chart, seriesIndex, pointIndex)&#13;&#10;{&#13;&#10;    if (pointOptions.y == 0) {&#13;&#10;        if (seriesIndex == 0 &amp;&amp; pointIndex &gt;= planningData.baseChartRows)&#13;&#10;            pointOptions.y = null;&#13;&#10;        else if (seriesIndex == 1 &amp;&amp; pointIndex &lt;= planningData.baseChartRows)&#13;&#10;            pointOptions.y = null;&#13;&#10;    }&#13;&#10;    &#13;&#10;    if (seriesIndex == 1) {&#13;&#10;        pointOptions.marker = {};&#13;&#10;        &#13;&#10;        var hasMarker = false;&#13;&#10;        for (var i = 0; i &lt; planningData.events.length; i++) {&#13;&#10;         if (planningData.events[i].state &amp;&amp; pointIndex == planningData.events[i].rec) {&#13;&#10;          var type = planningData.events[i].type;    &#13;&#10;          //var markerURL = &quot;custom/images/&quot;;&#13;&#10;          var markerURL = &quot;servlet/DownloadFile?name=/Resources/images/&quot;;&#13;&#10;          //var markerURL = &quot;http://localhost:8900/iportal/servlet/DownloadFile?name=/images/&quot;;&#13;&#10;                    if (type == 1)&#13;&#10;                  markerURL += &quot;home.png&quot;;&#13;&#10;                 else if (type == 2)&#13;&#10;                        markerURL += &quot;sports_car.png&quot;;&#13;&#10;                    else if (type == 3)&#13;&#10;                        markerURL += &quot;graduate.png&quot;;&#13;&#10;                    else if (type == 4)&#13;&#10;                        markerURL += &quot;church.png&quot;;&#13;&#10;                    else if (type == 5)&#13;&#10;                        markerURL += &quot;palm_tree.png&quot;;&#13;&#10;                    else if (type == 6)&#13;&#10;                        markerURL += &quot;moneybag_dollar.png&quot;;&#13;&#10;                        &#13;&#10;          pointOptions.marker.symbol = &quot;url(&quot; + markerURL + &quot;)&quot;;&#13;&#10;          hasMarker = true;&#13;&#10;         }&#13;&#10;        }&#13;&#10;        &#13;&#10;        if (!hasMarker)&#13;&#10;         pointOptions.marker.symbol = &quot;url(http://)&quot;;&#13;&#10;    }&#13;&#10;},"/>
+  <extendedProperties name="jschart.client.script" value="beforeRendering: function(options, chart)&#13;&#10;{&#13;&#10;    options.plotOptions = {&#13;&#10;        area: {&#13;&#10;            animation: {duration:1500},&#13;&#10;            shadow:true,&#13;&#10;            lineWidth:1&#13;&#10;        }&#13;&#10;    };&#13;&#10;    &#13;&#10;    options.xAxis = {&#13;&#10;        startOnTick: true,&#13;&#10;        endOnTick: true,&#13;&#10;        maxPadding: 0&#13;&#10;         &#13;&#10;    };&#13;&#10;},&#13;&#10;&#13;&#10;afterRendering: function(chart)&#13;&#10;{  &#13;&#10;&#13;&#10;    // Goal Amount line&#13;&#10;    chart.getCore().yAxis[0].addPlotLine({&#13;&#10;     color: &quot;#C0C0C0&quot;,&#13;&#10;     width: 1,&#13;&#10;     zIndex: 5,&#13;&#10;     value: planningData.goalAmount,&#13;&#10;     label: {&#13;&#10;      text: &quot;Retirement Goal amount: &quot; + planningData.goalAmountValue,&#13;&#10;      align: &quot;right&quot;,&#13;&#10;         style: {&#13;&#10;          color: &quot;#C0C0C0&quot;,&#13;&#10;          fontSize: &quot;9pt&quot;&#13;&#10;         },&#13;&#10;         x: -10&#13;&#10;     },&#13;&#10;     id: &quot;goalAmountLine&quot;&#13;&#10;    });&#13;&#10;&#13;&#10;    // Goal Age line&#13;&#10;    chart.getCore().xAxis[0].addPlotLine({&#13;&#10;        color: &quot;#C0C0C0&quot;,&#13;&#10;        width: 1,&#13;&#10;        zIndex: 5,&#13;&#10;        value: planningData.goalAge,&#13;&#10;        label: {&#13;&#10;         text: &quot;Years: &quot; + planningData.goalAgeValue,&#13;&#10;         rotation: 270,&#13;&#10;         verticalAlign: &quot;middle&quot;,&#13;&#10;         style: {&#13;&#10;          color: &quot;#C0C0C0&quot;,&#13;&#10;          fontSize: &quot;10pt&quot;&#13;&#10;         },&#13;&#10;         x: 14&#13;&#10;        },&#13;&#10;        id: &quot;goalAgeLine&quot;&#13;&#10;    });&#13;&#10;    &#13;&#10;    // Actual/Projected dividing line&#13;&#10;    chart.getCore().xAxis[0].addPlotLine({&#13;&#10;        color: &quot;grey&quot;,&#13;&#10;        width: 1,&#13;&#10;        dashStyle: &quot;Dash&quot;,&#13;&#10;        zIndex: 5,&#13;&#10;        value: planningData.baseChartRows,&#13;&#10;        id: &quot;actualProjectedLine&quot;&#13;&#10;    });&#13;&#10;   &#13;&#10;    // Actual section band &#13;&#10;    chart.getCore().xAxis[0].addPlotBand({&#13;&#10;     from: 0,&#13;&#10;     to: planningData.baseChartRows,&#13;&#10;     label: {&#13;&#10;      text: &quot;Actual&quot;,&#13;&#10;      verticalAlign: &quot;top&quot;,&#13;&#10;      style: {&#13;&#10;       color: &quot;black&quot;,&#13;&#10;       fontWeight: &quot;bold&quot;,&#13;&#10;       fontSize: &quot;9pt&quot;&#13;&#10;      }&#13;&#10;     },&#13;&#10;     id: &quot;actualBand&quot;&#13;&#10;    });&#13;&#10;    &#13;&#10;    // Projected section band &#13;&#10;    chart.getCore().xAxis[0].addPlotBand({&#13;&#10;     from: planningData.baseChartRows,&#13;&#10;     to: planningData.totalChartRows,&#13;&#10;     label: {&#13;&#10;      text: &quot;Projected&quot;,&#13;&#10;      verticalAlign: &quot;top&quot;,&#13;&#10;      style: {&#13;&#10;       color: &quot;black&quot;,&#13;&#10;       fontWeight: &quot;bold&quot;,&#13;&#10;       fontSize: &quot;9pt&quot;&#13;&#10;      }&#13;&#10;     },&#13;&#10;     id: &quot;projectedBand&quot;&#13;&#10;    });&#13;&#10;},&#13;&#10;&#13;&#10;beforeDrawDataPoint: function(point, pointOptions, chart, seriesIndex, pointIndex)&#13;&#10;{&#13;&#10;&#13;&#10;    if (pointOptions.y == 0) {&#13;&#10;        if (seriesIndex == 0 &amp;&amp; pointIndex &gt;= planningData.baseChartRows)&#13;&#10;            pointOptions.y = null;&#13;&#10;        else if (seriesIndex == 1 &amp;&amp; pointIndex &lt;= planningData.baseChartRows)&#13;&#10;            pointOptions.y = null;&#13;&#10;    }&#13;&#10;&#13;&#10;    if (seriesIndex == 1) {&#13;&#10;    &#13;&#10;&#13;&#10;&#13;&#10;        for (var i = 0; i &lt; planningData.events.length; i++) {&#13;&#10;         if (planningData.events[i].state &amp;&amp; pointIndex == planningData.events[i].rec) {&#13;&#10;          var type = planningData.events[i].type;    &#13;&#10;          // If you want images on Info Console path&#13;&#10;          //var markerURL = &quot;images/&quot;;&#13;&#10;          // If you want images in the Resources of the Application on the iHub&#13;&#10;          //var markerURL = &quot;servlet/DownloadFile?name=/Resources/images/&quot;;&#13;&#10;          var markerURL = &quot;servlet/DownloadFile?name=/Applications/DataVisDemo/images/&quot;;&#13;&#10;          if (location.href.indexOf(&quot;/apps/&quot;) &gt; -1)&#13;&#10;           markerURL = &quot;../../&quot; + markerURL;&#13;&#10;           &#13;&#10;                    if (type == 1)&#13;&#10;                  markerURL += &quot;Home.png&quot;;&#13;&#10;                 else if (type == 2)&#13;&#10;                        markerURL += &quot;Vehicle.png&quot;;&#13;&#10;                    else if (type == 3)&#13;&#10;                        markerURL += &quot;College.png&quot;;&#13;&#10;                    else if (type == 4)&#13;&#10;                        markerURL += &quot;Wedding.png&quot;;&#13;&#10;                    else if (type == 5)&#13;&#10;                        markerURL += &quot;Vacation.png&quot;;&#13;&#10;                    else if (type == 6)&#13;&#10;                        markerURL += &quot;Misc.png&quot;;&#13;&#10;&#13;&#10;         &#13;&#10;         &#13;&#10;        pointOptions.dataLabels = {&#13;&#10;        enabled: true,&#13;&#10;                    useHTML: true,&#13;&#10;                    formatter: function() {&#13;&#10;                        return &#039;&lt;div  style=&quot;position:absolute;bottom:-27px;left:-27px;&quot;&gt;&lt;img src=&quot;&#039; + markerURL + &#039;&quot;&gt;&lt;/div&gt;&#039;;&#13;&#10;                        } &#13;&#10;        }  &#13;&#10;    &#13;&#10;         &#13;&#10;         &#13;&#10;         &#13;&#10;         }   //if&#13;&#10;        }  // for&#13;&#10;    &#13;&#10;    }  //  if (seriesIndex == 1)&#13;&#10;},"/>
   <extendedProperties name="jschart.zoom" value="x"/>
   <extendedProperties name="jschart.animation" value="true"/>
+  <extendedProperties name="keep.hierarchy.category" value="false"/>
+  <extendedProperties name="keep.hierarchy.series" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="true"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="01/05/2000,02/01/2000,04/12/2000,03/12/2000,02/29/2000"/>
    <orthogonalSampleData dataSetRepresentation="6,4,12,8,10" seriesDefinitionIndex="0"/>
-   <orthogonalSampleData dataSetRepresentation="12.0,8.0,24.0,16.0,20.0" seriesDefinitionIndex="1"/>
+   <orthogonalSampleData dataSetRepresentation="42,91,62,9,21" seriesDefinitionIndex="1"/>
   </sampleData>
   <emptyMessage>
    <caption value="This chart contains no data."/>
@@ -936,7 +939,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
     <color _body=",128,127,127,127"/>
    </outline>
   </emptyMessage>
-  <axes type="3" interval="6">
+  <axes type="3" staggered="false" interval="6">
    <title>
     <background _nil="1"/>
     <outline>
@@ -954,7 +957,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
      <query definition=""/>
      <seriesPalette>
       <entries _body=",255,192,192,192"/>
-      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,0,121,193"/>
       <entries _body=",255,232,172,57"/>
       <entries _body=",255,128,255,128"/>
       <entries _body=",255,64,128,128"/>
@@ -986,7 +989,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
       <entries _body=",255,255,255,255"/>
       <entries _body=",255,255,128,0"/>
      </seriesPalette>
-     <series _type="AreaSeries" seriesIdentifier="Series 1" stacked="false" connectMissingValue="false">
+     <series _type="LineSeries" seriesIdentifier="Series 1" stacked="false">
       <label>
        <background _nil="1"/>
        <outline>
@@ -1005,10 +1008,10 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
        </action>
       </triggers>
       <curveFitting _nil="1"/>
-      <markers type="2">
+      <markers visible="false">
        <outline/>
       </markers>
-      <lineAttributes>
+      <lineAttributes style="1">
        <color _nil="1"/>
       </lineAttributes>
      </series>
@@ -1017,7 +1020,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
     <seriesDefinitions>
      <query definition=""/>
      <seriesPalette>
-      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,0,121,193"/>
       <entries _body=",255,232,172,57"/>
       <entries _body=",255,128,255,128"/>
       <entries _body=",255,64,128,128"/>
@@ -1050,7 +1053,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
       <entries _body=",255,255,128,0"/>
       <entries _body=",255,192,192,192"/>
      </seriesPalette>
-     <series _type="AreaSeries" seriesIdentifier="Series 2" stacked="false" connectMissingValue="false">
+     <series _type="LineSeries" seriesIdentifier="Series 2" stacked="false">
       <label>
        <background _nil="1"/>
        <outline>
@@ -1064,21 +1067,22 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
        <components type="1"/>
       </dataPoint>
       <curveFitting _nil="1"/>
-      <markers visible="true">
+      <cursor type="0"/>
+      <markers type="2" visible="false">
        <outline visible="false"/>
       </markers>
-      <lineAttributes>
+      <lineAttributes thickness="4">
        <color _nil="1"/>
       </lineAttributes>
      </series>
     </seriesDefinitions>
     <lineAttributes>
-     <color _body=",255,0,0,0"/>
+     <color _body=",255,192,192,192"/>
     </lineAttributes>
     <label>
      <caption>
       <font size="8.0"/>
-      <color _body=",255,0,0,0"/>
+      <color _body=",255,145,145,145"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -1109,7 +1113,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
     <query definition=""/>
     <seriesPalette>
      <entries _body=",255,192,192,192"/>
-     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,0,121,193"/>
      <entries _body=",255,232,172,57"/>
      <entries _body=",255,128,255,128"/>
      <entries _body=",255,64,128,128"/>
@@ -1158,12 +1162,12 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
     <sortKey definition="row[&quot;birthyear&quot;]"/>
    </seriesDefinitions>
    <lineAttributes>
-    <color _body=",255,0,0,0"/>
+    <color _body=",255,192,192,192"/>
    </lineAttributes>
    <label>
     <caption>
      <font size="7.0" rotation="90.0"/>
-     <color _body=",255,0,0,0"/>
+     <color _body=",255,145,145,145"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -1200,9 +1204,9 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">false</property>
                         <property name="marginTop">10pt</property>
-                        <property name="dataSet">Data Set</property>
-                        <property name="height">3.9895833333333335in</property>
+                        <property name="height">3.8020833333333335in</property>
                         <property name="width">1000px</property>
+                        <property name="dataSet">Data Set</property>
                         <list-property name="boundDataColumns">
                             <structure>
                                 <property name="name">birthyear</property>
@@ -1247,7 +1251,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
                         </list-property>
                     </extended-item>
                     <grid id="130">
-                        <property name="fontSize">10pt</property>
+                        <property name="fontSize">12pt</property>
                         <property name="marginTop">0pt</property>
                         <property name="marginLeft">0px</property>
                         <property name="textAlign">left</property>
@@ -1255,7 +1259,7 @@ var planningData = <VALUE-OF>vars["planningData"]</VALUE-OF>;
                         <column id="131"/>
                         <row id="132">
                             <cell id="133">
-                                <property name="paddingTop">20pt</property>
+                                <property name="paddingTop">10pt</property>
                                 <property name="paddingLeft">1pt</property>
                                 <property name="textAlign">center</property>
                                 <text id="125">
@@ -1303,7 +1307,7 @@ function displayLifeEvents() {
 	for (var i = 0; i < lifeEventTypes.length; i++) {
 		html += "<td valign='top'>"
 		html += "<div id='lifeEventContainer" + i + "' style='width:310px; padding:3px;'>";
-		html += "<div id='lifeEvent" + i + "' style='font-size:10pt'>";
+		html += "<div id='lifeEvent" + i + "' style='font-size:13pt'>";
 		html += "<span style='vertical-align:top'>";
 		html += "<input type='checkbox' style='vertical-align:top' id='lifeEventState" + i + "' onclick='event.stopPropagation()' ";
 		if (lifeEventStates[i] == 1)
@@ -1311,7 +1315,7 @@ function displayLifeEvents() {
 		html += "></input><span style='vertical-align:top;cursor:default' onclick='toggleLifeEventState(" + i + ")'>";
 		html += lifeEventNames[i];
 		html += "</span></span>";
-		html += "<img title='Edit Event' style='margin-left:10px;' src='servlet/DownloadFile?name=/Resources/images/edit.png' ontouchstart='displayLifeEventEdit(event," + i + ")' onclick='displayLifeEventEdit(event," + i + ")' />";
+		html += "<img title='Edit Event' style='margin-left:10px;' src='../../servlet/DownloadFile?name=/Applications/DataVisDemo/images/edit.png' ontouchstart='displayLifeEventEdit(event," + i + ")' onclick='displayLifeEventEdit(event," + i + ")' />";
 		html += "</div>";
 		html += "</div>";
 		html += "</td>";
@@ -1333,12 +1337,12 @@ function displayLifeEventEdit(event, idx) {
 	if (lifeEventStates[idx] == 1)
 		html += " checked ";
 	html += "></input>";
-	html += "<input type='text' style='width:255px;float:right;margin-right:3px;font-size:10pt' id='lifeEventName" + idx + "' value=\"" + lifeEventNames[idx] + "\"></input>";
+	html += "<input type='text' style='width:255px;float:right;margin-right:3px;font-size:12pt' id='lifeEventName" + idx + "' value=\"" + lifeEventNames[idx] + "\"></input>";
 	html += "<table border='0' style='width:304px'>";
 	html += "<tr><td>Amount $</td>";
-	html += "<td align='right'><input type='number' style='width:190px;font-size:10pt' id='lifeEventAmount" + idx + "' value='" + lifeEventAmounts[idx] + "'></input></td></tr>";	
+	html += "<td align='right'><input type='number' style='width:190px;font-size:12pt' id='lifeEventAmount" + idx + "' value='" + lifeEventAmounts[idx] + "'></input></td></tr>";	
 	html += "<tr><td>Year-Month</td>";
-	html += "<td align='right'><input type='text' pattern='[0-9]*' style='width:190px;font-size:10pt' id='lifeEventDate" + idx + "' value='" + formatYearMonth(parseYearMonth(lifeEventDates[idx])) + "'></input></td></tr>";	
+	html += "<td align='right'><input type='text' pattern='[0-9]*' style='width:190px;font-size:12pt' id='lifeEventDate" + idx + "' value='" + formatYearMonth(parseYearMonth(lifeEventDates[idx])) + "'></input></td></tr>";	
 	html += "</table>"
 	html += "</div>";
 	_$("lifeEventContainer" + idx).innerHTML = html;	
@@ -1454,7 +1458,7 @@ function runReportViewer() {
 <table width="98%" style="font-family:Arial: border:0">
 <tr>
 <td align="left">
-	<select id="selAddLifeEvent" onchange="addLifeEvent()" style="font-size:10pt">
+	<select id="selAddLifeEvent" onchange="addLifeEvent()" style="font-size:13pt">
 		<option value="0">Add Life Event</option>
 		<option value="1">House</option>
 		<option value="2">Car</option>
@@ -1465,15 +1469,15 @@ function runReportViewer() {
 	</select>
 </td>
 <td align="center">
-	Monthly Contribution $<input type="number" size="10" id="monthlyContibution" name="monthlyContribution" value="<VALUE-OF>params["pMonthlyContribution"].value</VALUE-OF>" style="font-size:10pt;width:100px"></input>
+	Monthly Contribution $<input type="number" size="10" id="monthlyContibution" name="monthlyContribution" value="<VALUE-OF>params["pMonthlyContribution"].value</VALUE-OF>" style="font-size:13pt;width:100px"></input>
 </td>
 <td align="right">
 	Investment Style
-	<select id="investmentStyle" style="font-size:10pt">
+	<select id="investmentStyle" style="font-size:13pt">
 		<option value="0.02">Conservative</option>
 		<option value="0.04">Moderately Conservative</option>
-		<option value="0.06">Moderately Aggresive</option>
-		<option value="0.08">Aggresive</option>
+		<option value="0.06">Moderately Aggressive</option>
+		<option value="0.08">Aggressive</option>
 	</select>
 </td>
 </tr>
@@ -1512,7 +1516,7 @@ Please contact your Financial Advisor to help you plan for and acheive your inve
                                 <text id="417">
                                     <property name="contentType">html</property>
                                     <text-property name="content"><![CDATA[<div style="margin-top: 15px; text-align:center; width:95%">
-	<button ontouchstart="allocate(event)" onclick="allocate(event)" style="padding:2px;font-size:12pt;font-weight:bold;width:250px">Re-Allocate</button>
+	<button ontouchstart="allocate(event)" onclick="allocate(event)" style="padding:2px;font-size:14pt;font-weight:bold;width:250px">Re-Allocate</button>
 </div>
 
 <script>

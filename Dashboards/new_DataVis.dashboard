@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <property name="layoutPreference">auto layout</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <body>
+        <text name="3130424b-960e-4446-a372-f08e008389d3" id="11">
+            <text-property name="content"><![CDATA[http://workshop.chromeexperiments.com/globe-search/]]></text-property>
+        </text>
+        <text name="0bf0af95-7182-4ae1-9d9e-0b1967c32dff" id="15">
+            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/choropleth/index.html]]></text-property>
+        </text>
+        <text name="bc8012d0-035a-4383-8e75-c2cb4335507c" id="25">
+            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/d3_Airports/airports.html]]></text-property>
+        </text>
+        <text name="96a0b1d5-ed72-4e78-a4bb-3950e0882afd" id="38">
+            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2fmotionchart-HTML%2eRPTDOCUMENT%3b1&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;showBreadCrumb=false&amp;locale=en_US&amp;__format=html]]></text-property>
+        </text>
+        <text name="5405e3a6-f3ce-484d-86e3-ab906dd51e41" id="69">
+            <text-property name="content"><![CDATA[http://mbostock.github.com/d3/talk/20111018/calendar.html]]></text-property>
+        </text>
+        <text name="ad148dcd-1e72-49b8-af6d-69bf2052183b" id="79">
+            <text-property name="content"><![CDATA[http://bost.ocks.org/mike/miserables/]]></text-property>
+        </text>
+        <text name="642e6105-a210-450b-b0bf-e180a05cbb34" id="89">
+            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2fd3-layout-tree%2erptdocument%3b1&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
+        </text>
+        <text name="cfc0630a-a2b3-412e-af51-e91545ffd643" id="93">
+            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2ftreemap-HTML%2eRPTDOCUMENT%3b1&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
+        </text>
+    </body>
+    <property name="dashboardView">
+        <dashboard id="2">
+            <property name="activeTab">180a3b33-87c3-4efd-af27-ac689d7b111c</property>
+            <property name="tabs">
+                <tab-element name="180a3b33-87c3-4efd-af27-ac689d7b111c" id="3">
+                    <property name="title">Geospatial</property>
+                    <property name="sections">
+                        <section id="4">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="1d5c8b08-4976-460a-933f-9c5437b0726f" id="9">
+                                    <property name="height">731px</property>
+                                    <property name="title">Google Earth</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">731px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="10">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="12">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">3130424b-960e-4446-a372-f08e008389d3</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="f7d977a8-310c-4541-8aae-8cccb96c6fa8" id="6">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="8">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"tahoma", "arial", "verdana", sans-serif</property>
+                                            <property name="fontSize">8pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="7"/>
+                                    </property>
+                                </gadget>
+                                <gadget name="d8dc9ed5-1921-43b1-bc09-a5171feae2cc" id="13">
+                                    <property name="height">550px</property>
+                                    <property name="title">Choropleth</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">3</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">550px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="14">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="16">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">0bf0af95-7182-4ae1-9d9e-0b1967c32dff</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="61144fd1-c5a2-4181-95ec-c0ba6f252d4d" id="17">
+                    <property name="title">Charts on Top</property>
+                    <property name="sections">
+                        <section id="18">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="1c056e32-c655-435d-9dc2-fa6c210eb298" id="23">
+                                    <property name="height">734px</property>
+                                    <property name="title">Charts and Interaction</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">734px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="24">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="26">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">bc8012d0-035a-4383-8e75-c2cb4335507c</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="ac5b929d-8761-4f4b-bdab-81718594e702" id="20">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="22">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">24pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="21"/>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="3dea0698-cce8-40ed-a5e5-268beea420f6" id="27">
+                    <property name="title">Animation</property>
+                    <property name="sections">
+                        <section id="28">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="9eeee8b1-31c0-433a-8117-353407fbd05d" id="36">
+                                    <property name="height">534px</property>
+                                    <property name="title">Motion Chart</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">534px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="37">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="39">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">96a0b1d5-ed72-4e78-a4bb-3950e0882afd</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="305a45a9-2ee0-475e-b47a-8aa4ab4d15a4" id="30">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="32">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">24pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="31"/>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="11529c78-067b-41dc-9e96-b1b36cbd88ea" id="40">
+                    <property name="title">Icon</property>
+                    <property name="sections">
+                        <section id="41">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="Gadget_0a057dfe-4e1e-4fda-be75-8757d7cb757b" id="46">
+                                    <property name="height">587px</property>
+                                    <property name="title">Planning Roadmap</property>
+                                    <property name="externalGadgetURI">^/Report Designs/Planning Roadmap - HTML5.rptdesign</property>
+                                    <property name="showTitle">true</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">587px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="47">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="48">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">false</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">^/Report Designs/Planning Roadmap - HTML5.rptdesign</property>
+                                                </external-element-ref>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="32d197ff-014c-4ad6-bb10-1f00080edd53" id="43">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="45">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">24pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="44"/>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="1fb29181-714b-4f3b-85bd-4e9642995924" id="49">
+                    <property name="title">Rich</property>
+                    <property name="sections">
+                        <section id="50">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="Gadget_da43a15d-d972-4dca-9303-371a11b1d97a" id="55">
+                                    <property name="height">286px</property>
+                                    <property name="title">Sales Metrics</property>
+                                    <property name="externalGadgetURI">^/Report Designs/Sales_Dashboard_V11_360.RPTDOCUMENT</property>
+                                    <property name="showTitle">true</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">286px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="56">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="57">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">false</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">^/Report Designs/Sales_Dashboard_V11_360.RPTDOCUMENT</property>
+                                                    <property name="targetBookmark">metrics</property>
+                                                </external-element-ref>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="Gadget_1f4f0be5-2451-45be-986f-cda756c69abd" id="58">
+                                    <property name="height">276px</property>
+                                    <property name="title">Sales</property>
+                                    <property name="externalGadgetURI">^/Report Designs/Sales_Dashboard_V11_360.RPTDOCUMENT</property>
+                                    <property name="showTitle">true</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">3</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">276px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="59">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="60">
+                                            <list-property name="userProperties">
+                                                <structure>
+                                                    <property name="name">showViewerToolbar</property>
+                                                    <property name="type">boolean</property>
+                                                </structure>
+                                            </list-property>
+                                            <property name="showViewerToolbar">false</property>
+                                            <property name="gadgetType">viewer</property>
+                                            <property name="externalContentRef">
+                                                <external-element-ref>
+                                                    <property name="sourceFile">^/Report Designs/Sales_Dashboard_V11_360.RPTDOCUMENT</property>
+                                                    <property name="targetBookmark">sales</property>
+                                                </external-element-ref>
+                                            </property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="354fc695-8152-4312-baac-9e353c1c6e86" id="52">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="54">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">24pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="53"/>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="4810e182-44da-417b-8b92-d5c53f90481e" id="61">
+                    <property name="title">Repetition</property>
+                    <property name="sections">
+                        <section id="62">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="96a1462c-e43f-46bf-b715-32371ecaffa0" id="67">
+                                    <property name="height">725px</property>
+                                    <property name="title">Small Multiples</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">725px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="68">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="70">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">5405e3a6-f3ce-484d-86e3-ab906dd51e41</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="082faf64-e81c-413c-ac19-b0124a95c070" id="64">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="66">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">24pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="65"/>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="07b45845-638e-488e-b697-64e84153199d" id="71">
+                    <property name="title">Grouping</property>
+                    <property name="sections">
+                        <section id="72">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="f8b60a2e-a0d7-46e7-baa6-a8f3fa8dbbb9" id="77">
+                                    <property name="height">966px</property>
+                                    <property name="title">Grouping</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">966px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="78">
+                                            <property name="showCaption">false</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="80">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">ad148dcd-1e72-49b8-af6d-69bf2052183b</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="31b36d92-56d8-48fe-a3bb-9e1150a2a0ad" id="74">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="76">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">24pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="75"/>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+                <tab-element name="f3d53585-5042-411e-823e-b0b24295b684" id="81">
+                    <property name="title">Drill</property>
+                    <property name="sections">
+                        <section id="82">
+                            <property name="width">100%</property>
+                            <property name="gadgets">
+                                <gadget name="adc88c9d-ff8b-4adc-bee9-dc7386538997" id="87">
+                                    <property name="height">820px</property>
+                                    <property name="title">Hierarchy</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">2</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">820px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="88">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="90">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">642e6105-a210-450b-b0bf-e180a05cbb34</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="82c3bb28-63b0-4223-8e9d-050cb1fd6e9c" id="91">
+                                    <property name="height">452px</property>
+                                    <property name="title">Tree Map</property>
+                                    <property name="gadgetContentType">url</property>
+                                    <property name="zIndex">3</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">452px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="92">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                            <property name="textUnderline">none</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <data-view id="94">
+                                            <property name="gadgetType">embedded</property>
+                                            <property name="internalReportLetRef">cfc0630a-a2b3-412e-af51-e91545ffd643</property>
+                                        </data-view>
+                                    </property>
+                                </gadget>
+                                <gadget name="f4048611-083d-4b33-b6e5-5a2c2a63db17" id="84">
+                                    <property name="height">150px</property>
+                                    <property name="zIndex">1</property>
+                                    <property name="isVisible">false</property>
+                                    <property name="height">150px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="86">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontSize">24pt</property>
+                                            <property name="fontWeight">bold</property>
+                                            <property name="color">#000000</property>
+                                        </gadget-caption>
+                                    </property>
+                                    <property name="content">
+                                        <current-selections id="85"/>
+                                    </property>
+                                </gadget>
+                            </property>
+                        </section>
+                    </property>
+                </tab-element>
+            </property>
+        </dashboard>
+    </property>
+</report>

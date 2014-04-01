@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20121022-1705 Build &lt;3.7.2.v20121022-1705></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
     <property name="units">in</property>
     <method name="beforeFactory"><![CDATA[vars["gDataXML"] = "[['Location', 'Parent', 'Medal Count (size)', 'Medal Count increase/decrease (color)']," 
 vars["gDataXML"] += "['Global', null, 0,  0]";
@@ -16,7 +16,7 @@ vars["gDataXML"] += "['Global', null, 0,  0]";
     </list-property>
     <data-sources>
         <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="Medal CountData Source" id="55">
-            <property name="HOME">C:\Users\BIRTAdmin\workspace\BigDataVis</property>
+            <property name="HOME">FlatFiles/</property>
             <property name="DELIMTYPE">COMMA</property>
             <property name="CHARSET">UTF-8</property>
             <property name="INCLCOLUMNNAME">YES</property>
