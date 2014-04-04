@@ -236,14 +236,14 @@
                             <property name="width">100%</property>
                             <property name="gadgets">
                                 <gadget name="Gadget_0a057dfe-4e1e-4fda-be75-8757d7cb757b" id="46">
-                                    <property name="height">587px</property>
+                                    <property name="height">659px</property>
                                     <property name="title">Planning Roadmap</property>
                                     <property name="externalGadgetURI">^/Report Designs/Planning Roadmap - HTML5.rptdesign</property>
                                     <property name="showTitle">true</property>
                                     <property name="showBorder">true</property>
                                     <property name="zIndex">2</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">587px</property>
+                                    <property name="height">659px</property>
                                     <property name="caption">
                                         <gadget-caption id="47">
                                             <property name="showCaption">true</property>
