@@ -5,3 +5,9 @@ This demo highlights the attributes of good data visualizations through many exa
 Extra iportal folder items get deployed into iHub3's Information Console (ex. C:\Actuate\iHub3\modules\BIRTiHub\iHub\web\iportal).
 
 Sometimes prospects just want to see some really good looking stuff, or see what can be done in our products.
+
+To learn how to use GitHub in Eclipse with this repository, check out the following link:
+http://saleswiki.actuate.com/MApps%20Demo%20Deployment.ashx
+
+To see more BIRT examples and get support from the BIRT community, go to:
+http://developer.actuate.com
