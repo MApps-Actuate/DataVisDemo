@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150710-0101 Build &lt;4.2.3.v20150710-0101></property>
     <property name="units">in</property>
     <method name="beforeFactory"><![CDATA[vars["gDataXML1"] += "['Apples',  new Date (1989,6,1), 1200, 400, 'East'],";
 vars["gDataXML1"] += "['Oranges', new Date (1989,6,1), 750,  150, 'West'],";
@@ -171,8 +171,8 @@ from
 where 
      od.ordernumber = o.ordernumber
      and o.orderdate = p.paymentdate
-     and o.orderdate >= '1/1/2013'
-     and o.orderdate <= '12/31/2013'
+     and o.orderdate >= '1/1/2011'
+     and o.orderdate <= '12/31/2011'
 group by o.orderdate, c.country]]></xml-property>
             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
@@ -449,7 +449,7 @@ else {
         </table>
         <text id="163">
             <property name="contentType">html</property>
-            <text-property name="content"><![CDATA[    <div id="chart_div" style="width: 800px; height: 500px;"></div>
+            <text-property name="content"><![CDATA[    <div id="chart_div" style="width: 780px; height: 500px;"></div>
 
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     
@@ -470,7 +470,7 @@ else {
 		options['state'] =
 '{"yAxisOption":"3","xZoomedIn":false,"colorOption":"_UNIQUE_COLOR","playDuration":18888.88888888889,"yLambda":1,"dimensions":{"iconDimensions":["dim0"]},"uniColorForNonSelected":false,"xZoomedDataMax":1070928000000,"duration":{"timeUnit":"D","multiplier":1},"orderedByY":false,"time":"2003-12-09","showTrails":false,"xLambda":1,"yZoomedIn":false,"yZoomedDataMax":6400635.12,"xAxisOption":"_TIME","sizeOption":"4","nonSelectedAlpha":0.4,"iconKeySettings":[],"yZoomedDataMin":1627.56,"orderedByX":false,"xZoomedDataMin":1050019200000,"iconType":"BUBBLE"};';
 
-		options['width'] = 800;
+		options['width'] = 780;
 		options['height'] = 500;
 
         var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
