@@ -16,10 +16,10 @@
             <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/choropleth/index.html]]></text-property>
         </text>
         <text name="bc8012d0-035a-4383-8e75-c2cb4335507c" id="25">
-            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/d3_Airports/airports.html]]></text-property>
+            <text-property name="content"><![CDATA[http://localhost:8700/iportal/d3_Airports/airports.html]]></text-property>
         </text>
         <text name="96a0b1d5-ed72-4e78-a4bb-3950e0882afd" id="38">
-            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2fmotionchart-HTML%2eRPTDOCUMENT%3b1&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;showBreadCrumb=false&amp;locale=en_US&amp;__format=html]]></text-property>
+            <text-property name="content"><![CDATA[http://localhost:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2fmotionchart-HTML%2eRPTDOCUMENT&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;showBreadCrumb=false&amp;locale=en_US&amp;__format=html]]></text-property>
         </text>
         <text name="5405e3a6-f3ce-484d-86e3-ab906dd51e41" id="69">
             <text-property name="content"><![CDATA[http://mbostock.github.com/d3/talk/20111018/calendar.html]]></text-property>
@@ -28,15 +28,15 @@
             <text-property name="content"><![CDATA[http://bost.ocks.org/mike/miserables/]]></text-property>
         </text>
         <text name="642e6105-a210-450b-b0bf-e180a05cbb34" id="89">
-            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2fd3-layout-tree%2erptdocument%3b1&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
+            <text-property name="content"><![CDATA[http://localhost:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2fd3-layout-tree%2erptdocument&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
         </text>
         <text name="cfc0630a-a2b3-412e-af51-e91545ffd643" id="93">
-            <text-property name="content"><![CDATA[http://actuateone.localdomain:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2ftreemap-HTML%2eRPTDOCUMENT%3b1&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
+            <text-property name="content"><![CDATA[http://localhost:8700/iportal/iv?__report=%2fApplications%2fDataVisDemo%2fReport%20Designs%2ftreemap-HTML%2eRPTDOCUMENT&amp;closex=true&amp;__vp=Default%20Volume&amp;volume=Default%20Volume&amp;showBanner=false&amp;locale=en_US&amp;__format=html]]></text-property>
         </text>
     </body>
     <property name="dashboardView">
         <dashboard id="2">
-            <property name="activeTab">180a3b33-87c3-4efd-af27-ac689d7b111c</property>
+            <property name="activeTab">f3d53585-5042-411e-823e-b0b24295b684</property>
             <property name="tabs">
                 <tab-element name="180a3b33-87c3-4efd-af27-ac689d7b111c" id="3">
                     <property name="title">Geospatial</property>
@@ -130,7 +130,7 @@
                                     <property name="title">Charts and Interaction</property>
                                     <property name="gadgetContentType">url</property>
                                     <property name="zIndex">2</property>
-                                    <property name="showScrollBar">false</property>
+                                    <property name="showScrollBar">true</property>
                                     <property name="height">734px</property>
                                     <property name="caption">
                                         <gadget-caption id="24">

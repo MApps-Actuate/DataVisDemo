@@ -81,14 +81,14 @@ d3.select("input[type=checkbox]").on("change", function() {
   cells.classed("voronoi", this.checked);
 });
 
-d3.json("http://actuateone.localdomain:8700/iportal/d3_Airports/us-states.json", function(collection) {
+d3.json("http://localhost:8700/iportal/d3_Airports/us-states.json", function(collection) {
   states.selectAll("path")
       .data(collection.features)
     .enter().append("svg:path")
       .attr("d", path);
 });
 
-d3.csv("http://actuateone.localdomain:8700/iportal/d3_Airports/flights-airport.csv", function(flights) {
+d3.csv("http://localhost:8700/iportal/d3_Airports/flights-airport.csv", function(flights) {
   var linksByOrigin = {},
       countByAirport = {},
 	  countByFlight = {},
@@ -109,7 +109,7 @@ d3.csv("http://actuateone.localdomain:8700/iportal/d3_Airports/flights-airport.c
 	countByFlight[origin] = (countByFlight[origin] || 0) + parseInt(flight.count);
   });
 
-  d3.csv("http://actuateone.localdomain:8700/iportal/d3_Airports/airports.csv", function(airports) {
+  d3.csv("http://localhost:8700/iportal/d3_Airports/airports.csv", function(airports) {
 
     // Only consider airports with at least one flight.
     airports = airports.filter(function(airport) {
